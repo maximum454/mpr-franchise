@@ -1,0 +1,68 @@
+@import "mixin";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+	font-family: PT Sans;
+	&.lock {
+		overflow: hidden;
+	}
+}
+.wrp {
+	position: relative;
+	p {
+		font-size: 18px;
+		line-height: 26px;
+		color: #fff;
+	}
+}
+
+.container {
+	max-width: 1366px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+
+.d-none {
+	display: none!important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+@import "componets/header";
+
+
+
+
