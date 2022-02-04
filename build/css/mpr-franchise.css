@@ -1129,28 +1129,20 @@ img {
 
 .general-information {
   position: relative;
-  padding-top: 258px;
   margin-bottom: 83px;
 }
 
-.general-information:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-image: url("../img/general-information.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 518px;
-  height: 272px;
-  margin: auto;
+.general-information__img {
+  position: relative;
+  z-index: 10;
+  text-align: center;
 }
 
 .general-information__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: -60px;
 }
 
 .general-information__left {
@@ -1175,6 +1167,8 @@ img {
 }
 
 .general-information__right {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   padding: 43px 59px;
   margin: 0 0 0 auto;
   height: 100%;
@@ -1436,5 +1430,44 @@ img {
     margin-left: 10px;
     font-size: 13px;
     line-height: 25px;
+  }
+
+  .general-information__body {
+    display: block;
+  }
+
+  .general-information__left {
+    max-width: 100%;
+    padding: 48px;
+  }
+
+  .general-information__left p {
+    font-size: 12px;
+  }
+
+  .general-information__name {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .general-information__right {
+    padding: 14px;
+    text-align: center;
+  }
+
+  .general-information__list {
+    margin: 10px 0 0;
+  }
+
+  .general-information__list li {
+    font-size: 13px;
+  }
+
+  .general-information__list li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  .general-information__list li:before {
+    display: none;
   }
 }

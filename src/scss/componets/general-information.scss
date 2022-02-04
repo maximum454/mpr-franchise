@@ -1,22 +1,14 @@
 .general-information{
 	position: relative;
-	padding-top: 258px;
 	margin-bottom: 83px;
-	&:before{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		background-image: url("../img/general-information.png");
-		background-repeat: no-repeat;
-		background-size: 100%;
-		width: 518px;
-		height: 272px;
-		margin: auto;
+	&__img{
+		position: relative;
+		z-index: 10;
+		text-align: center;
 	}
 	&__body{
 		display: flex;
+		margin-top: -60px;
 	}
 	&__left{
 		max-width: 548px;
@@ -37,6 +29,7 @@
 		color: #E30613;
 	}
 	&__right{
+		flex-shrink: 0;
 		padding: 43px 59px;
 		margin: 0 0 0 auto;
 		height: 100%;
@@ -66,6 +59,38 @@
 				margin-right: 10px;
 				vertical-align: middle;
 				overflow: hidden;
+			}
+		}
+	}
+	@include r(767){
+		&__body{
+			display: block;
+		}
+		&__left{
+			max-width: 100%;
+			padding: 48px;
+			p{
+				font-size: 12px;
+			}
+		}
+		&__name{
+			font-size: 14px;
+			text-align: center;
+		}
+		&__right{
+			padding: 14px;
+			text-align: center;
+		}
+		&__list{
+			margin: 10px 0 0;
+			li{
+				font-size: 13px;
+				&:not(:last-of-type){
+					margin-bottom: 10px;
+				}
+				&:before{
+					display: none;
+				}
 			}
 		}
 	}
