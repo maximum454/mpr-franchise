@@ -913,18 +913,16 @@ img {
 
 .hero {
   overflow: hidden;
+  padding: 10px 0;
 }
 
 .hero__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  position: relative;
 }
 
 .hero__txt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 60%;
-          flex: 1 0 60%;
+  max-width: 582px;
   text-align: right;
 }
 
@@ -970,25 +968,27 @@ img {
 }
 
 .hero__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .hero__row span {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
   text-align: right;
-  max-width: 264px;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
   color: #000000;
+}
+
+.hero__img {
+  top: -40px;
+  left: 582px;
+  position: absolute;
 }
 
 .number {
@@ -1200,6 +1200,74 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .hero__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero__txt {
+    max-width: 582px;
+    text-align: right;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .hero__img {
+    top: 0;
+    left: 0;
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .hero__img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .hero__list {
+    margin: 0 0 16px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .hero__list li {
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .hero__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 18px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .hero__row span {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .hero__row .btn {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 10px;
   }
 
   .number {

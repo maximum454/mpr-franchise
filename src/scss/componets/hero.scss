@@ -1,10 +1,12 @@
 .hero{
 	overflow: hidden;
+	padding: 10px 0;
 	&__body{
-		display: flex;
+		display: block;
+		position: relative;
 	}
 	&__txt{
-		flex: 1 0 60%;
+		max-width: 582px;
 		text-align: right;
 	}
 	&__title{
@@ -45,17 +47,71 @@
 		}
 	}
 	&__row{
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
 		align-items: center;
 		span{
-			flex: 1 0 50%;
 			text-align: right;
-			max-width: 264px;
 			font-weight: normal;
 			font-size: 12px;
 			line-height: 14px;
 			letter-spacing: 0.05em;
 			color: #000000;
+		}
+	}
+	&__img{
+		top: -40px;
+		left: 582px;
+		position: absolute;
+	}
+	@include r(767){
+		&__body{
+			display: flex;
+			flex-direction: column;
+		}
+		&__txt{
+			max-width: 582px;
+			text-align: right;
+			order: 2;
+		}
+		&__img{
+			top: 0;
+			left: 0;
+			position: relative;
+			order: 1;
+			img{
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&__title{
+			font-size: 24px;
+			line-height: 30px;
+		}
+		&__list{
+			margin: 0 0 16px;
+			padding: 0;
+			list-style: none;
+			li{
+				font-size: 13px;
+				line-height: 25px;
+			}
+		}
+		&__row{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 18px;
+			align-items: center;
+			span{
+				font-size: 8px;
+				line-height: 10px;
+			}
+			.btn{
+				font-size: 12px;
+				line-height: 14px;
+				padding: 10px;
+			}
 		}
 	}
 }
