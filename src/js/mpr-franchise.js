@@ -21,6 +21,20 @@ menu.addEventListener('click', (e) => {
     target.classList.toggle('active');
 })
 
+const swiperStatistic = new Swiper('.swiper-container-statistic',{
+    slidesPerView: 'auto',
+    loop:true,
+    spaceBetween: 165,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    observer: true,
+    freeMode: true,
+    navigation: {
+        nextEl: '.swiper-statistic-next',
+    },
+})
+
 
 
 

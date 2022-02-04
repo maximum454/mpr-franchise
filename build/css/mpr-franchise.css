@@ -1207,6 +1207,61 @@ img {
   overflow: hidden;
 }
 
+.statistic {
+  margin-bottom: 88px;
+  overflow: hidden;
+}
+
+.statistic__count {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #E30613;
+  margin-bottom: 3px;
+}
+
+.statistic__name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.statistic__year {
+  padding-top: 13px;
+  border-top: 3px solid #E30613;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #E30613;
+}
+
+.statistic .swiper-container-statistic {
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.statistic .swiper-slide {
+  width: auto !important;
+}
+
+.statistic .swiper-statistic-next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 100px;
+  height: 100%;
+  background-image: url("../img/icons-sprite.svg#icon-arrow-next");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;
