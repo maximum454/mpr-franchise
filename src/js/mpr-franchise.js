@@ -11,8 +11,15 @@ $(function () {
         $('html, body').animate({scrollTop: dn}, 1000);
     });
 
+
 })
 
+menu.addEventListener('click', (e) => {
+    const target = e.target;
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+    target.classList.toggle('active');
+})
 
 
 

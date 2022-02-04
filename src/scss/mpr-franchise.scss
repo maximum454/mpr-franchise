@@ -30,6 +30,12 @@ body {
 	padding-left: 15px;
 }
 
+a{
+	transition: color 0.3s ease;
+	&:hover{
+		transition: color 0.3s ease;
+	}
+}
 
 
 .d-none {

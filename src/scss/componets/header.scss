@@ -23,16 +23,31 @@
 		box-sizing: border-box;
 		border-radius: 4px;
 		position: relative;
-		display: flex;
 		align-items: center;
 		justify-content: center;
+		z-index: 15;
 		flex-shrink: 0;
 		width: 29px;
 		height: 29px;
 		padding: 5px;
 		background-color: #fff;
+		cursor: pointer;
 		display: none;
+		transition: all 0.3s ease;
+		&:hover{
+			transition: all 0.3s ease;
+			background-color: #E30613;
+			&:before {
+				background-color: #fff;
+			}
 
+			&:after {
+				background-color: #fff;
+			}
+			span{
+				background-color: #fff;
+			}
+		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -94,6 +109,23 @@
 		}
 		&__button {
 			display: flex;
+			&.active{
+				&:before {
+					top: 13px;
+					transform: rotate(45deg);
+					transition: all 0.3s ease;
+				}
+
+				&:after {
+					bottom: 13px;
+					transform: rotate(-45deg);
+					transition: all 0.3s ease;
+				}
+
+				span {
+					display: none;
+				}
+			}
 		}
 
 		&__phone {
