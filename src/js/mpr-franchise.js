@@ -1,4 +1,4 @@
-
+@@include('./partials/remodal.js')
 
 $(function () {
     $('a[href^="#"]').on('click', function(event) {
