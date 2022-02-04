@@ -1310,6 +1310,61 @@ img {
   background-position: center;
 }
 
+.advantage {
+  background-color: #E30613;
+  padding: 44px 0;
+}
+
+.advantage__header {
+  margin-bottom: 72px;
+}
+
+.advantage__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.advantage__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.advantage__list {
+  margin: 0 0 70px;
+  padding: 0;
+  list-style: none;
+}
+
+.advantage__list li {
+  position: relative;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.advantage__list li:before {
+  content: '';
+  display: inline-block;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;
