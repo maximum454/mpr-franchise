@@ -6,10 +6,10 @@
 	vertical-align: middle;
 	user-select: none;
 	border: 1px solid transparent;
-	padding: .563rem 1.4rem;
-	font-size: 15px;
-	line-height: 20px;
-	border-radius: 25px;
+	padding: 20px 35px;
+	font-size: 18px;
+	line-height: 21px;
+	border-radius: 4px;
 	cursor: pointer;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	text-decoration: none;
@@ -23,21 +23,22 @@
 	}
 	&.btn-primary{
 		color: #fff;
-		background: linear-gradient(45deg, #f15200 33%, #f58400);
-		border-color: #fd7400;
+		background: #E30613;
+		border-color: #E30613;
 		&:hover {
-			color: #fff;
-			background-color: #d76200;
-			border-color: #ca5d00;
+			color: #E30613;
+			background-color: #fff;
+			border-color: #E30613;
 		}
 	}
 	&.btn-secondary{
-		color: #324C9A;
-		background-color: #F1F5F9;
-		border-color: #F1F5F9;
-        
+		color: #E30613;
+		background-color: #fff;
+		border-color: #E30613;
 		&:hover {
-
+			color: #fff;
+			background-color: #E30613;
+			border-color: #E30613;
 		}
 	}
 	&.btn-success{
@@ -82,7 +83,7 @@
 	}
 	&.btn-link{
 		font-weight: 400;
-		color: #324C9A;
+		color: #E30613;
 		background-color: transparent;
 		&.text-muted{
 			color: #A4A9BB;
@@ -110,15 +111,15 @@
 	}
 
 	&.btn-outline-primary{
-		color: #333;
+		color: #E30613;
 		background-color: transparent;
 		background-image: none;
-		border-color: #fd7400;
+		border-color: #E30613;
         
 		&:hover {
 			color: #fff;
-			background-color: #fd7400;
-			border-color: #fd7400;
+			background-color: #E30613;
+			border-color: #E30613;
 		}
 		&:focus {
 			box-shadow: 0 0 0 0.2rem rgb(0,123,255 / 50%);

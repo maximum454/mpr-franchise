@@ -1,0 +1,25 @@
+.nav{
+	padding: 24px 0;
+	&__menu{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__item{
+	}
+	&__link{
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 50px;
+		letter-spacing: 0.05em;
+		text-transform: capitalize;
+		color: #000000;
+		text-decoration: none;
+	}
+	&__dropdown{
+		display: none;
+	}
+}
