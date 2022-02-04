@@ -63,6 +63,7 @@
 		}
 	}
 	@include r(767){
+		margin-bottom: 0;
 		&__body{
 			display: block;
 		}

@@ -1207,6 +1207,54 @@ img {
   overflow: hidden;
 }
 
+.geografia {
+  margin-bottom: 30px;
+}
+
+.geografia__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  position: relative;
+}
+
+.geografia__title:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #E30613;
+  width: 100%;
+  max-width: 142px;
+  height: 3px;
+}
+
+.geografia__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -60px;
+}
+
+.geografia__txt {
+  width: 304px;
+  margin: 36px auto 80px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.geografia__txt b {
+  font-size: 18px;
+}
+
 .statistic {
   margin-bottom: 88px;
   overflow: hidden;
@@ -1487,6 +1535,10 @@ img {
     line-height: 25px;
   }
 
+  .general-information {
+    margin-bottom: 0;
+  }
+
   .general-information__body {
     display: block;
   }
@@ -1524,5 +1576,19 @@ img {
 
   .general-information__list li:before {
     display: none;
+  }
+
+  .geografia__title {
+    display: none;
+  }
+
+  .geografia__body {
+    display: block;
+    margin-top: 0;
+  }
+
+  .geografia__txt {
+    width: 304px;
+    margin: 36px auto;
   }
 }

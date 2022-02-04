@@ -1,3 +1,52 @@
 .geografia{
-
+	margin-bottom: 30px;
+	&__title{
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		color: #000000;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			background-color: #E30613;
+			width: 100%;
+			max-width: 142px;
+			height: 3px;
+		}
+	}
+	&__body{
+		display: flex;
+		margin-top: -60px;
+	}
+	&__txt{
+		width: 304px;
+		margin: 36px auto 80px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 25px;
+		text-align: justify;
+		letter-spacing: 0.05em;
+		align-self: flex-end;
+		b{
+			font-size: 18px;
+		}
+	}
+	@include r(767){
+		&__title{
+			display: none;
+		}
+		&__body{
+			display: block;
+			margin-top: 0;
+		}
+		&__txt{
+			width: 304px;
+			margin: 36px auto;
+		}
+	}
 }
