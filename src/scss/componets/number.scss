@@ -1,0 +1,50 @@
+.number{
+	background-color: #E30613;
+	padding: 64px 0;
+	&__body{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	&__item{
+		font-style: normal;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+	}
+	&__text{
+		font-size: 24px;
+		line-height: 25px;
+	}
+	&__count{
+		width: fit-content;
+		font-size: 48px;
+		margin-bottom: 6px;
+		padding-bottom: 5px;
+		border-bottom: 3px solid #fff;
+		text-align: right;
+		margin-right: 0;
+		margin-left: auto;
+	}
+	&__name{
+		font-size: 24px;
+		line-height: 25px;
+		text-align: right;
+	}
+	@include r(767){
+		padding: 14px 0;
+		&__text{
+			font-size: 13px;
+			line-height: 25px;
+		}
+		&__count{
+			font-size: 30px;
+			line-height: 25px;
+			width: 100%;
+		}
+		&__name{
+			font-size: 13px;
+			line-height: 25px;
+		}
+	}
+}

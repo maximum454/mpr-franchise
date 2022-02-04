@@ -37,6 +37,9 @@ a{
 		transition: color 0.3s ease;
 	}
 }
+img{
+	height: auto;
+}
 
 
 .d-none {
@@ -72,6 +75,8 @@ a{
 
 @import "componets/header";
 @import "componets/nav";
+@import "componets/hero";
+@import "componets/number";
 @import "componets/footer";
 
 
