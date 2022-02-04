@@ -18,7 +18,14 @@
 
 @font-face {
   font-family: 'AvantGardeCTT';
-  src: url("../fonts/AvantGardeCTT/avantgardectt_bold.ttf") format("truetype");
+  src: url("../fonts/AvantGardeCTT/AvantGardeCTT-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url("../fonts/CenturyGothic/CenturyGothic-bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -922,7 +929,8 @@ img {
 }
 
 .hero__title {
-  font-weight: bold;
+  font-family: 'CenturyGothic';
+  font-weight: 700;
   font-size: 50px;
   line-height: 60px;
   letter-spacing: 0.05em;
@@ -1054,6 +1062,34 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.percent {
+  padding: 100px 0;
+}
+
+.percent__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  grid-gap: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.percent__item {
+  max-width: 250px;
+}
+
+.percent__name {
+  margin-top: 34px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #000000;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1190,5 +1226,24 @@ img {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
+  }
+
+  .percent {
+    padding: 24px 0;
+  }
+
+  .percent__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 100%;
+  }
+
+  .percent__name {
+    margin-top: 0;
+    margin-left: 10px;
   }
 }
