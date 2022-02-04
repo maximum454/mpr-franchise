@@ -3,6 +3,7 @@
 @import "buttons";
 @import "remodal";
 @import "form";
+@import "text";
 
 * {
 	box-sizing: border-box;
@@ -19,7 +20,6 @@ body {
 	p {
 		font-size: 18px;
 		line-height: 25px;
-		color: #333;
 	}
 }
 
@@ -79,6 +79,7 @@ img{
 @import "componets/number";
 @import "componets/footer";
 @import "componets/percent";
+@import "componets/general-information";
 
 
 

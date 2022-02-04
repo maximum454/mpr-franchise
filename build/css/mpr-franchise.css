@@ -676,6 +676,42 @@
   opacity: 0.6;
 }
 
+.text-warning {
+  color: #F2994A;
+}
+
+.text-danger {
+  color: #E30613;
+}
+
+.text-link {
+  color: #324c9a;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-success {
+  color: #6fcf97;
+}
+
+.text-muted {
+  color: #a4a9bb;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -696,7 +732,6 @@ body.lock {
 .wrp p {
   font-size: 18px;
   line-height: 25px;
-  color: #333;
 }
 
 .container {
@@ -1090,6 +1125,92 @@ img {
   letter-spacing: 0.05em;
   text-transform: capitalize;
   color: #000000;
+}
+
+.general-information {
+  position: relative;
+  padding-top: 258px;
+  margin-bottom: 83px;
+}
+
+.general-information:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../img/general-information.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 518px;
+  height: 272px;
+  margin: auto;
+}
+
+.general-information__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.general-information__left {
+  max-width: 548px;
+  background: #E5E5E5;
+  border-radius: 21px;
+  padding: 43px 59px;
+}
+
+.general-information__left p {
+  font-size: 14px;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.05em;
+}
+
+.general-information__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #E30613;
+}
+
+.general-information__right {
+  padding: 43px 59px;
+  margin: 0 0 0 auto;
+  height: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.general-information__list {
+  margin: 23px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.general-information__list li {
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.general-information__list li:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.general-information__list li:before {
+  content: '';
+  display: inline-block;
+  color: #000;
+  border-radius: 50%;
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 767px) {
