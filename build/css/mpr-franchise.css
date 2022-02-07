@@ -1841,6 +1841,102 @@ img {
       flex-shrink: 0;
 }
 
+.learning-main {
+  padding: 80px 0;
+}
+
+.learning-main__header {
+  margin-bottom: 72px;
+}
+
+.learning-main__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+.learning-main__title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 155px;
+  height: 3px;
+  background-color: #E30613;
+}
+
+.learning-main__img {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.learning-main__img:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(29.6%, rgba(255, 255, 255, 0)), color-stop(94.91%, #FFFFFF));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 29.6%, #FFFFFF 94.91%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 29.6%, #FFFFFF 94.91%);
+  width: 100%;
+  height: 250px;
+}
+
+.learning-main__img img {
+  width: 100%;
+}
+
+.learning-main__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.learning-main__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.learning-main__icon {
+  background-image: url("../img/icons-sprite.svg#icon-training-red");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.learning-main__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.learning-main .btn {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+}
+
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;
@@ -2021,6 +2117,10 @@ img {
 
   .number {
     padding: 14px 0;
+  }
+
+  .number--secondary {
+    padding: 24px 0;
   }
 
   .number--secondary .number__body {
@@ -2365,11 +2465,92 @@ img {
     margin: 20px 0;
   }
 
+  .investment__item {
+    padding: 15px 20px;
+    margin: 0 -20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+
+  .investment__item:nth-child(even) {
+    background-color: #EFEDED;
+  }
+
+  .investment__item:nth-child(even):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: calc(100vw - 40px);
+    height: 100%;
+    background-color: inherit;
+    pointer-events: none;
+    z-index: 0;
+  }
+
   .investment__name {
     font-size: 12px;
   }
 
   .investment__price {
     font-size: 12px;
+  }
+
+  .learning-main {
+    padding: 20px 0;
+  }
+
+  .learning-main__header {
+    margin-bottom: 37px;
+  }
+
+  .learning-main__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .learning-main__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .learning-main__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .learning-main__name {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .learning-main .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 11px 20px;
   }
 }

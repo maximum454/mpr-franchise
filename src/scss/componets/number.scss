@@ -69,6 +69,7 @@
 	@include r(767) {
 		padding: 14px 0;
 		&--secondary {
+			padding: 24px 0;
 			.number__body{
 				justify-content: space-between;
 				align-items: stretch;

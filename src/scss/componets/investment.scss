@@ -108,6 +108,30 @@
 
 	@include r(767) {
 		margin: 20px 0;
+		&__item {
+			padding: 15px 20px;
+			margin: 0 -20px;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+
+			&:nth-child(even) {
+				background-color: #EFEDED;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translate(-50%, 0);
+					width: calc(100vw - 40px);
+					height: 100%;
+					background-color: inherit;
+					pointer-events: none;
+					z-index: 0;
+				}
+			}
+		}
 		&__name {
 			font-size: 12px;
 		}
