@@ -1565,6 +1565,249 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.parametrs {
+  margin: 30px 0 80px;
+}
+
+.parametrs__header {
+  margin-bottom: 80px;
+}
+
+.parametrs__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.parametrs__title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 264px;
+  height: 3px;
+  background-color: #E30613;
+}
+
+.parametrs__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.parametrs__img {
+  position: relative;
+  left: -50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  max-height: 687px;
+  pointer-events: none;
+}
+
+.parametrs__img:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -300px;
+  background: -o-linear-gradient(180.22deg, #FFFFFF 65.2%, rgba(255, 255, 255, 0) 96.25%);
+  background: linear-gradient(269.78deg, #FFFFFF 65.2%, rgba(255, 255, 255, 0) 96.25%);
+  width: 570px;
+  height: 100%;
+  pointer-events: none;
+}
+
+.parametrs__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.parametrs__txt {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.parametrs__content {
+  width: 50%;
+  margin-left: auto;
+}
+
+.parametrs__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.parametrs__list {
+  margin: 0 0 47px 15px;
+  padding: 0;
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.parametrs__list li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.parametrs__list li:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 50%;
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.investment {
+  margin: 30px 0 80px;
+  overflow: hidden;
+}
+
+.investment__header {
+  margin-bottom: 80px;
+}
+
+.investment__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.investment__title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 264px;
+  height: 3px;
+  background-color: #E30613;
+}
+
+.investment__txt {
+  max-width: 710px;
+  position: relative;
+  margin-right: 40px;
+}
+
+.investment__list {
+  margin: 0 0 0 15px;
+  padding: 0;
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.investment__list li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.investment__list li:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 50%;
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.investment__item {
+  padding: 33px 20px 40px;
+  margin: 0 -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.investment__item:nth-child(even) {
+  background-color: #EFEDED;
+}
+
+.investment__item:nth-child(even):before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: calc(100vw - 40px);
+  height: 100%;
+  background-color: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.investment__name {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.investment__price {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1980,5 +2223,79 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .parametrs__header {
+    margin-bottom: 37px;
+  }
+
+  .parametrs__title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .parametrs__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .parametrs__content {
+    width: 100%;
+  }
+
+  .parametrs__txt {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .parametrs__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+    left: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+
+  .parametrs__img:after {
+    display: none;
+  }
+
+  .parametrs__name {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+
+  .parametrs__list {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .investment {
+    margin: 20px 0;
+  }
+
+  .investment__name {
+    font-size: 12px;
+  }
+
+  .investment__price {
+    font-size: 12px;
   }
 }

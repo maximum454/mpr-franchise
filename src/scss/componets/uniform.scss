@@ -29,6 +29,8 @@
     img{
       align-self: center;
       justify-content: center;
+      display: block;
+      margin: 0 auto;
     }
   }
   @include r(767){

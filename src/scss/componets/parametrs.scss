@@ -1,0 +1,154 @@
+.parametrs {
+  margin: 30px 0 80px;
+
+  &__header {
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    position: relative;
+    width: fit-content;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 264px;
+      height: 3px;
+      background-color: #E30613;
+    }
+  }
+
+  &__body {
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: relative;
+    left: -50%;
+    flex: 0 0 50%;
+    transform: translate(-100%, 0);
+    max-height: 687px;
+    pointer-events: none;
+    &:after {
+      content: '';
+      position: absolute;
+      top: -1px;
+      right: -300px;
+      background: linear-gradient(269.78deg, #FFFFFF 65.2%, rgba(255, 255, 255, 0) 96.25%);
+      width: 570px;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  &__txt {
+    flex: 0 0 100%;
+    position: relative;
+    z-index: 100;
+  }
+
+  &__content {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    margin: 0 0 47px 15px;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #000000;
+
+    li {
+      position: relative;
+      padding-left: 15px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 0;
+        border-radius: 50%;
+        background-color: #000;
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
+        vertical-align: middle;
+        overflow: hidden;
+      }
+    }
+  }
+
+  @include r(767) {
+    &__header {
+      margin-bottom: 37px;
+    }
+    &__title {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__body {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+    &__content {
+      width: 100%;
+    }
+    &__txt {
+      order: 2;
+    }
+    &__img {
+      order: 1;
+      position: relative;
+      left: 0;
+      flex: 0 0 100%;
+      transform: translate(-0, 0);
+
+      &:after {
+        display: none;
+      }
+    }
+    &__name{
+      margin-bottom: 10px;
+      font-size: 13px;
+      line-height: 25px;
+    }
+    &__list{
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 25px;
+    }
+  }
+}
