@@ -14,4 +14,7 @@
     color: #E30613;
     align-self: center;
   }
+  @include r(767){
+    padding-top: 20px;
+  }
 }
