@@ -35,6 +35,20 @@ const swiperStatistic = new Swiper('.swiper-container-statistic',{
     },
 })
 
+const swiperReviews = new Swiper('.swiper-container-reviews',{
+    slidesPerView: 2,
+    loop:true,
+    spaceBetween: 20,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    observer: true,
+    freeMode: true,
+    navigation: {
+        nextEl: '.swiper-reviews-next',
+    },
+})
+
 
 
 

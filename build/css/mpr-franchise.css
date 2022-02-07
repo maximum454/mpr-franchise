@@ -1108,6 +1108,7 @@ img {
 .footer {
   background-color: #E30613;
   padding: 88px 0;
+  margin-top: 45px;
 }
 
 .footer__body {
@@ -1937,6 +1938,94 @@ img {
   width: 100%;
 }
 
+.reviews {
+  padding: 80px 0;
+}
+
+.reviews__header {
+  margin-bottom: 80px;
+}
+
+.reviews__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.reviews__title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #E30613;
+}
+
+.reviews__body {
+  overflow: hidden;
+}
+
+.reviews__name {
+  background-color: #EFEDED;
+  padding: 29px 60px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 23px;
+}
+
+.reviews__anons {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.reviews__anons ul {
+  margin: 15px 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: normal;
+  color: #000000;
+}
+
+.reviews__anons ul li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.reviews__anons ul li:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-radius: 50%;
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.reviews .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 40px auto 0;
+  display: block;
+}
+
 @media only screen and (max-width: 767px) {
   .d-desktop-none {
     display: block;
@@ -2524,6 +2613,27 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .learning-main__img {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .learning-main__img:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(29.6%, rgba(255, 255, 255, 0)), color-stop(94.91%, #FFFFFF));
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 29.6%, #FFFFFF 94.91%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 29.6%, #FFFFFF 94.91%);
+    width: 100%;
+    height: 50px;
+  }
+
+  .learning-main__img img {
+    width: 100%;
   }
 
   .learning-main__item {
