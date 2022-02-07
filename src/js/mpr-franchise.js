@@ -47,6 +47,15 @@ const swiperReviews = new Swiper('.swiper-container-reviews',{
     navigation: {
         nextEl: '.swiper-reviews-next',
     },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+    }
 })
 
 
