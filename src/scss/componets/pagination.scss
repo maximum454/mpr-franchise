@@ -14,9 +14,16 @@
 			font-size: 18px;
 			line-height: 25px;
 		}
-		&.more{
-			display: block;
+	}
+	@include r(767){
+		a,span{
+			font-size: 12px;
+			&.active{
+				font-size: 12px;
+			}
+			&.more{
+				display: block;
+			}
 		}
 	}
-
 }

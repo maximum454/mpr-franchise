@@ -2525,7 +2525,6 @@ img {
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  text-transform: lowercase;
   color: #000000;
 }
 
@@ -3105,11 +3104,6 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
-}
-
-.pagination a.more,
-.pagination span.more {
-  display: block;
 }
 
 @media only screen and (min-width: 641px) {
@@ -4115,5 +4109,20 @@ img {
 
   .articles .btn {
     display: none;
+  }
+
+  .pagination a,
+  .pagination span {
+    font-size: 12px;
+  }
+
+  .pagination a.active,
+  .pagination span.active {
+    font-size: 12px;
+  }
+
+  .pagination a.more,
+  .pagination span.more {
+    display: block;
   }
 }
