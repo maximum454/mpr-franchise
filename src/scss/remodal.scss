@@ -1,5 +1,9 @@
 .remodal {
     text-align: left;
+    background: #EFEDED;
+    border-radius: 10px;
+    position: relative;
+    padding: 24px;
     .remodal-close {
         right: 22px;
         top: 24px;
@@ -7,8 +11,20 @@
         width: 18px;
         height: 18px;
         &:before {
-            display: none;
+
         }
+    }
+    .title{
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #E30613;
+        margin-bottom: 20px;
+    }
+    @include rmin(641){
+        max-width: 320px;
     }
 }
 .remodal-wrapper {

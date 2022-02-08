@@ -38,6 +38,8 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css" integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css" integrity="sha512-jRxwiuoe3nt8lMSnOzNEuQ7ckDrLl31dwVYFWS6jklXQ6Nzl7b05rrWF9gjSxgOow5nFerdoN6CBB4gY5m5nDw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/mpr-franchise.css">
 
 
@@ -53,23 +55,32 @@
             </a>
             <button id="menu" type="button" class="header__button"><span></span></button>
             <a class="header__phone" href="tel:8800800800" title="Телефон">8 800 800 800</a>
-            <button type="button" class="header__btn btn btn-outline-primary">заказать звонок</button>
+            <button type="button" class="header__btn btn btn-outline-primary" data-remodal-target="consultation">заказать звонок</button>
         </div>
     </div>
 </header>
 
+<!--TODO: меню для мобилы-->
 <nav class="nav">
     <div class="container">
         <ul class="nav__menu">
             <li class="nav__item">
-                <a class="nav__link" href="#about">О нас</a>
+                <a class="nav__link nav__link--arrow" href="#about">О нас</a>
                 <ul class="nav__dropdown dropdown">
                     <li class="dropdown__item"><a class="dropdown__link" href="#information">общая информация</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#geografia">георграфия</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#statistic">статистика</a></li>
                 </ul>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Готовое решение</a></li>
+            <li class="nav__item">
+                <a class="nav__link nav__link--arrow" href="#">Готовое решение</a>
+                <ul class="nav__dropdown dropdown">
+                    <li class="dropdown__item"><a class="dropdown__link" href="#advantage">преимущества МПР</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#opening">этапы открытия</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#store-decoration">оформление магазина</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#uniform">униформа</a></li>
+                </ul>
+            </li>
             <li class="nav__item"><a class="nav__link" href="#">Учебный центр</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Статьи</a></li>
@@ -88,7 +99,7 @@
                     </ul>
                     <div class="hero__row">
                         <span>Оставьте заявку на консультацию, и наш менеджер подробно расскажет об условиях партнерства</span>
-                        <button type="button" class="btn btn-primary">Оставить заявку</button>
+                        <button type="button" class="btn btn-primary" data-remodal-target="consultation">Оставить заявку</button>
                     </div>
                 </div>
                 <div class="hero__img">
@@ -251,7 +262,7 @@
                     <div class="swiper-statistic-next"></div>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-primary">оставить заявку</button>
+                    <button type="button" class="btn btn-primary" data-remodal-target="consultation">оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -460,7 +471,7 @@
                     </ul>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary">оставить заявку</button>
+            <button type="button" class="btn btn-primary" data-remodal-target="consultation">оставить заявку</button>
 
             <div class="open-data">
                 <img class="img-fluid" src="./img/open-data-1.png" width="264" height="174" alt="">
@@ -470,7 +481,7 @@
         </div>
     </div>
 
-    <div class="store-decoration">
+    <div id="store-decoration" class="store-decoration">
         <div class="container">
             <div class="store-decoration__title">Оформление магазина</div>
         </div>
@@ -482,7 +493,7 @@
         </div>
     </div>
 
-    <div class="uniform">
+    <div id="uniform" class="uniform">
         <div class="container">
             <div class="uniform__header">
                 <div class="uniform__title">Униформа</div>
@@ -769,7 +780,7 @@
                     </div>
                 </div>
                 <div class="swiper-reviews-next"></div>
-                <button type="button" class="btn btn-primary">оставить заявку</button>
+                <button type="button" class="btn btn-primary" data-remodal-target="consultation">оставить заявку</button>
             </div>
         </div>
     </div>
@@ -820,6 +831,7 @@
 <!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js" integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/mpr-franchise.js"></script>
 
 </body>

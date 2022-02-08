@@ -109,6 +109,7 @@
 		}
 		&__button {
 			display: flex;
+			z-index: 25;
 			&.active{
 				&:before {
 					top: 13px;

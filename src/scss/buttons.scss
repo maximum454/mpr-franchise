@@ -122,7 +122,7 @@
 			border-color: #E30613;
 		}
 		&:focus {
-			box-shadow: 0 0 0 0.2rem rgb(0,123,255 / 50%);
+			box-shadow: 0 0 0 0.2rem rgba(#E30613, .5);
 		}
 	}
 	&.btn-outline-secondary{
@@ -225,6 +225,5 @@
 			box-shadow: 0 0 0 0.2rem rgb(52, 58 ,64 / 50%);
 		}
 	}
-
 }
 

@@ -6,23 +6,32 @@
             </a>
             <button id="menu" type="button" class="header__button"><span></span></button>
             <a class="header__phone" href="tel:8800800800" title="Телефон">8 800 800 800</a>
-            <button type="button" class="header__btn btn btn-outline-primary">заказать звонок</button>
+            <button type="button" class="header__btn btn btn-outline-primary" data-remodal-target="consultation">заказать звонок</button>
         </div>
     </div>
 </header>
 
+<!--TODO: меню для мобилы-->
 <nav class="nav">
     <div class="container">
         <ul class="nav__menu">
             <li class="nav__item">
-                <a class="nav__link" href="#about">О нас</a>
+                <a class="nav__link nav__link--arrow" href="#about">О нас</a>
                 <ul class="nav__dropdown dropdown">
                     <li class="dropdown__item"><a class="dropdown__link" href="#information">общая информация</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#geografia">георграфия</a></li>
                     <li class="dropdown__item"><a class="dropdown__link" href="#statistic">статистика</a></li>
                 </ul>
             </li>
-            <li class="nav__item"><a class="nav__link" href="#">Готовое решение</a></li>
+            <li class="nav__item">
+                <a class="nav__link nav__link--arrow" href="#">Готовое решение</a>
+                <ul class="nav__dropdown dropdown">
+                    <li class="dropdown__item"><a class="dropdown__link" href="#advantage">преимущества МПР</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#opening">этапы открытия</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#store-decoration">оформление магазина</a></li>
+                    <li class="dropdown__item"><a class="dropdown__link" href="#uniform">униформа</a></li>
+                </ul>
+            </li>
             <li class="nav__item"><a class="nav__link" href="#">Учебный центр</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
             <li class="nav__item"><a class="nav__link" href="#">Статьи</a></li>
