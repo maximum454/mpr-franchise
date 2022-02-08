@@ -1,9 +1,21 @@
 .learning-main {
 	padding: 80px 0;
 	&__header {
-		margin-bottom: 72px;
+		margin-bottom: 80px;
+		position: relative;
 	}
+	&.active {
+		.dropdown-block {
+			display: block;
+		}
 
+		.learning-main__arrow {
+			transform: rotate(0);
+		}
+	}
+	&__arrow {
+		display: none;
+	}
 	&__title{
 		font-weight: bold;
 		font-size: 24px;
@@ -75,12 +87,29 @@
 
 	@include r(767) {
 		padding: 20px 0;
+		&__arrow {
+			position: absolute;
+			bottom: -18px;
+			right: 0;
+			background-repeat: no-repeat;
+			transform: rotate(-90deg);
+			width: 26px;
+			height: 13px;
+			display: block;
+			background-image: url("../img/icons-sprite.svg#icon-arrow-dropdown");
+		}
+		.dropdown-block {
+			display: none;
+		}
 		&__header{
 			margin-bottom: 37px;
 		}
 		&__title{
 			font-size: 20px;
 			line-height: 25px;
+			&:after {
+				width: 142px;
+			}
 		}
 		&__body {
 			display: grid;

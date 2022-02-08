@@ -107,6 +107,21 @@
 
 	@include r(767) {
 		margin: 20px 0;
+		.text-danger{
+			font-size: 13px;
+			margin: 0;
+		}
+		&__header {
+			margin-bottom: 30px;
+		}
+		&__title {
+			font-size: 20px;
+			line-height: 25px;
+
+			&:after {
+				width: 142px;
+			}
+		}
 		&__item {
 			padding: 15px 20px;
 			margin: 0 -20px;

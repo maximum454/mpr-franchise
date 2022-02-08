@@ -35,6 +35,9 @@
     &__title{
       font-size: 20px;
       line-height: 25px;
+      &:after{
+        width: 142px;
+      }
     }
     &__img{
       margin: 20px auto;

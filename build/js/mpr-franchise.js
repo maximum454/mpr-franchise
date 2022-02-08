@@ -117,6 +117,15 @@ for (let articlesItem of articlesItems) {
 }
 
 
+const dropDowns = document.querySelectorAll('.js-dropdown');
+
+for (let dropDown of dropDowns) {
+    dropDown.addEventListener('click', function (e){
+        this.classList.toggle('active');
+    })
+}
+
+
 
 
 
