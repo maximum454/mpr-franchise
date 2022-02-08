@@ -2241,6 +2241,7 @@ img {
 .advantage__item {
   padding-left: 50px;
   position: relative;
+  margin-bottom: 57px;
 }
 
 .advantage__item span {
@@ -2764,6 +2765,7 @@ img {
 }
 
 .learning-main__item {
+  max-width: 262px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2771,6 +2773,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .learning-main__icon {
@@ -2795,7 +2798,7 @@ img {
 }
 
 .learning-main .btn {
-  margin: auto;
+  margin: auto 0 20px;
   width: 100%;
 }
 
@@ -3739,6 +3742,7 @@ img {
   .advantage__item {
     padding-left: 50px;
     max-width: 100%;
+    margin-bottom: 40px;
   }
 
   .advantage__list {
@@ -4040,6 +4044,7 @@ img {
   }
 
   .learning-main__item {
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
