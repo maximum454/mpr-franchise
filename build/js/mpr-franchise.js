@@ -66,6 +66,14 @@ for (let navItem of navItems) {
 }
 
 
+const articlesItems = document.querySelectorAll('.articles__item');
+
+for (let articlesItem of articlesItems) {
+    articlesItem.addEventListener('click', function (e){
+        this.classList.toggle('active');
+    })
+}
+
 
 
 
