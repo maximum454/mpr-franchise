@@ -1,4 +1,5 @@
 @@include('./partials/jquery.formstyler.min.js')
+@@include('./slider-statistic.js')
 
 $(function () {
     $('select').styler();
@@ -24,19 +25,7 @@ menu.addEventListener('click', (e) => {
     document.querySelector('body').classList.toggle('lock');
 })
 
-const swiperStatistic = new Swiper('.swiper-container-statistic',{
-    slidesPerView: 'auto',
-    loop:true,
-    spaceBetween: 165,
-    watchOverflow: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    observer: true,
-    freeMode: true,
-    navigation: {
-        nextEl: '.swiper-statistic-next',
-    },
-})
+
 
 const swiperReviews = new Swiper('.swiper-container-reviews',{
     slidesPerView: 2,

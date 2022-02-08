@@ -1769,7 +1769,6 @@ img {
   font-size: 12px;
   line-height: 31px;
   letter-spacing: 0.05em;
-  text-transform: lowercase;
   color: #E30613;
   text-decoration: none;
 }
@@ -3558,6 +3557,65 @@ img {
   .geografia__txt {
     width: 304px;
     margin: 36px auto;
+  }
+
+  .statistic {
+    margin-bottom: 24px;
+  }
+
+  .statistic__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 18px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+
+  .statistic__count {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 30px;
+    line-height: 36px;
+    width: 55px;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  .statistic__name {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .statistic__year {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 30px;
+    line-height: 36px;
+    border-top: none;
+    border-bottom: 3px solid #E30613;
+    margin-right: 57px;
+  }
+
+  .statistic .swiper-container-statistic {
+    margin-bottom: 24px;
+  }
+
+  .statistic .swiper-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .statistic .swiper-statistic-next {
+    display: none;
   }
 
   .advantage {

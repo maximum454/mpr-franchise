@@ -48,4 +48,43 @@
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+	@include r(767){
+		margin-bottom: 24px;
+		&__item{
+			display: flex;
+			margin-bottom: 18px;
+			align-items: baseline;
+		}
+		&__count{
+			order: 2;
+			font-size: 30px;
+			line-height: 36px;
+			width: 55px;
+			text-align: center;
+			margin-right: 20px;
+		}
+		&__name{
+			order: 3;
+			font-size: 13px;
+			line-height: 16px;
+		}
+		&__year{
+			order: 1;
+			font-size: 30px;
+			line-height: 36px;
+			border-top: none;
+			border-bottom: 3px solid #E30613;
+			margin-right: 57px;
+
+		}
+		.swiper-container-statistic{
+			margin-bottom: 24px;
+		}
+		.swiper-wrapper{
+			flex-direction: column;
+		}
+		.swiper-statistic-next{
+			display: none;
+		}
+	}
 }
