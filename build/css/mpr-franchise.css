@@ -1200,7 +1200,6 @@ input[type='submit'].styler[disabled] {
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -1745,7 +1744,6 @@ img {
   font-size: 18px;
   line-height: 50px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #000000;
   text-decoration: none;
 }
@@ -1797,7 +1795,6 @@ img {
   font-size: 50px;
   line-height: 60px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #E30613;
   margin-bottom: 20px;
   text-align: left;
@@ -1985,7 +1982,6 @@ img {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #000000;
 }
 
@@ -2278,7 +2274,6 @@ img {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   margin-bottom: 20px;
 }
 
@@ -2294,7 +2289,6 @@ img {
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   padding-left: 15px;
 }
 
@@ -2656,7 +2650,6 @@ img {
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #000000;
 }
 
@@ -2726,6 +2719,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .learning-main__item {
@@ -2736,9 +2732,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .learning-main__icon {
@@ -2763,8 +2756,7 @@ img {
 }
 
 .learning-main .btn {
-  -ms-flex-item-align: center;
-      align-self: center;
+  margin: auto;
   width: 100%;
 }
 
