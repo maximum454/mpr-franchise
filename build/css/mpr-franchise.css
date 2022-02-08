@@ -2185,6 +2185,10 @@ img {
   background-position: center;
 }
 
+.articles {
+  margin: 15px 0;
+}
+
 .articles__title {
   font-weight: bold;
   font-size: 24px;
@@ -2282,6 +2286,34 @@ img {
   line-height: 16px;
   letter-spacing: 0.05em;
   padding: 8.5px 30px;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination a,
+.pagination span {
+  font-weight: normal;
+  color: #000;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.pagination a.active,
+.pagination span.active {
+  color: #E30613;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.pagination a.more,
+.pagination span.more {
+  display: block;
 }
 
 @media only screen and (min-width: 641px) {
@@ -3144,6 +3176,11 @@ img {
     font-size: 12px;
     line-height: 14px;
     padding: 11px 20px;
+  }
+
+  .articles__title {
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .articles__item.active .articles__data {
