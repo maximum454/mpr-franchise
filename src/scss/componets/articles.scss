@@ -63,6 +63,9 @@
 		text-align: justify;
 		letter-spacing: 0.05em;
 		color: #333333;
+		.btn{
+			display: none!important;
+		}
 	}
 	.btn{
 		display: block;

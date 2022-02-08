@@ -3065,6 +3065,10 @@ img {
   color: #333333;
 }
 
+.articles__txt .btn {
+  display: none !important;
+}
+
 .articles .btn {
   display: block;
   width: -webkit-fit-content;
