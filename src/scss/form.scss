@@ -8,7 +8,7 @@
     padding: 32px;
 }
 .form-group {
-    margin-bottom: 24px;
+    margin-bottom: 44px;
     &.mb-60 {
         margin-bottom: 60px;
     }
@@ -59,18 +59,21 @@
     display: block;
     width: 100%;
     padding:.6rem .75rem;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
     color: #000000;
     background-color: #fff;
     background-clip: padding-box;
-    border: 2px solid #e6e6e6;
+    border: none;
     border-radius: 10px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     font-style: normal;
     font-weight: normal;
     letter-spacing: 0.05em;
     text-transform: capitalize;
+    &::placeholder {
+        color: #000000;
+    }
 }
 
 .form-group-simbol {
@@ -107,7 +110,7 @@
     border: solid transparent;
     border-width: 1px 0;
     border-bottom: 1px solid rgba(68, 121, 163, 0.12);
-    &:placeholder {
+    &::placeholder {
         color: #a4a9bb;
     }
 }
@@ -273,5 +276,17 @@
 .checkbox-other input[type=checkbox]:disabled + span:before {
     filter: grayscale(100%);
     opacity: 0.6;
+}
+
+@include r(767){
+    .form-group {
+        margin-bottom: 24px;
+    }
+    .form-control{
+        padding:.2rem .75rem;
+        font-size: 12px;
+        line-height: 18px;
+        border-radius: 4px;
+    }
 }
 

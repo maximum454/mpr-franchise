@@ -1,4 +1,8 @@
+@@include('./partials/jquery.formstyler.min.js')
+
 $(function () {
+    $('select').styler();
+
     $('a[href^="#"]').on('click', function(event) {
         // отменяем стандартное действие
         event.preventDefault();
