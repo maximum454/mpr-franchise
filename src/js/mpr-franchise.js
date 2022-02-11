@@ -1,5 +1,4 @@
 @@include('./partials/jquery.formstyler.min.js')
-@@include('./slider-statistic.js')
 
 $(function () {
     $('select').styler();
