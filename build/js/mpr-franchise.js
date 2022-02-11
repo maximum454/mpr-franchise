@@ -54,12 +54,25 @@ $(function () {
     $('select').styler();
 
     $('a[href^="#"]').on('click', function(event) {
-        // отменяем стандартное действие
         event.preventDefault();
-        var sc = $(this).attr("href"),
-            dn = $(sc).offset().top-30;
+        let target = event.target;
+        let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+        let desktop = window.matchMedia('(min-width: 1024px)');
+        let sc = $(this).attr("href");
+        let dn = $(sc).offset().top-30;
+        console.log($(this));
+        if (mobile.matches) {
+            if($(this).next('.dropdown')){
+                console.log('da')
+            }else{
+                menuToggle(menu);
+                $('html, body').animate({scrollTop: dn}, 1000);
+            }
+
+        }else if (desktop.matches) {
+            menuToggle(menu);
             $('html, body').animate({scrollTop: dn}, 1000);
-        menuToggle(menu);
+        }
     });
 
 
