@@ -59,6 +59,7 @@ function menuToggle(target) {
 const swiperReviews = new Swiper('.swiper-container-reviews', {
     slidesPerView: 2,
     loop: true,
+    autoHeight: true,
     spaceBetween: 20,
     watchOverflow: true,
     watchSlidesVisibility: true,

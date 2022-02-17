@@ -1,0 +1,44 @@
+.pagination-inner{
+  margin-top: 24px;
+  &__body{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+  }
+  &__link{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    &:hover{
+      color: #E30613;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      top: 3px;
+      background-image: url("../img/icons-sprite.svg#icon-arrow-dropdown");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      width: 26px;
+      height: 20px;
+    }
+    &--left{
+      &:before{
+        left: -28px;
+        transform: rotate(90deg);
+      }
+
+    }
+    &--right{
+      &:before{
+        right: -23px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
