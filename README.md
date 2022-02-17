@@ -9,3 +9,6 @@ https://maximum454.github.io/mpr-franchise/build/learning.html
 
 ##Статьи
 https://maximum454.github.io/mpr-franchise/build/articles.html
+
+##Статьи внутрении
+https://maximum454.github.io/mpr-franchise/build/articles-inner.html
