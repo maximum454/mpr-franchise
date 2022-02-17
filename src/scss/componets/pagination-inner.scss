@@ -28,16 +28,53 @@
       height: 20px;
     }
     &--left{
+      padding-left: 28px;
       &:before{
-        left: -28px;
+        left: -8px;
         transform: rotate(90deg);
       }
 
     }
     &--right{
+      padding-right: 28px;
       &:before{
-        right: -23px;
+        right: -3px;
         transform: rotate(-90deg);
+      }
+    }
+  }
+
+  @include r(767){
+    &__link{
+      font-size: 12px;
+      &:hover{
+        color: #E30613;
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        top: 3px;
+        background-image: url("../img/icons-sprite.svg#icon-arrow-dropdown");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 26px;
+        height: 20px;
+      }
+      &--left{
+        padding-left: 20px;
+        &:before{
+          left: -8px;
+          transform: rotate(90deg);
+        }
+
+      }
+      &--right{
+        padding-right: 20px;
+        &:before{
+          right: -3px;
+          transform: rotate(-90deg);
+        }
       }
     }
   }
