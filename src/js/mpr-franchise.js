@@ -4,29 +4,42 @@
 $(function () {
     $('select').styler();
 
-    $('a[href^="#"]').on('click', function(event) {
+    $('a[href^="#"]').on('click', function (event) {
         event.preventDefault();
         let target = event.target;
         let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
         let desktop = window.matchMedia('(min-width: 1024px)');
         let sc = $(this).attr("href");
-        let dn = $(sc).offset().top-30;
+        let dn = $(sc).offset().top - 30;
         console.log($(this));
         if (mobile.matches) {
-            if($(this).next('.dropdown')){
+            if ($(this).next('.dropdown')) {
                 console.log('da')
-            }else{
+            } else {
                 menuToggle(menu);
                 $('html, body').animate({scrollTop: dn}, 1000);
             }
 
-        }else if (desktop.matches) {
+        } else if (desktop.matches) {
             menuToggle(menu);
             $('html, body').animate({scrollTop: dn}, 1000);
         }
     });
 
-
+    var button = $('#button-up');
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            button.fadeIn();
+        } else {
+            button.fadeOut();
+        }
+    });
+    button.on('click', function () {
+        $('body, html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
 })
 
 menu.addEventListener('click', (e) => {
@@ -35,7 +48,7 @@ menu.addEventListener('click', (e) => {
 })
 
 //TODO: поправить функцию для десктопа body.lock
-function menuToggle(target){
+function menuToggle(target) {
     const nav = document.querySelector('.nav');
     nav.classList.toggle('active');
     target.classList.toggle('active');
@@ -43,10 +56,9 @@ function menuToggle(target){
 }
 
 
-
-const swiperReviews = new Swiper('.swiper-container-reviews',{
+const swiperReviews = new Swiper('.swiper-container-reviews', {
     slidesPerView: 2,
-    loop:true,
+    loop: true,
     spaceBetween: 20,
     watchOverflow: true,
     watchSlidesVisibility: true,
@@ -70,7 +82,7 @@ const swiperReviews = new Swiper('.swiper-container-reviews',{
 const navItems = document.querySelectorAll('.nav__item');
 
 for (let navItem of navItems) {
-    navItem.addEventListener('click', function (e){
+    navItem.addEventListener('click', function (e) {
         this.classList.toggle('active');
     })
 }
@@ -79,7 +91,7 @@ for (let navItem of navItems) {
 const articlesItems = document.querySelectorAll('.articles__item');
 
 for (let articlesItem of articlesItems) {
-    articlesItem.addEventListener('click', function (e){
+    articlesItem.addEventListener('click', function (e) {
         this.classList.toggle('active');
     })
 }
@@ -88,7 +100,7 @@ for (let articlesItem of articlesItems) {
 const dropDowns = document.querySelectorAll('.js-dropdown');
 
 for (let dropDown of dropDowns) {
-    dropDown.addEventListener('click', function (e){
+    dropDown.addEventListener('click', function (e) {
         this.classList.toggle('active');
     })
 }

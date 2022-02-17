@@ -10,9 +10,10 @@
 	&__item{
 		position: relative;
 		.next{
-			max-width: 124px;
+			max-width: 65px;
 			width: 100%;
 			height: 100%;
+			margin-top: 12px;
 		}
 	}
 	&__count{
@@ -29,7 +30,7 @@
 		line-height: 29px;
 		text-align: center;
 		color: #000000;
-		margin-bottom: 13px;
+		margin-bottom: 9px;
 	}
 	&__year{
 		padding-top: 13px;
@@ -39,6 +40,10 @@
 		line-height: 43px;
 		text-align: center;
 		color: #E30613;
+	}
+	.btn{
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 	@include r(767){
 		margin-bottom: 24px;

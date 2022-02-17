@@ -36,9 +36,10 @@
 		}
 	}
 	&__header{
-		margin-bottom: 72px;
+		margin-bottom: 100px;
 	}
 	&__title{
+		font-family: $font1;
 		font-weight: bold;
 		font-size: 24px;
 		line-height: 25px;
@@ -47,7 +48,7 @@
 		&:after{
 			content: '';
 			position: absolute;
-			bottom: -15px;
+			bottom: -12px;
 			left: 0;
 			width: 142px;
 			height: 3px;
@@ -59,11 +60,13 @@
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 20px 50px;
 		justify-content: space-between;
+		max-width: 1058px;
+		margin: 0 auto;
 	}
 	&__item{
 		padding-left: 50px;
 		position: relative;
-		margin-bottom: 57px;
+		margin-bottom: 10px;
 		span{
 			color: #fff;
 		}
@@ -87,7 +90,7 @@
 		font-size: 18px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
-		margin-bottom: 20px;
+		margin-bottom: 36px;
 	}
 	&__list{
 		margin: 0 0 70px;
@@ -118,6 +121,8 @@
 	.btn{
 		margin: 0 auto;
 		display: block;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 	@include r(767){
 		padding: 20px 0;

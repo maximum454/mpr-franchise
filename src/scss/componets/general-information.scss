@@ -14,23 +14,26 @@
 		max-width: 548px;
 		background: #E5E5E5;
 		border-radius: 21px;
-		padding: 43px 59px;
+		padding: 43px 59px 35px;
 		p{
 			font-size: 14px;
 			line-height: 25px;
 			text-align: justify;
 			letter-spacing: 0.05em;
+			margin: 0;
 		}
 	}
 	&__name{
-		font-weight: bold;
+		font-weight: 700;
 		font-size: 18px;
 		line-height: 25px;
 		color: #E30613;
+		letter-spacing: 0.05em;
+		margin-bottom: 2px;
 	}
 	&__right{
 		flex-shrink: 0;
-		padding: 43px 59px;
+		padding: 35px 59px;
 		margin: 0 0 0 auto;
 		height: 100%;
 		align-self: flex-end;
@@ -39,6 +42,7 @@
 		margin: 23px 0 0;
 		padding: 0;
 		list-style: none;
+		text-align: right;
 		li{
 			position: relative;
 			font-weight: bold;

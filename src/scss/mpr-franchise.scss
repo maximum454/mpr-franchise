@@ -76,6 +76,46 @@ img{
 }
 
 
+.button-up{
+	font-family: $font1;
+	display: none;
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	transition: .3s;
+	width: 62px;
+	height: 59px;
+	overflow: hidden;
+	background-color: #fff;
+	color: #E30613;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	z-index: 100;
+	text-align: center;
+	padding: 8px 0;
+	letter-spacing: 0.05em;
+	&:hover{
+		background-color: #E30613;
+		cursor: pointer;
+		transition: .3s;
+		color: #fff;
+		.button-up__arrow{
+			background-image: url("../img/icons-sprite.svg#icon-arrow-dropdown-white");
+		}
+	}
+	&__arrow{
+		background-image: url("../img/icons-sprite.svg#icon-arrow-dropdown");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		width: 36px;
+		height: 21px;
+		margin: 0 auto 4px;
+		transform: rotate(180deg);
+	}
+}
+
 
 @import "componets/header";
 @import "componets/nav";
