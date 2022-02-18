@@ -9,6 +9,13 @@
 	&__item{
 		max-width: 250px;
 	}
+	&__img{
+		width: 55px;
+		height: 52px;
+		img{
+			display: block;
+		}
+	}
 	&__name{
 		margin-top: 34px;
 		font-style: normal;

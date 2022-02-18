@@ -754,6 +754,13 @@ input[type='submit'].styler[disabled] {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CenturyGothic2';
+  src: url("../fonts/CenturyGothic/CenturyGothic-bold2.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .btn {
   display: inline-block;
   font-weight: bold;
@@ -1849,6 +1856,15 @@ img {
   text-align: left;
 }
 
+.hero__title span {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .hero__list {
   margin: 0 0 70px;
   padding: 0;
@@ -2022,6 +2038,15 @@ img {
 
 .percent__item {
   max-width: 250px;
+}
+
+.percent__img {
+  width: 55px;
+  height: 52px;
+}
+
+.percent__img img {
+  display: block;
 }
 
 .percent__name {
@@ -3635,6 +3660,15 @@ img {
   .hero__title {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  .hero__title span {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .hero__list {
