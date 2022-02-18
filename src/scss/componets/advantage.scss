@@ -64,7 +64,7 @@
 		margin: 0 auto;
 	}
 	&__item{
-		padding-left: 50px;
+		padding-left: 100px;
 		position: relative;
 		margin-bottom: 10px;
 		span{
@@ -73,7 +73,7 @@
 	}
 	&__img{
 		position: absolute;
-		top: -10px;
+		top: -2px;
 		left: 0;
 		width: 37px;
 		height: 37px;
@@ -83,6 +83,7 @@
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
+			display: block;
 		}
 	}
 	&__name{
@@ -90,7 +91,9 @@
 		font-size: 18px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
-		margin-bottom: 36px;
+		margin-bottom: 10px;
+		min-height: 70px;
+		max-width: 295px;
 	}
 	&__list{
 		margin: 0 0 70px;

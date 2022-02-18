@@ -2301,7 +2301,7 @@ img {
 }
 
 .advantage__item {
-  padding-left: 50px;
+  padding-left: 100px;
   position: relative;
   margin-bottom: 10px;
 }
@@ -2312,7 +2312,7 @@ img {
 
 .advantage__img {
   position: absolute;
-  top: -10px;
+  top: -2px;
   left: 0;
   width: 37px;
   height: 37px;
@@ -2325,6 +2325,7 @@ img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  display: block;
 }
 
 .advantage__name {
@@ -2332,7 +2333,9 @@ img {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  margin-bottom: 36px;
+  margin-bottom: 10px;
+  min-height: 70px;
+  max-width: 295px;
 }
 
 .advantage__list {
