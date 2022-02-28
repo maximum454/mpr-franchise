@@ -48,7 +48,6 @@ menu.addEventListener('click', (e) => {
     menuToggle(target);
 })
 
-//TODO: поправить функцию для десктопа body.lock
 function menuToggle(target) {
     const nav = document.querySelector('.nav');
     nav.classList.toggle('active');

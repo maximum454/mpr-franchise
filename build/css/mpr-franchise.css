@@ -1546,6 +1546,7 @@ body.lock {
 
 .wrp {
   position: relative;
+  padding-top: 212px;
 }
 
 .wrp p {
@@ -1575,6 +1576,15 @@ a:hover {
 
 img {
   height: auto;
+}
+
+.header-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .d-none {
@@ -3464,6 +3474,10 @@ img {
     font-size: 12px;
     line-height: 18px;
     border-radius: 4px;
+  }
+
+  .wrp {
+    padding-top: 140px;
   }
 
   .d-desktop-none {

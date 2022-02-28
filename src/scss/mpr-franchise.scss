@@ -19,9 +19,13 @@ body {
 }
 .wrp {
 	position: relative;
+	padding-top: 212px;
 	p {
 		font-size: 18px;
 		line-height: 25px;
+	}
+	@include r(767){
+		padding-top: 140px;
 	}
 }
 
@@ -41,6 +45,15 @@ a{
 }
 img{
 	height: auto;
+}
+
+.header-fix{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 10;
 }
 
 
