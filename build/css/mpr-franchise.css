@@ -747,13 +747,6 @@ input[type='submit'].styler[disabled] {
   font-style: normal;
 }
 
-/*@font-face {
-	font-family: 'CenturyGothic';
-	src: url('../fonts/CenturyGothic/CenturyGothic-bold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-}*/
-
 @font-face {
   font-family: 'CenturyGothic';
   src: url("../fonts/CenturyGothic/CenturyGothic-bold3.ttf") format("truetype");
@@ -1584,7 +1577,7 @@ img {
   left: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 10;
+  z-index: 200;
 }
 
 .d-none {
