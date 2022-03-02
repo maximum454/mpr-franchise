@@ -1,5 +1,13 @@
 .nav{
 	padding: 24px 0;
+	&--fix{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		z-index: 200;
+	}
 	&__menu{
 		margin: 0;
 		padding: 0;

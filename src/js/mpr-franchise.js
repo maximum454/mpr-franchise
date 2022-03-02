@@ -29,6 +29,12 @@ $(function () {
 
     var button = $('#button-up');
     $(window).scroll(function () {
+        if($(this).scrollTop() > 115){
+            $('.nav').addClass('nav--fix');
+        }else{
+            $('.nav').removeClass('nav--fix');
+        }
+
         if ($(this).scrollTop() > 300) {
             button.fadeIn();
         } else {
