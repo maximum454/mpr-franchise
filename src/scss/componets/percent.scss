@@ -12,6 +12,7 @@
 	&__img{
 		width: 55px;
 		height: 52px;
+		flex-shrink: 0;
 		img{
 			display: block;
 		}
@@ -27,16 +28,24 @@
 	}
 	@include r(767){
 		padding: 24px 0;
+		&__body{
+			grid-gap: 27px;
+		}
 		&__item{
 			display: flex;
 			align-items: center;
 			max-width: 100%;
+			gap: 10px;
 		}
 		&__name{
 			margin-top: 0;
 			margin-left: 10px;
 			font-size: 13px;
 			line-height: 25px;
-		}
+		}&__img{
+			 width: 23px;
+			 height: 21px;
+			 flex-shrink: 0;
+		 }
 	}
 }
