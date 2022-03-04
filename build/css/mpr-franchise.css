@@ -2151,6 +2151,10 @@ img {
   margin-bottom: 30px;
 }
 
+.geografia__header {
+  margin-bottom: 60px;
+}
+
 .geografia__title {
   display: inline-block;
   font-weight: bold;
@@ -2175,7 +2179,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -60px;
 }
 
 .geografia__txt {
@@ -3869,13 +3872,17 @@ img {
     display: none;
   }
 
+  .geografia__header {
+    margin-bottom: 37px;
+    position: relative;
+  }
+
   .geografia__title {
     display: none;
   }
 
   .geografia__body {
     display: block;
-    margin-top: 0;
   }
 
   .geografia__txt {

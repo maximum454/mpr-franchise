@@ -1,5 +1,8 @@
 .geografia{
 	margin-bottom: 30px;
+	&__header{
+		margin-bottom: 60px;
+	}
 	&__title{
 		display: inline-block;
 		font-weight: bold;
@@ -20,7 +23,6 @@
 	}
 	&__body{
 		display: flex;
-		margin-top: -60px;
 	}
 	&__txt{
 		width: 304px;
@@ -37,12 +39,16 @@
 		}
 	}
 	@include r(767){
+		&__header{
+			margin-bottom: 37px;
+			position: relative;
+
+		}
 		&__title{
 			display: none;
 		}
 		&__body{
 			display: block;
-			margin-top: 0;
 		}
 		&__txt{
 			width: 304px;
