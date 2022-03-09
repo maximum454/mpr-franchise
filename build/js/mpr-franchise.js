@@ -18,7 +18,7 @@ function calc(){
     const ADS = TPM < 100 ? 180000 : 250000; //Затраты на Внутренюю и внешнюю рекламу
     const RTP = 100000; //Ремонт торгового помещения
     let ZPP = TPM <= 100 ? 4 : 6; //Заработная плата Персонала
-    let POMPR = TPM <= 100 ? 162000 : 230000;//Праздничное открытие МПР
+    let POMPR = TPM < 100 ? 162000 : 230000;//Праздничное открытие МПР
 
 
     //Данные из операционной бюджета
@@ -35,6 +35,10 @@ function calc(){
         POMPR = 289000;
         rent = 25;
         revenue = 99000;
+        POMPR = 289000;
+    }
+    if(TPM >= 170){
+        POMPR = 289000;
     }
 
     //инвест
@@ -70,11 +74,16 @@ function calc(){
 
     console.log(otherNum)
 }
-calc()
+
 
 
 $(function () {
     $('select').styler();
+
+    let modalCalc = $('[data-remodal-id=calc]').remodal();
+    $(document).on('opening', modalCalc, function () {
+        calc()
+    });
 
     $('a[href^="#"]').on('click', function (event) {
         event.preventDefault();

@@ -5,6 +5,11 @@
 $(function () {
     $('select').styler();
 
+    let modalCalc = $('[data-remodal-id=calc]').remodal();
+    $(document).on('opening', modalCalc, function () {
+        calc()
+    });
+
     $('a[href^="#"]').on('click', function (event) {
         event.preventDefault();
         let target = event.target;
