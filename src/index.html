@@ -54,28 +54,28 @@
                 <div class="percent__item">
                     <div class="percent__img">
                         <img class="img-fluid" src="./img/icon-percent.png" width="55" height="52"
-                         alt="иконка процента">
+                             alt="иконка процента">
                     </div>
                     <div class="percent__name">Федеральная сеть клиентских магазинов</div>
                 </div>
                 <div class="percent__item">
                     <div class="percent__img">
                         <img class="img-fluid" src="./img/icon-percent.png" width="55" height="52"
-                         alt="иконка процента">
+                             alt="иконка процента">
                     </div>
                     <div class="percent__name">Товары на каждый сезон года</div>
                 </div>
                 <div class="percent__item">
                     <div class="percent__img">
                         <img class="img-fluid" src="./img/icon-percent.png" width="55" height="52"
-                         alt="иконка процента">
+                             alt="иконка процента">
                     </div>
                     <div class="percent__name">широкий ассортимет товаров от поставщиков торговой платформы</div>
                 </div>
                 <div class="percent__item">
                     <div class="percent__img">
                         <img class="img-fluid" src="./img/icon-percent.png" width="55" height="52"
-                         alt="иконка процента">
+                             alt="иконка процента">
                     </div>
                     <div class="percent__name">Консультационное сопровождение</div>
                 </div>
@@ -138,31 +138,151 @@
                 <div class="calculator__body">
                     <div class="form-group">
                         <label class="form-label" for="KVM">Стоимость 1&nbsp;кв.м.</label>
-                        <input class="form-control" type="text" name="KVM" id="KVM" placeholder="...">
+                        <input class="form-control" type="number" name="KVM" value="1000" id="KVM" placeholder="..." required>
                         <span class="calculator__span">рублей</span>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="TPM">Торговая площадь<br> магазина</label>
-                        <input class="form-control" type="text" name="TPM" id="TPM" placeholder="...">
+                        <input class="form-control" type="number" name="TPM" value="110" id="TPM" placeholder="..." required>
                         <span class="calculator__span">метров</span>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="ZPR">Средняя зарплата продавца<br> в вашем регионе</label>
-                        <input class="form-control" type="text" name="ZPR" id="ZPR" placeholder="...">
+                        <input class="form-control" type="number" name="ZPR" value="25000" id="ZPR" placeholder="..." required>
                         <span class="calculator__span">рублей</span>
                     </div>
                     <button class="btn btn-primary">расчитать</button>
+                </div>
+
+                <div class="calculator__modal">
+                    <div class="calculator__modal-item">
+                        <div class="calculator__modal-logo"><img src="./img/logo.svg" width="441" height="37" alt="">
+                        </div>
+                        <div class="calculator__modal-title">Инвестиционный бюджет</div>
+                        <div id="invest">
+                            <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Услуги Сервисной Компании</td>
+                                <td id="YCK">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Торговое оборудование</td>
+                                <td id="TO">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Техника: компьютеры,
+                                    кассы,1С лицензии
+                                </td>
+                                <td id="technique">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Настройка IT</td>
+                                <td id="IT">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Монтаж слаботочных сетей</td>
+                                <td id="MSS">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Безопасность (Ворота защитные+датчики)</td>
+                                <td id="security">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Товарная загрузка</td>
+                                <td id="TZ">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Праздничная листовка открытия</td>
+                                <td id="PLO">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Затраты на Внутренюю и внешнюю рекламу</td>
+                                <td id="ADS">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Ремонт торгового помещения</td>
+                                <td id="RTP">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Заработная плата Персонала</td>
+                                <td id="ZPP">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Праздничное открытие МПР</td>
+                                <td id="POMPR">000 000</td>
+                            </tr>
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td>Итог:</td>
+                                <td id="investSumma">000 000</td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                        </div>
+                    </div>
+                    <div class="calculator__modal-item">
+                        <div class="calculator__modal-logo"><img src="./img/logo.svg" width="441" height="37" alt="">
+                        </div>
+                        <div class="calculator__modal-title">Операционный бюджет</div>
+                        <div>
+                        <table class="table">
+                            <thead></thead>
+                            <tbody>
+                            <tr>
+                                <td>Выручка в мес, руб</td>
+                                <td id="revenue">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Валовый доход, руб</td>
+                                <td id="INCOME">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Аренда, руб</td>
+                                <td id="rent">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>ФОТ (заработная плата), руб</td>
+                                <td id="FOT">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Прочие расходы (реклама,
+                                    хознужды и т.п.
+                                </td>
+                                <td id="OTHER">000 000</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td>Итог:</td>
+                                <td id="operionSumma">000 000</td>
+                            </tr>
+                            <tr>
+                                <td>Окупаемость , мес</td>
+                                <td id="payback">000 000</td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                        </div>
+                        <div class="calculator__code">
+                            <img class="img-fluid" src="./img/check-code.png" width="208" height="66" alt="">
+                            <div>спасибо!</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div id="geografia" class="geografia">
                 <div class="geografia__header">
-                <div class="geografia__title">География МПР</div>
+                    <div class="geografia__title">География МПР</div>
                 </div>
                 <div class="geografia__body">
                     <div class="geografia__img">
                         <!--<img class="img-fluid" src="./img/russia-kazakhstan-v2.png" width="841" height="566" alt="карта mpr Россия и Казахстан">-->
-                        <img class="img-fluid" src="./img/map.png" width="802" height="550" alt="карта mpr Россия и Казахстан">
+                        <img class="img-fluid" src="./img/map.png" width="802" height="550"
+                             alt="карта mpr Россия и Казахстан">
                     </div>
                     <div class="geografia__txt">
                         <b class="text-danger">МПР</b> начал свою историю в Омске в октябре 2018 г. Именно в этом
@@ -440,7 +560,7 @@
     <div id="store-decoration" class="store-decoration">
         <div class="container">
             <div class="store-decoration__header">
-            <div class="store-decoration__title">Оформление магазина</div>
+                <div class="store-decoration__title">Оформление магазина</div>
             </div>
         </div>
         <div class="store-decoration__img">
@@ -564,7 +684,8 @@
                         </div>
                         <ul class="investment__list">
                             <li>прорисовка периметра магазина, план расстановки ТО, 3D-моделирование, зонирование
-                                магазина по&nbsp;товарным группам, разработка дизайна вывесок навигации и&nbsp;листовки откртия,
+                                магазина по&nbsp;товарным группам, разработка дизайна вывесок навигации и&nbsp;листовки
+                                откртия,
                                 аудио-видео ролики, формирование установочного заказа, сопровождение проекта, очное
                                 обучение управляющего (в&nbsp;теч.&nbsp;6&nbsp;мес с&nbsp;даты старта проекта)
                             </li>

@@ -1524,6 +1524,91 @@ input[type='submit'].styler[disabled] {
   text-align: right;
 }
 
+.table {
+  width: 100%;
+  margin-bottom: 40px;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+  background-color: transparent;
+  caption-side: bottom;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.table a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #324c9a;
+}
+
+.table.history a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #324c9a;
+}
+
+.table.history p {
+  margin: 0;
+}
+
+.table.history .btn {
+  text-decoration: none;
+}
+
+.table > thead {
+  vertical-align: bottom;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+.table > tbody {
+  vertical-align: inherit;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: transparent;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+.table > :not(caption) > * > * {
+  padding: 19px 0.5rem 28px;
+  border-bottom-width: 1px;
+  font-weight: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3453,6 +3538,84 @@ img {
   color: #000000;
 }
 
+.calculator__modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculator__modal img {
+  max-width: 100%;
+}
+
+.calculator__modal-item {
+  background-color: #fff;
+  background-image: url("../img/check-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 49px 55px 25px 25px;
+  max-width: 380px;
+  height: 543px;
+}
+
+.calculator__modal-logo {
+  margin-bottom: 26px;
+}
+
+.calculator__modal-title {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.calculator__code {
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #4D4D4D;
+}
+
+.calculator .table {
+  margin-bottom: 0;
+  font-size: 9px;
+}
+
+.calculator .table > :not(caption) > * > * {
+  padding: 0 10px 22px;
+  border-bottom-width: 0;
+}
+
+.calculator .table td:first-child {
+  max-width: 157px;
+}
+
+.calculator .table td:last-child {
+  text-align: right;
+}
+
+.calculator .table tfoot {
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.calculator .table tfoot td {
+  font-weight: bold;
+}
+
 .calculator .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3484,6 +3647,12 @@ img {
   line-height: 21px;
   text-align: center;
   color: #8A8383;
+}
+
+.calculator .form-control::-webkit-outer-spin-button,
+.calculator .form-control::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .calculator .form-control::-webkit-input-placeholder {

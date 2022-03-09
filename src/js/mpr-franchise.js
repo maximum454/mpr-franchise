@@ -1,4 +1,5 @@
 @@include('./partials/jquery.formstyler.min.js')
+@@include('./calc.js')
 
 
 $(function () {
