@@ -119,6 +119,19 @@ img{
 	}
 }
 
+.remodal.calc{
+	max-width: fit-content;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	.remodal-close{
+		top: -20px;
+		right: -20px;
+		color: #E30613;
+	}
+}
+
+
 
 @import "componets/header";
 @import "componets/nav";

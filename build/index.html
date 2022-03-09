@@ -218,127 +218,10 @@
                         <input class="form-control" type="number" name="ZPR" value="25000" id="ZPR" placeholder="..." required>
                         <span class="calculator__span">рублей</span>
                     </div>
-                    <button class="btn btn-primary">расчитать</button>
+                    <button class="btn btn-primary" data-remodal-target="calc">расчитать</button>
                 </div>
 
-                <div class="calculator__modal">
-                    <div class="calculator__modal-item">
-                        <div class="calculator__modal-logo"><img src="./img/logo.svg" width="441" height="37" alt="">
-                        </div>
-                        <div class="calculator__modal-title">Инвестиционный бюджет</div>
-                        <div id="invest">
-                            <table class="table">
-                            <tbody>
-                            <tr>
-                                <td>Услуги Сервисной Компании</td>
-                                <td id="YCK">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Торговое оборудование</td>
-                                <td id="TO">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Техника: компьютеры,
-                                    кассы,1С лицензии
-                                </td>
-                                <td id="technique">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Настройка IT</td>
-                                <td id="IT">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Монтаж слаботочных сетей</td>
-                                <td id="MSS">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Безопасность (Ворота защитные+датчики)</td>
-                                <td id="security">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Товарная загрузка</td>
-                                <td id="TZ">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Праздничная листовка открытия</td>
-                                <td id="PLO">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Затраты на Внутренюю и внешнюю рекламу</td>
-                                <td id="ADS">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Ремонт торгового помещения</td>
-                                <td id="RTP">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Заработная плата Персонала</td>
-                                <td id="ZPP">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Праздничное открытие МПР</td>
-                                <td id="POMPR">000 000</td>
-                            </tr>
 
-                            </tbody>
-                            <tfoot>
-                            <tr>
-                                <td>Итог:</td>
-                                <td id="investSumma">000 000</td>
-                            </tr>
-                            </tfoot>
-                        </table>
-                        </div>
-                    </div>
-                    <div class="calculator__modal-item">
-                        <div class="calculator__modal-logo"><img src="./img/logo.svg" width="441" height="37" alt="">
-                        </div>
-                        <div class="calculator__modal-title">Операционный бюджет</div>
-                        <div>
-                        <table class="table">
-                            <thead></thead>
-                            <tbody>
-                            <tr>
-                                <td>Выручка в мес, руб</td>
-                                <td id="revenue">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Валовый доход, руб</td>
-                                <td id="INCOME">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Аренда, руб</td>
-                                <td id="rent">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>ФОТ (заработная плата), руб</td>
-                                <td id="FOT">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Прочие расходы (реклама,
-                                    хознужды и т.п.
-                                </td>
-                                <td id="OTHER">000 000</td>
-                            </tr>
-                            </tbody>
-                            <tfoot>
-                            <tr>
-                                <td>Итог:</td>
-                                <td id="operionSumma">000 000</td>
-                            </tr>
-                            <tr>
-                                <td>Окупаемость , мес</td>
-                                <td id="payback">000 000</td>
-                            </tr>
-                            </tfoot>
-                        </table>
-                        </div>
-                        <div class="calculator__code">
-                            <img class="img-fluid" src="./img/check-code.png" width="208" height="66" alt="">
-                            <div>спасибо!</div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
             <div id="geografia" class="geografia">
@@ -1121,6 +1004,130 @@
             <button data-remodal-action="confirm" class="btn btn-primary w100">Связаться с тренером</button>
         </div>
     </form>
+</div>
+
+<div class="remodal calc" data-remodal-id="calc">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="calculator">
+    <div class="calculator__modal">
+        <div class="calculator__modal-item">
+            <div class="calculator__modal-logo"><img src="./img/logo.svg" width="441" height="37" alt="">
+            </div>
+            <div class="calculator__modal-title">Инвестиционный бюджет</div>
+            <div id="invest">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td>Услуги Сервисной Компании</td>
+                        <td id="YCK">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Торговое оборудование</td>
+                        <td id="TO">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Техника: компьютеры,
+                            кассы,1С лицензии
+                        </td>
+                        <td id="technique">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Настройка IT</td>
+                        <td id="IT">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Монтаж слаботочных сетей</td>
+                        <td id="MSS">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Безопасность (Ворота защитные+датчики)</td>
+                        <td id="security">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Товарная загрузка</td>
+                        <td id="TZ">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Праздничная листовка открытия</td>
+                        <td id="PLO">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Затраты на Внутренюю и внешнюю рекламу</td>
+                        <td id="ADS">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Ремонт торгового помещения</td>
+                        <td id="RTP">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Заработная плата Персонала</td>
+                        <td id="ZPP">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Праздничное открытие МПР</td>
+                        <td id="POMPR">000 000</td>
+                    </tr>
+
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>Итог:</td>
+                        <td id="investSumma">000 000</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <div class="calculator__modal-item">
+            <div class="calculator__modal-logo"><img src="./img/logo.svg" width="441" height="37" alt="">
+            </div>
+            <div class="calculator__modal-title">Операционный бюджет</div>
+            <div>
+                <table class="table">
+                    <thead></thead>
+                    <tbody>
+                    <tr>
+                        <td>Выручка в мес, руб</td>
+                        <td id="revenue">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Валовый доход, руб</td>
+                        <td id="INCOME">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Аренда, руб</td>
+                        <td id="rent">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>ФОТ (заработная плата), руб</td>
+                        <td id="FOT">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Прочие расходы (реклама,
+                            хознужды и т.п.
+                        </td>
+                        <td id="OTHER">000 000</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>Итог:</td>
+                        <td id="operionSumma">000 000</td>
+                    </tr>
+                    <tr>
+                        <td>Окупаемость , мес</td>
+                        <td id="payback">000 000</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="calculator__code">
+                <img class="img-fluid" src="./img/check-code.png" width="208" height="66" alt="">
+                <div>спасибо!</div>
+            </div>
+        </div>
+    </div>
+    </div>
 </div>
 
 <!-- JS -->
