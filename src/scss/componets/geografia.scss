@@ -55,4 +55,9 @@
 			margin: 36px auto;
 		}
 	}
+	@include r(424){
+		&__txt{
+			width: 100%;
+		}
+	}
 }

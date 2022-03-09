@@ -1,0 +1,104 @@
+.calculator{
+	margin-bottom: 30px;
+	&__header{
+		margin-bottom: 60px;
+	}
+	&__title{
+		display: inline-block;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		color: #000000;
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			background-color: #E30613;
+			width: 100%;
+			height: 3px;
+		}
+	}
+	&__body{
+		max-width: 667px;
+		margin: auto;
+	}
+	&__span{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.05em;
+		color: #000000;
+	}
+	.form-group{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.form-label{
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.05em;
+		color: #000000;
+	}
+	.form-control{
+		border: 1px solid #E30613;
+		border-radius: 5px;
+		max-width: 162px;
+		margin-right: 26px;
+		margin-left: auto;
+		padding: 3px .75rem;
+		font-size: 18px;
+		line-height: 21px;
+		text-align: center;
+		color: #8A8383;
+		&::placeholder{
+			color: #8A8383;
+		}
+	}
+	.btn{
+		width: 264px;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.05em;
+		padding: 6px 25px;
+		margin: 0 auto;
+		display: block;
+	}
+	@include r(767){
+		&__header{
+			margin-bottom: 37px;
+			position: relative;
+
+		}
+		&__title{
+			font-size: 20px;
+			line-height: 25px;
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: -15px;
+				left: 0;
+				width: 142px;
+				height: 3px;
+				background-color: #fff;
+			}
+		}
+		&__span{
+			font-size: 13px;
+			line-height: 16px;
+		}
+		.form-label{
+			font-size: 13px;
+			line-height: 16px;
+		}
+		.form-control{
+			max-width: 116px;
+			margin-right: 20px;
+		}
+	}
+}
