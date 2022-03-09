@@ -138,20 +138,21 @@
                 <div class="calculator__body">
                     <div class="form-group">
                         <label class="form-label" for="KVM">Стоимость 1&nbsp;кв.м.</label>
-                        <input class="form-control" type="number" name="KVM" value="1000" id="KVM" placeholder="..." required>
+                        <input class="form-control" type="number" name="KVM" value="" id="KVM" placeholder="..." required>
                         <span class="calculator__span">рублей</span>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="TPM">Торговая площадь<br> магазина</label>
-                        <input class="form-control" type="number" name="TPM" value="110" id="TPM" placeholder="..." required>
+                        <input class="form-control" type="number" name="TPM" value="" id="TPM" placeholder="..." required>
                         <span class="calculator__span">метров</span>
                     </div>
                     <div class="form-group">
                         <label class="form-label" for="ZPR">Средняя зарплата продавца<br> в вашем регионе</label>
-                        <input class="form-control" type="number" name="ZPR" value="25000" id="ZPR" placeholder="..." required>
+                        <input class="form-control" type="number" name="ZPR" value="" id="ZPR" placeholder="..." required>
                         <span class="calculator__span">рублей</span>
                     </div>
-                    <button class="btn btn-primary calculator__btn" data-remodal-target="calc">расчитать</button>
+                    <div class="alert alert-danger">заполните все поля</div>
+                    <button class="btn btn-primary calculator__btn js-calc">расчитать</button>
                 </div>
 
 

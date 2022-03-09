@@ -5,9 +5,19 @@
 $(function () {
     $('select').styler();
 
-    let modalCalc = $('[data-remodal-id=calc]').remodal();
-    $(document).on('opening', modalCalc, function () {
-        calc()
+
+    $('.js-calc').on('click', function () {
+        const KVM = parseInt(document.getElementById('KVM').value); //Стоимость 1 кв.м.
+        const TPM = parseInt(document.getElementById('TPM').value); //Торговая площадь магазина
+        const ZPR = parseInt(document.getElementById('ZPR').value); //Средняя зарплата продавца в вашем регионе
+        if (KVM && TPM && ZPR) {
+            $('.calculator .alert').slideUp();
+            calc(KVM,TPM,ZPR);
+            let modalCalc = $('[data-remodal-id=calc]').remodal();
+            modalCalc.open();
+        } else {
+            $('.calculator .alert').slideDown();
+        }
     });
 
     $('a[href^="#"]').on('click', function (event) {
@@ -35,9 +45,9 @@ $(function () {
 
     var button = $('#button-up');
     $(window).scroll(function () {
-        if($(this).scrollTop() > 115){
+        if ($(this).scrollTop() > 115) {
             $('.nav').addClass('nav--fix');
-        }else{
+        } else {
             $('.nav').removeClass('nav--fix');
         }
 

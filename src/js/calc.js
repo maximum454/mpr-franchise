@@ -1,9 +1,4 @@
-function calc(){
-    //даные из формы
-    const KVM = parseInt(document.getElementById('KVM').value); //Стоимость 1 кв.м.
-    const TPM = parseInt(document.getElementById('TPM').value); //Торговая площадь магазина
-    const ZPR = parseInt(document.getElementById('ZPR').value); //Средняя зарплата продавца в вашем регионе
-
+function calc(KVM,TPM,ZPR){
     //Данные из инвестиции бюджета
     const YCK = 180000; //Услуги Сервисной Компании
     const TO = TPM < 100 ?  9000: 8200; //Торговое оборудование

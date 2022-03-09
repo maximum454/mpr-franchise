@@ -141,7 +141,10 @@
 			color: #8A8383;
 		}
 	}
-
+	.alert{
+		text-align: center;
+		display: none;
+	}
 	@include r(767){
 		&__header{
 			margin-bottom: 37px;
