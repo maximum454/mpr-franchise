@@ -1806,6 +1806,36 @@ img {
   display: none;
 }
 
+.form-check-input {
+  margin-top: 6px;
+  margin-left: -24px;
+}
+
+.form-check {
+  padding-left: 24px;
+}
+
+.form-check-label {
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.jq-checkbox {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #E30613 !important;
+  border-radius: 2px;
+  background: transparent;
+  outline: none !important;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  margin: 2px 0 0 1px;
+}
+
 .header {
   padding: 36px 0;
   border-bottom: 1px solid #E5E5E5;
@@ -3769,7 +3799,7 @@ img {
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 524px;
-    padding: 32px 54px 10px;
+    padding: 32px 54px;
   }
 
   .remodal .title {

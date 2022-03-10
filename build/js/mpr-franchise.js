@@ -73,7 +73,7 @@ function calc(KVM,TPM,ZPR){
 
 
 $(function () {
-    $('select').styler();
+    $('select, input[type=checkbox]').styler();
 
 
     $('.js-calc').on('click', function () {
