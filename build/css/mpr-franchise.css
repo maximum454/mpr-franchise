@@ -3856,6 +3856,136 @@ img {
   display: none;
 }
 
+.tabs-format {
+  margin: 80px 0;
+}
+
+.tabs-format__header {
+  margin-bottom: 60px;
+}
+
+.tabs-format__title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  position: relative;
+}
+
+.tabs-format__title:before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #E30613;
+  width: 100%;
+  height: 3px;
+}
+
+.tabs-format__body {
+  margin-bottom: 80px;
+}
+
+.tabs-format__txt {
+  max-width: 380px;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.tabs-format__txt p {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+}
+
+.tabs-format__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.tabs-format__img img {
+  height: 100%;
+}
+
+.tabs-format .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 20px;
+}
+
+.tabs-format .tabs label {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: block;
+  padding: 23px 2rem;
+  margin: 0;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  -webkit-transition: background ease 0.2s;
+  -o-transition: background ease 0.2s;
+  transition: background ease 0.2s;
+  color: #E30613;
+  border: 1px solid #E30613;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.tabs-format .tabs .tab {
+  padding: 122px 140px;
+  margin-top: -5px;
+  -webkit-box-ordinal-group: 100;
+      -ms-flex-order: 99;
+          order: 99;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  display: none;
+  border: 1px solid #E30613;
+  border-radius: 0 0 5px 5px;
+  background: #8A8383;
+  position: relative;
+  overflow: hidden;
+}
+
+.tabs-format .tabs input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.tabs-format .tabs input[type="radio"]:checked + label {
+  background: #E30613;
+  color: #fff;
+}
+
+.tabs-format .tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 524px;
@@ -5246,6 +5376,53 @@ img {
   .calculator .form-control {
     max-width: 116px;
     margin-right: 20px;
+  }
+
+  .tabs-format {
+    margin: 20px 0;
+  }
+
+  .tabs-format__header {
+    margin-bottom: 37px;
+    position: relative;
+  }
+
+  .tabs-format__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .tabs-format__title:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 142px;
+    height: 3px;
+    background-color: #fff;
+  }
+
+  .tabs-format__body {
+    margin-bottom: 0;
+  }
+
+  .tabs-format__tur {
+    display: none;
+  }
+
+  .tabs-format .tabs .tab,
+  .tabs-format .tabs label {
+    -webkit-box-ordinal-group: initial;
+        -ms-flex-order: initial;
+            order: initial;
+  }
+
+  .tabs-format .tabs label {
+    width: 100%;
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 18px 2rem;
   }
 }
 
