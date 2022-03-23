@@ -199,6 +199,40 @@ $(function () {
     }
 })
 
+const swiperOne = new Swiper( '.swiper.one', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 150,
+        modifier: 1.5,
+        slideShadows : false,
+        scale: .9,
+    },
+} );
+
+const swiperTwo = new Swiper( '.swiper.two', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 17,
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        modifier: 1,
+        slideShadows : false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+} );
+
 
 
 

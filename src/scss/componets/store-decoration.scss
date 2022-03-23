@@ -1,61 +1,90 @@
 .store-decoration {
-  &__header {
-    position: relative;
-    margin-bottom: 100px;
-  }
+	overflow: hidden;
+	&__header {
+		position: relative;
+		margin-bottom: 100px;
+	}
+	&__title {
+		display: inline-block;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: 0.05em;
+		position: relative;
+	}
+	&__slider{
+		margin-bottom: 77px;
+	}
 
-  &__title {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-    position: relative;
+	.one .swiper-slide {
+		width: 548px;
+	}
 
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -15px;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background-color: #E30613;
-    }
-  }
+	.two{
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 10%;
+			height: 100%;
+			background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+			z-index: 10;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 10%;
+			height: 100%;
+			background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+			z-index: 10;
+		}
+	}
+	.two .swiper-slide {
+		width: 263px;
+	}
+	.swiper-button-next{
+		right: 20px;
+		z-index: 20;
+		height: 68px;
+		background-image: url("../img/store-decoration-arrow.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 27px 68px;
+		top: 50%;
+		transform: translate(0,-50%);
+		margin: 0;
+		&:after{
+			display: none;
+		}
+	}
+	.swiper-button-prev{
+		left: 20px;
+		z-index: 20;
+		height: 68px;
+		background-image: url("../img/store-decoration-arrow.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 27px 68px;
+		transform: rotate(180deg) translate(0,50%);
+		margin: 0;
+		&:after{
+			display: none;
+		}
+	}
 
-  &__img {
-    margin: 0 auto;
-    position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 4.46%, #FFFFFF 80.63%);
-      width: 100%;
-      height: 224px;
-    }
-
-    img {
-      width: 100%;
-    }
-  }
-
-  @include r(767) {
-    &__header {
-      margin-bottom: 20px;
-    }
-    &__title {
-      font-size: 20px;
-      line-height: 25px;
-
-      &:after {
-        width: 142px;
-      }
-    }
-    &__img {
-      margin: auto 20px;
-    }
-  }
+	@include r(767) {
+		&__header {
+			margin-bottom: 20px;
+		}
+		&__title {
+			font-size: 20px;
+			line-height: 25px;
+		}
+		.one .swiper-slide {
+			width: 100%;
+		}
+	}
 }
