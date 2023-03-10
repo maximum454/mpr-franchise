@@ -1,23 +1,5 @@
 .header {
 	padding: 36px 0;
-	border-bottom: 1px solid #E5E5E5;
-
-	&__body {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-
-	}
-
-	&__logo {
-		margin-right: 20px;
-
-		img {
-			max-width: 100%;
-			height: auto;
-		}
-	}
-
 	&__button {
 		border: 1px solid #E30613;
 		box-sizing: border-box;
@@ -82,31 +64,20 @@
 	&__phone {
 		font-weight: bold;
 		font-size: 24px;
+		line-height: 50px;
 		text-decoration: none;
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
-		color: #000000;
-		flex-shrink: 0;
-		margin-right: 20px;
+		color: #E30613;
+		display: block;
+		text-align: right;
 	}
 
-	&__btn {
-		font-weight: bold;
-		font-size: 13px;
-		line-height: 16px;
-		padding: 8.5px 30px;
-	}
+
 
 	@include r(1023) {
 		padding: 24px 0;
-		&__body {
-			flex-wrap: wrap;
-			gap: 15px;
-		}
-		&__logo {
-			flex: 0 1 70%;
-			margin-right: 0;
-		}
+
 		&__button {
 			display: flex;
 			z-index: 25;
@@ -135,11 +106,5 @@
 			font-size: 18px;
 		}
 
-		&__btn {
-			flex: 0 1 100%;
-			max-width: 136px;
-			font-size: 12px;
-			padding: 8.5px 0;
-		}
 	}
 }

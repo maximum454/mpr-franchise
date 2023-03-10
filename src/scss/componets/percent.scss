@@ -1,5 +1,5 @@
 .percent{
-	padding: 100px 0;
+	margin-bottom: 70px;
 	&__body{
 		display: grid;
 		grid-template-columns: repeat(auto-fit,minmax(245px, 1fr));
@@ -9,20 +9,38 @@
 	&__item{
 		max-width: 250px;
 	}
-	&__img{
-		width: 55px;
-		height: 52px;
-		flex-shrink: 0;
-		img{
-			display: block;
-		}
+	&__num{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 60px;
+		height: 60px;
+		background: linear-gradient(306.05deg, #FF646E 12.66%, #E30613 64.29%);
+		border-radius: 50%;
+		overflow: hidden;
+		font-family: 'AvantGardeCTT';
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+		margin-bottom: 32px;
 	}
 	&__name{
-		margin-top: 34px;
-		font-style: normal;
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 25px;
+		letter-spacing: 0.05em;
+		color: #000000;
+		margin-bottom: 20px;
+	}
+	&__anons{
+
+		font-family: 'AvantGardeCTT';
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
 		letter-spacing: 0.05em;
 		color: #000000;
 	}

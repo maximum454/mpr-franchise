@@ -1,25 +1,16 @@
 .tabs-format{
-	margin: 80px 0;
+	margin-bottom: 85px;
 	&__header{
-		margin-bottom: 60px;
+		margin-bottom: 85px;
 	}
 	&__title{
 		display: inline-block;
 		font-weight: bold;
-		font-size: 24px;
+		font-size: 32px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
-		color: #000000;
-		position: relative;
-		&:before{
-			content: '';
-			position: absolute;
-			bottom: -5px;
-			left: 0;
-			background-color: #E30613;
-			width: 100%;
-			height: 3px;
-		}
+		color: #E30613;
+		margin-left: 118px;
 	}
 	&__body{
 		margin-bottom: 80px;
@@ -32,13 +23,13 @@
 		letter-spacing: 0.05em;
 		color: #FFFFFF;
 		flex-shrink: 1;
+		font-family: 'AvantGardeCTT';
 		p{
-			font-size: 14px;
-			line-height: 17px;
+			font-size: 18px;
+			line-height: 25px;
 			letter-spacing: 0.05em;
 			color: #FFFFFF;
 			margin: 0 0 20px;
-
 		}
 	}
 	&__img{
@@ -50,8 +41,6 @@
 			width: 100%;
 			object-fit: contain;
 		}
-	}
-	&__tur{
 	}
 	.tabs {
 		display: flex;
@@ -84,9 +73,8 @@
 			flex-grow: 1;
 			width: 100%;
 			display: none;
-			border: 1px solid #E30613;
 			border-radius: 0 0 5px 5px;
-			background: #8A8383;
+			background: #9F9FA0;
 			position: relative;
 			overflow: hidden;
 			align-items: center;
@@ -145,9 +133,6 @@
 				width: 100%;
 				object-fit: contain;
 			}
-		}
-		&__tur{
-			display: none;
 		}
 		.tabs{
 			.tab,

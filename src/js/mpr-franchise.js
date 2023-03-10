@@ -79,10 +79,10 @@ $(function () {
 
 
     const swiperReviews = new Swiper('.swiper-container-reviews', {
-        slidesPerView: 2,
+        slidesPerView: 3,
         loop: true,
         autoHeight: true,
-        spaceBetween: 20,
+        spaceBetween: 136,
         watchOverflow: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
@@ -96,8 +96,7 @@ $(function () {
                 slidesPerView: 1,
             },
             767: {
-                slidesPerView: 2,
-                spaceBetween: 20
+                slidesPerView: 3,
             }
         }
     })

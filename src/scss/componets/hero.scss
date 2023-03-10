@@ -2,31 +2,42 @@
 	overflow: hidden;
 	padding: 10px 0;
 	&__body{
-		display: block;
-		position: relative;
+		display: flex;
+		align-items: center;
+		margin-bottom: 95px;
 	}
 	&__txt{
-		max-width: 582px;
-		text-align: right;
+		max-width: 700px;
 	}
 	&__title{
-		font-family: 'CenturyGothic';
+		font-family: 'AvantGardeCTT';
 		font-weight: 700;
-		font-size: 50px;
-		line-height: 60px;
+		font-size: 32px;
+		line-height: 40px;
 		letter-spacing: 0.05em;
-		color: #E30613;
-		margin-bottom: 20px;
-		text-align: left;
+		color: #1B1B1B;
 		span{
+			font-size: 40px;
+			line-height: 40px;
+			text-transform: uppercase;
 			display: block;
-			margin-left: auto;
-			margin-right: 0;
-			width: fit-content;
 		}
 	}
+	&__lable{
+		background: linear-gradient(90deg, #E20E1B 3.27%, #FF646E 49.92%, #E20E1B 97.66%);
+		font-family: 'AvantGardeCTT';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 50px;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+		text-align: center;
+		text-transform: uppercase;
+		max-width: 612px;
+	}
 	&__list{
-		margin: 0 0 70px;
+		margin: 0 0 18px;
 		padding: 0;
 		list-style: none;
 		li{
@@ -35,7 +46,6 @@
 			font-size: 24px;
 			line-height: 50px;
 			letter-spacing: 0.05em;
-			text-transform: lowercase;
 			color: #000000;
 			&:before{
 				content: '';
@@ -66,9 +76,14 @@
 		}
 	}
 	&__img{
-		top: -40px;
-		left: 582px;
-		position: absolute;
+		flex: 1;
+		text-align: center;
+	}
+	&__video{
+		width: 100%;
+		img{
+			width: 100%;
+		}
 	}
 	@include r(767){
 		&__body{

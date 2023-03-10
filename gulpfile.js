@@ -31,7 +31,7 @@ let {src, dest} = require('gulp'),
     browsersync = require("browser-sync").create(),
     fileinclude = require('gulp-file-include'),
     del = require('del'),
-    scss = require('gulp-sass'),
+    scss = require('gulp-sass')(require('sass')),
     autoprefixer = require('gulp-autoprefixer'),
     group_media = require('gulp-group-css-media-queries'),
     clean_css = require('gulp-clean-css'),
@@ -48,7 +48,6 @@ let {src, dest} = require('gulp'),
     babel = require('gulp-babel'),
     spritesmith = require('gulp.spritesmith'),
     merge = require('merge-stream');
-
 
 function browserSync(params) {
     browsersync.init({
@@ -213,12 +212,6 @@ gulp.task('otf2ttf', function () {
         .pipe(dest(source + '/fonts/'));
 });
 
-gulp.task('ttf2woff', function(){
-    return src([source + 'fonts/*.ttf'])
-        .pipe(ttf2woff())
-        .pipe(dest(source + 'fonts/'));
-});
-
 function fonts() {
     src(path.src.fonts)
         .pipe(ttf2woff())
@@ -239,10 +232,10 @@ function watchFiles() {
     gulp.watch([path.watch.img], images);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images/*, fonts*/));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-//exports.fonts = fonts;
+exports.fonts = fonts;
 exports.images = images;
 exports.js = js;
 exports.css = css;
