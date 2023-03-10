@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    @@include('./template/_meta.html')
+    <title>Готовое решение для вашего бизнеса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css"
+          integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css"
+          integrity="sha512-jRxwiuoe3nt8lMSnOzNEuQ7ckDrLl31dwVYFWS6jklXQ6Nzl7b05rrWF9gjSxgOow5nFerdoN6CBB4gY5m5nDw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/mpr-franchise.css">
+
+
+</head>
+
+<body>
+<div class="wrp">
+    @@include('./template/_header.html')
+
+    <div id="geografia" class="geografia">
+        <div class="geografia__header">
+            <div class="geografia__title">География МПР</div>
+        </div>
+        <div class="geografia__body">
+            <div class="geografia__img">
+                <img class="img-fluid" src="./img/map.png" width="802" height="550"
+                     alt="карта mpr Россия и Казахстан">
+            </div>
+        </div>
+    </div>
+
+    @@include('./template/_footer.html')
+</div>
+@@include('./template/_modal.html')
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"
+        integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/mpr-franchise.js"></script>
+
+</body>
+
+</html>

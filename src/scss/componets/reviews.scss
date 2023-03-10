@@ -2,6 +2,7 @@
 	margin-bottom: 118px;
 	&__header {
 		margin-bottom: 72px;
+		padding-left: 118px;
 	}
 	&__title{
 		display: inline-block;
@@ -10,7 +11,6 @@
 		line-height: 50px;
 		letter-spacing: 0.05em;
 		color: #E30613;
-		margin-left: 118px;
 	}
 	&__body{
 		position: relative;

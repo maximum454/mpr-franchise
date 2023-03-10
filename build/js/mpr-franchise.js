@@ -171,6 +171,28 @@ $(function () {
         }
     })
 
+    const swiperShop = new Swiper('.swiper-container-shop', {
+        slidesPerView: 4,
+        loop: false,
+        autoHeight: true,
+        spaceBetween: 20,
+        watchOverflow: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        observer: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 4,
+            }
+        }
+    })
+
     const navItems = document.querySelectorAll('.nav__item');
 
     for (let navItem of navItems) {

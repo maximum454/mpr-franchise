@@ -1,0 +1,56 @@
+.opening{
+  margin-bottom: 81px;
+  &__header {
+    margin-bottom: 72px;
+    padding-left: 118px;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: #E30613;
+  }
+  &__subtitle{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+  &__body{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 116px;
+  }
+  &__item{
+    &:nth-of-type(-4n + 4){
+      margin-left: auto;
+    }
+  }
+  &__name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #000000;
+  }
+  &__figure{
+    margin: 0;
+    display: none;
+  }
+  &__figure-big{
+    flex: 1 0 100%;
+  }
+  @include r(767){
+    &__figure-big{
+      display: none;
+    }
+    &__figure{
+      margin: 0;
+      display: block;
+    }
+  }
+}

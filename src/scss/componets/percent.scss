@@ -1,5 +1,17 @@
 .percent{
 	margin-bottom: 70px;
+	&__header {
+		margin-bottom: 72px;
+		padding-left: 118px;
+	}
+	&__title{
+		display: inline-block;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 50px;
+		letter-spacing: 0.05em;
+		color: #E30613;
+	}
 	&__body{
 		display: grid;
 		grid-template-columns: repeat(auto-fit,minmax(245px, 1fr));

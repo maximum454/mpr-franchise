@@ -68,124 +68,147 @@
     </div>
 </header>
 
-    <div id="learning-main" class="learning-main js-dropdown">
-        <div class="container">
-            <div class="learning-main__header">
-                <div class="learning-main__title">Учебный центр</div>
-                <div class="learning-main__arrow"></div>
-            </div>
+
+    <div id="calculator" class="calculator">
+        <div class="calculator__header">
+            <div class="calculator__title">Калькулятор вашего будущего бизнеса</div>
         </div>
-        <div class="dropdown-block">
-            <div class="learning-main__img">
-                <img class="img-fluid" src="./img/learning-main.png" width="1439" height="388" alt="">
+        <div class="calculator__body">
+            <div class="form-group">
+                <label class="form-label" for="KVM">Стоимость 1&nbsp;кв.м.</label>
+                <input class="form-control" type="number" name="KVM" value="" id="KVM" placeholder="..." required>
+                <span class="calculator__span">рублей</span>
             </div>
-            <div class="container">
-                <div class="learning-main__body">
-                    <div class="learning-main__item">
-                        <div class="learning-main__icon"></div>
-                        <div class="learning-main__name">создан для интеграции опыта действующих технологий и
-                            инструментов
-                            малого бизнеса
-                        </div>
-                    </div>
-                    <div class="learning-main__item">
-                        <div class="learning-main__icon"></div>
-                        <div class="learning-main__name">предоставляет возможность обязательной отработки полученных
-                            навыков
-                            на магазине-школе
-                        </div>
-                    </div>
-                    <div class="learning-main__item">
-                        <div class="learning-main__icon"></div>
-                        <div class="learning-main__name">реализует подготовку к отрытию и сопровождение действующих
-                            магазинов силами региональных тренеров Учебного Центра
-                        </div>
-                    </div>
-                    <div class="learning-main__item">
-                        <div class="learning-main__icon"></div>
-                        <div class="learning-main__name">консультирует после обучния в течение 2 месяцев</div>
-                    </div>
-                    <div class="learning-main__item">
-                        <div class="learning-main__icon"></div>
-                        <div class="learning-main__name">поможет качественно подготовиться к эффективной работе
-                            собственного
-                            МПР
-                        </div>
-                    </div>
-                    <div class="learning-main__item">
-                        <button class="btn btn-primary">Подробнее...</button>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label class="form-label" for="TPM">Торговая площадь<br> магазина</label>
+                <input class="form-control" type="number" name="TPM" value="" id="TPM" placeholder="..." required>
+                <span class="calculator__span">метров</span>
             </div>
+            <div class="form-group">
+                <label class="form-label" for="ZPR">Средняя зарплата продавца<br> в вашем регионе</label>
+                <input class="form-control" type="number" name="ZPR" value="" id="ZPR" placeholder="..." required>
+                <span class="calculator__span">рублей</span>
+            </div>
+            <div class="alert alert-danger">заполните все поля</div>
+            <button class="btn btn-primary calculator__btn js-calc">расчитать</button>
         </div>
+
+
     </div>
-    <div class="learning-page">
+    <div class="investment">
         <div class="container">
-            <h1 class="learning-page__title">Учебный Центр</h1>
-            <div class="learning-page__body">
-                <p>Учебный центр Красного проекта МПР создан в&nbsp;ноябре 2019 года.</p>
-                <p>Цель&nbsp;&mdash; отработка практических навыков управления розничным магазином на&nbsp;основе
-                    <nobr>бизнес-модели</nobr>
-                    Красного проекта МПР.
-                </p>
-                <p>Учебный центр осуществляет подготовку управленческого и&nbsp;линейного торгового персонала на&nbsp;базе
-                    <nobr>МПР-школы</nobr>
-                    в&nbsp;Екатеринбурге. Обучение проводят сотрудники действующего магазина с&nbsp;практическим опытом
-                    управления розницей.
-                </p>
+            <div class="investment__header">
+                <div class="investment__title">Сумма инвестиций на один магазин</div>
             </div>
-            <div class="learning-page__galllery">
-                <div>
-                    <img class="img-fluid" src="./img/learning-page.png" width="547" height="304" alt="">
+            <p class="text-danger"><b>Основные расходы в руб. на магазин 170 м<sup>2</sup> торговой площади</b></p>
+            <div class="investment__body">
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">Ремонт/дополнительное освещение</div>
+                        <ul class="investment__list">
+                            <li>при необходимости</li>
+                        </ul>
+                    </div>
+                    <div class="investment__price">от 100 000</div>
                 </div>
-                <div>
-                    <img class="img-fluid" src="./img/learning-page-2.png" width="548" height="304" alt="">
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">Новое торговое оборудование (8200 руб/ м<sup>2</sup> торг.
+                            площади)
+                        </div>
+                        <ul class="investment__list">
+                            <li>возможно использование подходящего б/у оборудования</li>
+                            <li>без учета доставки</li>
+                        </ul>
+                    </div>
+                    <div class="investment__price">от 1 395 000</div>
                 </div>
-            </div>
-
-            <h2>Расписание ближайших групп:</h2>
-            <div class="learning-page__body">
-                <ul class="learning-page__list">
-                    <li><b>08-19 февраля 2021 года</b> - Курс для управляющих магазином (группа 18)</li>
-
-                    <li><b>01-12 марта 2021 года </b>- Курс для управляющих магазином (группа 19)</li>
-
-                    <li><b>15-26 марта 2021 года </b>- Курс для управляющих магазином (группа 20)</li>
-                </ul>
-            </div>
-            <button type="button" class="btn btn-primary" data-remodal-target="course">Записаться на курс</button>
-
-            <div class="learning-page__body">
-                <p><b>Модель получения знаний&nbsp;&mdash; обучение действием.</b></p>
-                <p>Преимущество предлагаемой программы&nbsp;&mdash; полное погружение в&nbsp;работу эффективного
-                    магазина, с&nbsp;отработкой
-                    теоретических и&nbsp;практических навыков. В&nbsp;основу положен принцип &laquo;зачем&raquo; с&nbsp;четким
-                    пояснением, &laquo;каким образом это сделать&raquo;.</p>
-                <div class="learning-page__dark">
-                    <p>Cегодня в учебном центре реализованы следующие программы обучения для действующих партнеров
-                        проекта:</p>
-                    <ul class="learning-page__list">
-                        <li>Курс для управляющих, заместителей и собственников бизнеса</li>
-                        <li>Курсы повышения квалификации</li>
-                        <li>Курсы для кладовщиков</li>
-                        <li>Дистанционные он-лайн сессии и вебинары</li>
-                        <li>Ассортиментное обучение</li>
-                    </ul>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">Техника: компьютерная, кассовая, 1с+лицензии, минисервер
+                        </div>
+                    </div>
+                    <div class="investment__price">от 500 000</div>
                 </div>
-            </div>
-            <div class="learning-page__row">
-                <div>
-                    <p><b>Остались вопросы?</b><br>
-                        Заполните форму и мы свяжемся с вами в ближайшее время</p>
-                    <button type="button" class="btn btn-primary" data-remodal-target="question">Задать вопрос
-                    </button>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">Услуги сервисной компании:
+                        </div>
+                        <ul class="investment__list">
+                            <li>прорисовка периметра магазина, план расстановки ТО, 3D-моделирование, зонирование
+                                магазина по&nbsp;товарным группам, разработка дизайна вывесок навигации и&nbsp;листовки
+                                откртия,
+                                аудио-видео ролики, формирование установочного заказа, сопровождение проекта, очное
+                                обучение управляющего (в&nbsp;теч.&nbsp;6&nbsp;мес с&nbsp;даты старта проекта)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="investment__price">от 180 000</div>
                 </div>
-                <div>
-                    <p><b>Нужен региональный менеджер?</b><br>
-                        В случае возникновения вопросов, требующих обсуждения</p>
-                    <button type="button" class="btn btn-primary" data-remodal-target="trener">Связаться с
-                        менеджером
-                    </button>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">ИТ-настройка программных продуктов и касс</div>
+                    </div>
+                    <div class="investment__price">10 000</div>
+                </div>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">Монтаж слаботочных сетей, интернет</div>
+                        <ul class="investment__list">
+                            <li>в зависимости от помещения</li>
+                        </ul>
+                    </div>
+                    <div class="investment__price">30 000</div>
+                </div>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">Реклама внешняя и внутренняя</div>
+                        <ul class="investment__list">
+                            <li>Внутреннее оформление от 70 000 руб</li>
+                            <li>Световая вывеска (в зависимости от размеров) от 160 000 руб.</li>
+                            <li>Навигация (в зависимости от размеров) от 20 000 руб.</li>
+                        </ul>
+                    </div>
+                    <div class="investment__price">от 250 000</div>
+                </div>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">Праздничное открытие на два дня</div>
+                        <ul class="investment__list">
+                            <li>маркетинговый бюджет на товары по спецценам от 145 00 руб.</li>
+                            <li>организация праздника (ведущий, игры для покупателей, сладвкая вата и пр.) от 50 000
+                                руб.
+                            </li>
+                            <li>печать листовки праздничного открытия от 50 000 руб.</li>
+                            <li>безадресная рассылка и рапсространение листовок (промоутеры) от 20 000 руб.</li>
+                            <li> дополнительные подарки в день розыгрыша от 20 000 руб.</li>
+                            <li>оформление фотозоны (роллап, прессвол) от 10 000 руб.</li>
+                            <li> Товары к праздничной листовке от 600 000 руб.</li>
+                        </ul>
+                    </div>
+                    <div class="investment__price">от 895 000</div>
+                </div>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">Безопасность (ворота+защитные датчики)
+                        </div>
+                    </div>
+                    <div class="investment__price">от 120 000</div>
+                </div>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name">ЗП сотрудников до технического открытия магазина</div>
+                        <ul class="investment__list">
+                            <li>персонал (чел.) УМ, ЗУМ, кладовщик, 5 продавцов-кассиров</li>
+                        </ul>
+                    </div>
+                    <div class="investment__price">от 200 000</div>
+                </div>
+                <div class="investment__item">
+                    <div class="investment__txt">
+                        <div class="investment__name"><b>Итого</b></div>
+                    </div>
+                    <div class="investment__price">от 7 590 000 рублей</div>
                 </div>
             </div>
         </div>
