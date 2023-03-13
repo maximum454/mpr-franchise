@@ -3,7 +3,7 @@
 	margin-bottom: 73px;
 	padding: 85px 0;
 	&__header{
-		margin-bottom: 47px;
+		margin-bottom: 81px;
 	}
 	&__title{
 		display: inline-block;
@@ -16,25 +16,45 @@
 		margin-left: 118px;
 	}
 	&__body{
-
+		display: flex;
+		gap: 56px;
+		flex-wrap: wrap;
+		padding-left: 40px;
+	}
+	&__col{
+		flex: 1 0 calc(50% - 56px);
 	}
 	&__item{
-		padding-left: 100px;
 		position: relative;
-		margin-bottom: 10px;
+		display: flex;
+		margin-bottom: 80px;
+		&:last-of-type{
+			margin-bottom: 0;
+			.advantage__name{
+				border-bottom: 0;
+			}
+		}
 		span{
 			color: #fff;
 		}
 	}
-	&__num{}
-	&__name{
-		font-weight: bold;
-		font-size: 18px;
+	&__num{
+		font-family: $font1;
+		font-weight: 700;
+		font-size: 32px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
-		margin-bottom: 10px;
-		min-height: 70px;
-		max-width: 295px;
+		color: #000000;
+		margin-right: 46px;
+		padding-bottom: 23px;
+	}
+	&__name{
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 25px;
+		padding-bottom: 22px;
+		border-bottom:1px solid #000;
+		flex: auto;
 	}
 	@include r(767){
 		padding: 20px 0;
