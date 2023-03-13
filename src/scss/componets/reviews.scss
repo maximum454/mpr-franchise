@@ -1,5 +1,5 @@
 .reviews{
-	margin-bottom: 118px;
+	margin-bottom: 68px;
 	&__header {
 		margin-bottom: 72px;
 		padding-left: 118px;
@@ -9,7 +9,7 @@
 		font-weight: 700;
 		font-size: 32px;
 		line-height: 50px;
-		letter-spacing: 0.05em;
+		letter-spacing: -0.3px;
 		color: #E30613;
 	}
 	&__body{
@@ -18,19 +18,19 @@
 	&__name{
 		background: linear-gradient(83.38deg, #E30613 4.96%, #FF646E 84.78%);
 		border-radius: 20px;
-		font-family: 'AvantGardeCTT';
+		font-family: $font1;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 22px;
 		line-height: 25px;
 		text-align: center;
-		letter-spacing: 0.05em;
+
 		color: #FFFFFF;
 		padding: 29px 39px;
 		margin: 0 0 28px;
 	}
 	&__anons{
-		margin: 0 0 27px;
+		margin: 0 0 40px;
 		font-size: 18px;
 		line-height: 24px;
 		letter-spacing: 0.05em;
@@ -75,7 +75,7 @@
 		}
 	}
 	&__link{
-		font-family: 'AvantGardeCTT';
+		font-family: $font1;
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 25px;
@@ -91,7 +91,7 @@
 		width: fit-content;
 		display: block;
 		margin: 0 0 0 auto;
-		font-family: 'AvantGardeCTT';
+		font-family: $font1;
 		font-weight: 700;
 		font-size: 22px;
 		line-height: 26px;
@@ -103,10 +103,10 @@
 			content: '';
 			position: absolute;
 			top: 3px;
-			right: -100px;
+			right: -84px;
 			background-image: url("../img/icons-sprite.svg#icon-arrow-next");
 			background-repeat: no-repeat;
-			width: 54px;
+			width: 72px;
 			height: 22px;
 		}
 	}

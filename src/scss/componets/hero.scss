@@ -1,31 +1,33 @@
 .hero{
 	overflow: hidden;
-	margin-bottom: 72px;
+	margin-bottom: 67px;
 	&__body{
 		display: flex;
 		align-items: center;
-		margin-bottom: 95px;
+		padding-top: 24px;
 	}
 	&__txt{
 		max-width: 700px;
 	}
 	&__title{
-		font-family: 'AvantGardeCTT';
+		font-family: $font1;
 		font-weight: 700;
 		font-size: 32px;
 		line-height: 40px;
 		letter-spacing: 0.05em;
 		color: #1B1B1B;
+		margin: 0 0 10px;
 		span{
 			font-size: 40px;
 			line-height: 40px;
 			text-transform: uppercase;
 			display: block;
+			margin-bottom: 6px;
 		}
 	}
 	&__lable{
 		background: linear-gradient(90deg, #E20E1B 3.27%, #FF646E 49.92%, #E20E1B 97.66%);
-		font-family: 'AvantGardeCTT';
+		font-family: $font1;
 		font-style: normal;
 		font-weight: 700;
 		font-size: 32px;
@@ -33,11 +35,10 @@
 		letter-spacing: 0.05em;
 		color: #FFFFFF;
 		text-align: center;
-		text-transform: uppercase;
 		max-width: 612px;
 	}
 	&__list{
-		margin: 0 0 18px;
+		margin: 0 0 28px;
 		padding: 0;
 		list-style: none;
 		li{
@@ -84,6 +85,40 @@
 		img{
 			width: 100%;
 		}
+	}
+	&__num{
+		font-family: $font1;
+		background-color: #C2C2C2;
+		padding: 45px 15px 51px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin-top: 47px;
+	}
+	&__num-item{
+		flex: 1 0 370px;
+	}
+	&__num-top{
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 30px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	&__num-middle{
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 50px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: lowercase;
+		color: #E30613;
+	}
+	.container{
+		max-width: 1160px;
 	}
 	@include r(767){
 		&__body{

@@ -1,5 +1,5 @@
 .percent{
-	margin-bottom: 70px;
+	margin-bottom: 86px;
 	&__header {
 		margin-bottom: 72px;
 		padding-left: 118px;
@@ -15,7 +15,7 @@
 	&__body{
 		display: grid;
 		grid-template-columns: repeat(auto-fit,minmax(245px, 1fr));
-		grid-gap: 40px;
+		grid-gap: 24px;
 		justify-content: space-between;
 	}
 	&__item{
@@ -30,7 +30,7 @@
 		background: linear-gradient(306.05deg, #FF646E 12.66%, #E30613 64.29%);
 		border-radius: 50%;
 		overflow: hidden;
-		font-family: 'AvantGardeCTT';
+		font-family: $font1;
 		font-weight: 700;
 		font-size: 24px;
 		line-height: 25px;
@@ -40,16 +40,16 @@
 		margin-bottom: 32px;
 	}
 	&__name{
-		font-weight: bold;
-		font-size: 18px;
-		line-height: 25px;
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 24px;
 		letter-spacing: 0.05em;
 		color: #000000;
 		margin-bottom: 20px;
 	}
 	&__anons{
 
-		font-family: 'AvantGardeCTT';
+		font-family: $font1;
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 24px;

@@ -1,5 +1,5 @@
 .header {
-	padding: 36px 0;
+	padding: 23px 0 26px;
 	&__button {
 		border: 1px solid #E30613;
 		box-sizing: border-box;
@@ -71,9 +71,12 @@
 		color: #E30613;
 		display: block;
 		text-align: right;
+		margin-bottom: 14px;
 	}
 
-
+	.container{
+		max-width: 1160px;
+	}
 
 	@include r(1023) {
 		padding: 24px 0;
