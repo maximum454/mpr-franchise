@@ -1,19 +1,52 @@
 .footer-form{
   background-color: #EFEFEF;
-  padding: 30px 0 45px;
+  padding: 81px 0 105px;
   &__header {
-    margin-bottom: 85px;
-    padding-left: 118px;
+    margin-bottom: 32px;
+    text-align: center;
   }
   &__title{
     display: inline-block;
+    font-family: $font1;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 50px;
+    font-size: 22px;
+    line-height: 25px;
     letter-spacing: 0.05em;
     color: #E30613;
   }
   &__body{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  &__form{
+
+  }
+  &__check{
+    display: flex;
+    .jq-checkbox{
+      flex-shrink: 0;
+      margin-right: 27px;
+    }
+    span{
+      font-family: $font1;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0.05em;
+      color: #4D4D4D;
+    }
+  }
+  .form-group{
+    margin-bottom: 34px;
+  }
+  .form-control{
+    padding: 17px 34px;
+  }
+  .btn.btn-primary{
+    margin: 0 auto;
+    width: 250px;
+    display: block;
 
   }
 }
