@@ -4058,6 +4058,106 @@ img {
   color: #E30613;
 }
 
+.send-plan {
+  background-color: #9F9FA0;
+  padding: 85px 83px;
+}
+
+.send-plan__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.send-plan__btns {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 325px;
+          flex: 1 0 325px;
+  max-width: 325px;
+}
+
+.send-plan__btns .btn {
+  margin-bottom: 22px;
+  border-radius: 10px;
+  font-family: "AvantGardeCTT", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding-left: 60px;
+}
+
+.send-plan__btns .btn.whatsapp {
+  background-color: #22B43B;
+}
+
+.send-plan__btns .btn.telegramm {
+  background-color: #13ADFC;
+}
+
+.send-plan__btns .btn.sms {
+  background-color: #B23D4A;
+}
+
+.send-plan__btns .btn svg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30px;
+          flex: 1 0 30px;
+  max-width: 30px;
+}
+
+.send-plan__btns .btn span {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 95px;
+          flex: 1 0 95px;
+  max-width: 95px;
+}
+
+.send-plan__txt {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  max-width: 567px;
+}
+
+.send-plan__title {
+  font-family: "AvantGardeCTT", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+  margin: 0 0 12px;
+}
+
+.send-plan__subtitle {
+  font-family: "AvantGardeCTT", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.send-plan .container {
+  max-width: 1160px;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 524px;

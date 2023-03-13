@@ -1,0 +1,71 @@
+.send-plan{
+    background-color: #9F9FA0;
+    padding: 85px 83px;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    &__btns{
+        flex: 1 0 325px;
+        max-width: 325px;
+        .btn{
+            margin-bottom: 22px;
+            border-radius: 10px;
+            font-family: $font1;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-left: 60px;
+            &.whatsapp{
+                background-color: #22B43B;
+            }
+            &.telegramm{
+                background-color: #13ADFC;
+            }
+            &.sms{
+                background-color: #B23D4A;
+            }
+            svg{
+                flex: 1 0 30px;
+                max-width: 30px;
+            }
+            span{
+                text-align: center;
+                flex: 1 0 95px;
+                max-width: 95px;
+            }
+        }
+    }
+    &__txt{
+        flex: auto;
+        max-width: 567px;
+    }
+    &__title{
+        font-family: $font1;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        text-transform: lowercase;
+        color: #000000;
+        margin: 0 0 12px;
+    }
+    &__subtitle{
+        font-family: $font1;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+    .container{
+        max-width: 1160px;
+    }
+}
