@@ -3841,6 +3841,11 @@ img {
   height: 100%;
 }
 
+.tur__body img {
+  width: 100%;
+  display: block;
+}
+
 .tur__btn {
   position: absolute;
   left: 50%;
@@ -4067,6 +4072,25 @@ img {
   margin: 0 auto;
 }
 
+.footer-form__form {
+  position: relative;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.footer-form__form:after {
+  content: "";
+  position: absolute;
+  bottom: -129px;
+  right: -414px;
+  background-image: url("../img/form-bg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 307px;
+  height: 310px;
+}
+
 .footer-form__check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4120,13 +4144,12 @@ img {
 
 .send-plan__btns {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 325px;
-          flex: 1 0 325px;
-  max-width: 325px;
+      -ms-flex: 1 0 calc(50% - 20px);
+          flex: 1 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
 }
 
 .send-plan__btns .btn {
-  margin-bottom: 22px;
   border-radius: 10px;
   font-family: "AvantGardeCTT", sans-serif;
   font-weight: 700;
@@ -4142,7 +4165,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
-  padding-left: 60px;
+  max-width: 325px;
+  margin: 0 auto 22px;
+  padding: 13px 60px;
 }
 
 .send-plan__btns .btn.whatsapp {
@@ -4174,9 +4199,9 @@ img {
 
 .send-plan__txt {
   -webkit-box-flex: 1;
-      -ms-flex: auto;
-          flex: auto;
-  max-width: 567px;
+      -ms-flex: 1 0 calc(50% - 20px);
+          flex: 1 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
 }
 
 .send-plan__title {

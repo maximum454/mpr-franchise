@@ -7,10 +7,9 @@
         gap: 20px;
     }
     &__btns{
-        flex: 1 0 325px;
-        max-width: 325px;
+        flex: 1 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
         .btn{
-            margin-bottom: 22px;
             border-radius: 10px;
             font-family: $font1;
             font-weight: 700;
@@ -22,7 +21,10 @@
             display: flex;
             align-items: center;
             gap: 20px;
-            padding-left: 60px;
+
+            max-width: 325px;
+            margin: 0 auto 22px;
+            padding: 13px 60px;
             &.whatsapp{
                 background-color: #22B43B;
             }
@@ -44,8 +46,8 @@
         }
     }
     &__txt{
-        flex: auto;
-        max-width: 567px;
+        flex: 1 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
     &__title{
         font-family: $font1;
