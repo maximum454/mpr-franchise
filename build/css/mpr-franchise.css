@@ -2400,6 +2400,16 @@ img {
           flex: auto;
 }
 
+.advantage__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  color: #E30613;
+  margin-left: 53px;
+}
+
 .opening {
   margin-bottom: 85px;
 }
@@ -5048,6 +5058,13 @@ img {
     line-height: 25px;
     min-height: auto;
     padding-bottom: 16px;
+  }
+
+  .advantage__link {
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 0;
+    display: block;
   }
 
   .opening {
