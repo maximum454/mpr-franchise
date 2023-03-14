@@ -5516,7 +5516,8 @@ img {
     padding: 15px 25px;
     font-size: 16px;
     line-height: 25px;
-    margin-bottom: 24px;
+    max-width: 233px;
+    margin: 0 auto 24px;
   }
 
   .reviews__anons {
