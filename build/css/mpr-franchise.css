@@ -2193,7 +2193,7 @@ img {
 }
 
 .percent__title {
-  display: inline-block;
+  font-family: "AvantGardeCTT", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 50px;
@@ -2887,6 +2887,15 @@ img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.learning-main__img-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .learning-main__header {
@@ -3725,6 +3734,7 @@ img {
 
 .tabs-format__header {
   margin-bottom: 85px;
+  padding-left: 118px;
 }
 
 .tabs-format__title {
@@ -4090,6 +4100,7 @@ img {
 .footer-form {
   background-color: #EFEFEF;
   padding: 81px 0 105px;
+  overflow: hidden;
 }
 
 .footer-form__header {
@@ -5320,29 +5331,11 @@ img {
   }
 
   .learning-main {
-    padding: 20px 0;
-  }
-
-  .learning-main__arrow {
-    position: absolute;
-    bottom: -18px;
-    right: 0;
-    background-repeat: no-repeat;
-    -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-    width: 26px;
-    height: 13px;
-    display: block;
-    background-image: url("../img/icons-sprite.svg#icon-arrow-dropdown");
-  }
-
-  .learning-main .dropdown-block {
-    display: none;
+    padding: 0;
   }
 
   .learning-main__header {
-    margin-bottom: 37px;
+    display: none;
   }
 
   .learning-main__title {
@@ -5357,7 +5350,7 @@ img {
   .learning-main__body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 24px;
+    grid-gap: 20px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -5373,11 +5366,9 @@ img {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(29.6%, rgba(255, 255, 255, 0)), color-stop(94.91%, #FFFFFF));
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 29.6%, #FFFFFF 94.91%);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 29.6%, #FFFFFF 94.91%);
+    background: rgba(77, 77, 77, 0.6);
     width: 100%;
-    height: 50px;
+    height: 100%;
   }
 
   .learning-main__img img {
@@ -5398,9 +5389,16 @@ img {
             justify-content: flex-start;
   }
 
+  .learning-main__item.align-center {
+    display: none;
+  }
+
   .learning-main__name {
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #000000;
   }
 
   .learning-main .btn {
@@ -5453,6 +5451,7 @@ img {
 
   .learning-page__dark {
     margin: 0 -15px;
+    padding: 22px 27px;
   }
 
   .learning-page__list {
