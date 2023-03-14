@@ -100,10 +100,10 @@
 	}
 	&__row{
 		display: flex;
-		justify-content: space-between;
-		gap: 20px;
+		gap: 20px 86px;
 		.btn{
 			margin-top: 63px;
+			width: 329px;
 		}
 		P{
 			font-family: $font1;
@@ -130,8 +130,12 @@
 				background-color: #E30613;
 			}
 		}
+		&__body{
+			margin-bottom: 30px;
+		}
 		&__galllery{
 			flex-wrap: wrap;
+			margin-bottom: 22px;
 			&>div{
 				width: 100%;
 			}
@@ -181,14 +185,15 @@
 		}
 		&__row{
 			flex-wrap: wrap;
+			gap: 0;
 			&>div{
 				width: 100%;
 			}
-		}
-		.btn{
-			display: block;
-			width: fit-content;
-			margin: 0 auto;
+			.btn{
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	}
 }

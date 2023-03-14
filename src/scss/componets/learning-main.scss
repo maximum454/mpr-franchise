@@ -89,6 +89,7 @@
 
 	@include r(767) {
 		padding: 0;
+		margin-bottom: 41px;
 		&__header{
 			display: none;
 		}
@@ -138,11 +139,11 @@
 			color: #000000;
 		}
 		.btn{
-			width: fit-content;
+			width: 100%;
 			margin: 0 auto;
-			font-size: 12px;
-			line-height: 14px;
 			padding: 11px 20px;
+			font-size: 22px;
+			line-height: 26px;
 		}
 	}
 

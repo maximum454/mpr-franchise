@@ -78,7 +78,11 @@
       }
     }
     &>div{
-      margin-top: 10px;
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      font-family: $font1
     }
   }
   @include r(1023){
@@ -138,7 +142,8 @@
         }
       }
       &>div{
-        margin-top: 10px;
+        font-size: 14px;
+        line-height: 25px;
       }
     }
   }

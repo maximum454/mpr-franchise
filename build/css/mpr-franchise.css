@@ -3095,14 +3095,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
+  gap: 20px 86px;
 }
 
 .learning-page__row .btn {
   margin-top: 63px;
+  width: 329px;
 }
 
 .learning-page__row P {
@@ -4076,7 +4074,11 @@ img {
 }
 
 .concerns details > div {
-  margin-top: 10px;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "AvantGardeCTT", sans-serif;
 }
 
 .footer-form {
@@ -5328,6 +5330,7 @@ img {
 
   .learning-main {
     padding: 0;
+    margin-bottom: 41px;
   }
 
   .learning-main__header {
@@ -5398,13 +5401,11 @@ img {
   }
 
   .learning-main .btn {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
-    font-size: 12px;
-    line-height: 14px;
     padding: 11px 20px;
+    font-size: 22px;
+    line-height: 26px;
   }
 
   .learning-page__title {
@@ -5423,9 +5424,14 @@ img {
     background-color: #E30613;
   }
 
+  .learning-page__body {
+    margin-bottom: 30px;
+  }
+
   .learning-page__galllery {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 22px;
   }
 
   .learning-page__galllery > div {
@@ -5484,17 +5490,16 @@ img {
   .learning-page__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 0;
   }
 
   .learning-page__row > div {
     width: 100%;
   }
 
-  .learning-page .btn {
+  .learning-page__row .btn {
+    width: 100%;
     display: block;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     margin: 0 auto;
   }
 
@@ -5988,7 +5993,8 @@ img {
   }
 
   .concerns details > div {
-    margin-top: 10px;
+    font-size: 14px;
+    line-height: 25px;
   }
 
   .send-plan {
