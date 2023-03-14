@@ -30,9 +30,12 @@
 		}
 	}
 	@include r(767){
-		margin-top: 24px;
 		&__item{
-			flex: 1 0 50%;
+		}
+		&__policy{
+			text-align: center;
+			font-size: 12px;
+			line-height: 15px;
 		}
 	}
 }

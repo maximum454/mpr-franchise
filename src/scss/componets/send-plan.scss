@@ -78,6 +78,12 @@
         letter-spacing: 0.05em;
         color: #000000;
     }
+    &__anons{
+        display: block;
+        &.mobile{
+            display: none;
+        }
+    }
     .container{
         max-width: 1160px;
     }
@@ -91,6 +97,54 @@
         }
     }
     @include r(767){
-
+        padding: 15px 0 0;
+        &__body{
+            flex-direction: column;
+            gap: 27px;
+        }
+        &__txt{
+            flex: 1 0 100%;
+            max-width: 100%;
+            order: 1;
+            text-align: center;
+        }
+        &__btns{
+            flex: 1 0 100%;
+            max-width: 100%;
+            width: 100%;
+            order: 2;
+            .btn{
+                justify-content: center;
+                max-width: 100%;
+                width: 100%;
+                margin: 0 auto 30px;
+                padding: 13px 60px;
+                svg{
+                    flex: 1 0 30px;
+                    max-width: 30px;
+                }
+                span{
+                    text-align: center;
+                    flex: 1 0 95px;
+                    max-width: 95px;
+                }
+            }
+        }
+        &__title{
+            font-size: 24px;
+            line-height: 40px;
+            margin: 0 0 12px;
+        }
+        &__subtitle{
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__anons{
+            text-align: center;
+            display: none;
+            &.mobile{
+                display: block;
+            }
+        }
     }
 }
