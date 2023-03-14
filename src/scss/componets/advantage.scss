@@ -2,8 +2,20 @@
 	background-color: #EFEFEF;
 	margin-bottom: 73px;
 	padding: 85px 0;
+
 	&__header{
 		margin-bottom: 81px;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0px;
+			right: 70px;
+			background-image: url("../img/advantage-decor.png");
+			background-repeat: no-repeat;
+			width: 80px;
+			height: 55px;
+		}
 	}
 	&__title{
 		display: inline-block;

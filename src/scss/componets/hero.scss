@@ -1,6 +1,17 @@
 .hero{
 	overflow: hidden;
 	margin-bottom: 67px;
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 100px;
+		right: 0;
+		background-image: url("../img/hero-decor.png");
+		background-repeat: no-repeat;
+		width: 135px;
+		height: 50px;
+	}
 	&__body{
 		display: flex;
 		align-items: center;
@@ -74,6 +85,9 @@
 			line-height: 14px;
 			letter-spacing: 0.05em;
 			color: #000000;
+		}
+		.btn{
+			padding: 28px 25px;
 		}
 	}
 	&__img{

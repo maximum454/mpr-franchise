@@ -1,6 +1,17 @@
 .send-plan{
     background-color: #9F9FA0;
     padding: 85px 83px;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: -50%;
+        left: 64px;
+        background-image: url("../img/send-plan-decor.png");
+        background-repeat: no-repeat;
+        width: 111px;
+        height: 324px;
+    }
     &__body{
         display: flex;
         justify-content: space-between;

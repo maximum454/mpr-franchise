@@ -1748,7 +1748,7 @@ img {
   display: none;
   position: fixed;
   right: 20px;
-  bottom: 100px;
+  bottom: 200px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1956,6 +1956,18 @@ img {
 .hero {
   overflow: hidden;
   margin-bottom: 67px;
+  position: relative;
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background-image: url("../img/hero-decor.png");
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 50px;
 }
 
 .hero__body {
@@ -2049,6 +2061,10 @@ img {
   line-height: 14px;
   letter-spacing: 0.05em;
   color: #000000;
+}
+
+.hero__row .btn {
+  padding: 28px 25px;
 }
 
 .hero__img {
@@ -2150,6 +2166,19 @@ img {
 
 .percent {
   margin-bottom: 86px;
+  position: relative;
+  overflow: hidden;
+}
+
+.percent:after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-image: url("../img/percent-decor.png");
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 200px;
 }
 
 .percent__header {
@@ -2282,6 +2311,18 @@ img {
 
 .advantage__header {
   margin-bottom: 81px;
+  position: relative;
+}
+
+.advantage__header:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 70px;
+  background-image: url("../img/advantage-decor.png");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 55px;
 }
 
 .advantage__title {
@@ -3870,6 +3911,18 @@ img {
 .video-shops__header {
   margin-bottom: 71px;
   padding-left: 118px;
+  position: relative;
+}
+
+.video-shops__header:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 70px;
+  background-image: url("../img/video-shops-decor.png");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 52px;
 }
 
 .video-shops__title {
@@ -4130,6 +4183,18 @@ img {
 .send-plan {
   background-color: #9F9FA0;
   padding: 85px 83px;
+  position: relative;
+}
+
+.send-plan:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 64px;
+  background-image: url("../img/send-plan-decor.png");
+  background-repeat: no-repeat;
+  width: 111px;
+  height: 324px;
 }
 
 .send-plan__body {

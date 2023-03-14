@@ -232,7 +232,7 @@ function watchFiles() {
     gulp.watch([path.watch.img], images);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fonts = fonts;

@@ -4,6 +4,17 @@
   &__header {
     margin-bottom: 71px;
     padding-left: 118px;
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0px;
+      right: 70px;
+      background-image: url("../img/video-shops-decor.png");
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 52px;
+    }
   }
   &__title{
     display: inline-block;

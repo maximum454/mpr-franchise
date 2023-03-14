@@ -1,5 +1,17 @@
 .percent{
 	margin-bottom: 86px;
+	position: relative;
+	overflow: hidden;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 60px;
+		right: 20px;
+		background-image: url("../img/percent-decor.png");
+		background-repeat: no-repeat;
+		width: 69px;
+		height: 200px;
+	}
 	&__header {
 		margin-bottom: 72px;
 		padding-left: 118px;
