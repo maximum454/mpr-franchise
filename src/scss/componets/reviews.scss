@@ -115,21 +115,6 @@
 		position: relative;
 		max-width: 1246px;
 	}
-	.swiper-reviews-next{
-		cursor: pointer;
-		position: absolute;
-		right: -100px;
-		top: 50%;
-		transform: translate(0,-50%);
-		z-index: 10;
-		background-color: #fff;
-		width: 100px;
-		height: 100px;
-		background-image: url("../img/icons-sprite.svg#icon-arrow-right-slider");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 139px 52px;
-	}
 	@include r(1023){
 		margin-bottom: 50px;
 		&__header {

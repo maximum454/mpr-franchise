@@ -114,6 +114,9 @@ $(function () {
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         observer: true,
+        navigation: {
+            nextEl: '.swiper-shop-next',
+        },
         breakpoints: {
             320: {
                 slidesPerView: 1,
