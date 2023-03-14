@@ -2166,8 +2166,8 @@ img {
   line-height: 25px;
   letter-spacing: 0.05em;
   color: #FFFFFF;
-  text-decoration: none;
   display: block;
+  text-decoration: none;
 }
 
 .percent {
