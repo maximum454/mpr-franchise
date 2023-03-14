@@ -137,7 +137,59 @@
 	.container{
 		max-width: 1160px;
 	}
+	@include r(1023){
+		margin-bottom: 50px;
+		&:after{
+			display: none;
+		}
+		&__txt{
+			max-width: 60%;
+		}
+		&__title{
+			font-size: 20px;
+			line-height: 28px;
+			span{
+				font-size: 32px;
+				line-height: 40px;
+			}
+		}
+		&__lable{
+			font-size: 20px;
+			line-height: 40px;
+		}
+
+		&__list{
+			margin: 0 0 28px;
+			li{
+				font-size: 16px;
+				line-height: 34px;
+			}
+		}
+		&__row{
+			span{
+				font-size: 12px;
+				line-height: 14px;
+			}
+			.btn{
+				padding: 16px 20px;
+				font-size: 16px;
+			}
+		}
+		&__num{
+			padding: 35px 15px 41px;
+			margin-top: 37px;
+		}
+		&__num-top{
+			font-size: 16px;
+			line-height: 26px;
+		}
+		&__num-middle{
+			font-size: 26px;
+			line-height: 46px;
+		}
+	}
 	@include r(767){
+		text-align: center;
 		&__body{
 			display: flex;
 			flex-direction: column;

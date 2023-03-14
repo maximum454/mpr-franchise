@@ -29,4 +29,10 @@
   &__footer{
     text-align: center;
   }
+  @include r(1023){
+    margin-bottom: 50px;
+    &__body{
+      margin-bottom: 50px;
+    }
+  }
 }

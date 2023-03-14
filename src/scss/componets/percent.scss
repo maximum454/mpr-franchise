@@ -68,6 +68,19 @@
 		letter-spacing: 0.05em;
 		color: #000000;
 	}
+	@include r(1023){
+		margin-bottom: 50px;
+		&:after{
+			display: none;
+		}
+		&__header {
+			margin-bottom: 40px;
+			padding-left: 50px;
+		}
+		&__item{
+			max-width: 100%;
+		}
+	}
 	@include r(767){
 		padding: 24px 0;
 		&__body{

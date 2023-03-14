@@ -76,4 +76,22 @@
   .swiper-container-shop{
     overflow: hidden;
   }
+  @include r(1023){
+    &__header {
+      margin-bottom: 50px;
+      padding-left: 50px;
+      &:after{
+        display: none;
+      }
+    }
+    &__btn{
+      margin: 0 100px 0 auto;
+      &:after{
+        top: 3px;
+        right: -100px;
+        width: 72px;
+        height: 22px;
+      }
+    }
+  }
 }

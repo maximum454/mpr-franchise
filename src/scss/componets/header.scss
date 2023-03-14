@@ -80,10 +80,17 @@
 
 	@include r(1023) {
 		padding: 24px 0;
-
+		&__body{
+			display: flex;
+			width: 100%;
+			align-items: center;
+			position: relative;
+		}
 		&__button {
 			display: flex;
 			z-index: 25;
+			margin-left: auto;
+			margin-right: 0;
 			&.active{
 				&:before {
 					top: 13px;
@@ -104,9 +111,11 @@
 		}
 
 		&__phone {
-			flex: 0 1 46%;
-			margin-right: 0;
+			flex: auto;
+			margin-right: 30px;
 			font-size: 18px;
+			line-height: 24px;
+			margin-bottom: 0;
 		}
 
 	}

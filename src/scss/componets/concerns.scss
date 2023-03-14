@@ -81,5 +81,17 @@
       margin-top: 10px;
     }
   }
-
+  @include r(1023){
+    &__header {
+      margin-bottom: 50px;
+      padding-left: 50px;
+    }
+    &__body{
+      gap: 20px;
+      padding-left: 0;
+    }
+    &__col{
+      flex: 1 0 calc(50% - 56px);
+    }
+  }
 }

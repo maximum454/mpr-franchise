@@ -96,7 +96,12 @@ $(function () {
                 slidesPerView: 1,
             },
             767: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1023: {
                 slidesPerView: 3,
+                spaceBetween: 136,
             }
         }
     })

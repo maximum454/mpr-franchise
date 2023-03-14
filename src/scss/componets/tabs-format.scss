@@ -10,7 +10,6 @@
 		line-height: 25px;
 		letter-spacing: 0.05em;
 		color: #E30613;
-		margin-left: 118px;
 	}
 	&__body{
 		margin-bottom: 80px;
@@ -89,6 +88,19 @@
 			&:checked + label + .tab {
 				display: flex;
 			}
+		}
+	}
+	@include r(1023){
+		&__header{
+			margin-bottom: 40px;
+			padding-left: 50px;
+		}
+		&__title{
+			font-size: 32px;
+			line-height: 25px;
+		}
+		&__body{
+			margin-bottom: 40px;
 		}
 	}
 	@include r(767){

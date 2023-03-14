@@ -81,4 +81,13 @@
     .container{
         max-width: 1160px;
     }
+    @include r(1023){
+        padding: 60px 0;
+        &:after{
+            display: none;
+        }
+        &__body{
+            align-items: center;
+        }
+    }
 }

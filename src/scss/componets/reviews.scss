@@ -130,13 +130,26 @@
 		background-position: center;
 		background-size: 139px 52px;
 	}
-	@include r(1366){
-		&__anons{
-			padding-right: 50px;
+	@include r(1023){
+		margin-bottom: 50px;
+		&__header {
+			margin-bottom: 40px;
+			padding-left: 50px;
 		}
-		.swiper-reviews-next{
-			right: -1px;
-			width: 50px;
+		&__name{
+			font-size: 22px;
+			line-height: 25px;
+			padding: 20px 30px;
+			margin: 0 0 20px;
+		}
+		&__btn{
+			margin: 0 100px 0 auto;
+			&:after{
+				top: 3px;
+				right: -100px;
+				width: 72px;
+				height: 22px;
+			}
 		}
 	}
 	@include r(767){
