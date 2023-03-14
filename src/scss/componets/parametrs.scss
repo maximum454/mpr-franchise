@@ -90,7 +90,7 @@
 	}
 
 	@include r(767) {
-		padding-bottom: 7px;
+		padding: 0 0 7px;
 		&__header {
 			margin-bottom: 27px;
 			padding: 0;
