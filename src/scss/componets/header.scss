@@ -1,6 +1,8 @@
 .header {
 	padding: 23px 0 26px;
+	background-color: #EFEFEF;
 	&__button {
+		background-color: #EFEFEF;
 		border: 1px solid #E30613;
 		box-sizing: border-box;
 		border-radius: 4px;
@@ -12,7 +14,6 @@
 		width: 29px;
 		height: 29px;
 		padding: 5px;
-		background-color: #fff;
 		cursor: pointer;
 		display: none;
 		transition: all 0.3s ease;
@@ -118,5 +119,20 @@
 			margin-bottom: 0;
 		}
 
+	}
+	@include r(767){
+		&__body{
+			justify-content: space-between;
+		}
+		&__phone {
+			margin-left: 0;
+			margin-right: auto;
+			font-size: 20px;
+			text-align: left;
+		}
+		&__button {
+			margin-right: 0;
+			margin-left: auto;
+		}
 	}
 }

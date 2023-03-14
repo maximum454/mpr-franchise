@@ -1830,9 +1830,11 @@ img {
 
 .header {
   padding: 23px 0 26px;
+  background-color: #EFEFEF;
 }
 
 .header__button {
+  background-color: #EFEFEF;
   border: 1px solid #E30613;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1850,7 +1852,6 @@ img {
   width: 29px;
   height: 29px;
   padding: 5px;
-  background-color: #fff;
   cursor: pointer;
   display: none;
   -webkit-transition: all 0.3s ease;
@@ -1957,6 +1958,7 @@ img {
   overflow: hidden;
   margin-bottom: 67px;
   position: relative;
+  background-color: #EFEFEF;
 }
 
 .hero:after {
@@ -4778,8 +4780,27 @@ img {
     line-height: 14px;
   }
 
+  .header__body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .header__phone {
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .header__button {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
   .hero {
     text-align: center;
+    margin-bottom: 14px;
   }
 
   .hero__body {
@@ -4790,6 +4811,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 30px;
   }
 
   .hero__txt {
@@ -4801,31 +4823,24 @@ img {
   }
 
   .hero__img {
-    top: 0;
-    left: 0;
-    position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-
-  .hero__img img {
-    max-width: 100%;
-    height: auto;
+    display: none;
   }
 
   .hero__title {
     font-size: 24px;
     line-height: 30px;
+    text-align: center;
   }
 
   .hero__title span {
     display: block;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    font-size: 36px;
+    line-height: 40px;
   }
 
   .hero__list {
@@ -4835,8 +4850,16 @@ img {
   }
 
   .hero__list li {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 25px;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .hero__list li:before {
+    left: 0;
+    position: absolute;
+    top: 11px;
   }
 
   .hero__row {
@@ -4857,6 +4880,30 @@ img {
     font-size: 12px;
     line-height: 14px;
     padding: 10px;
+  }
+
+  .hero__lable {
+    font-size: 16px;
+    line-height: 33px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero__row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero__row .btn {
+    font-size: 16px;
+    padding: 19px 25px;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero__num {
+    display: none;
   }
 
   .footer {
@@ -5379,74 +5426,56 @@ img {
   }
 
   .reviews {
-    padding: 20px 0;
+    padding: 0;
+    margin-bottom: 20px;
   }
 
   .reviews__header {
-    margin-bottom: 37px;
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: center;
   }
 
   .reviews__title {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 24px;
+    line-height: 50px;
   }
 
   .reviews__name {
-    padding: 8px 50px;
-    font-size: 13px;
+    padding: 15px 25px;
+    font-size: 16px;
     line-height: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
   }
 
   .reviews__anons {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    height: 148px;
+    margin-bottom: 24px;
+  }
+
+  .reviews__link {
+    font-size: 14px;
     line-height: 25px;
   }
 
-  .reviews__anons ul {
-    margin: 15px 0;
-    padding: 0;
-    list-style-type: none;
-    font-weight: normal;
-    color: #000000;
+  .reviews__footer {
+    margin-top: 21px;
   }
 
-  .reviews__anons ul li {
-    position: relative;
-    padding-left: 15px;
+  .reviews__btn {
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
   }
 
-  .reviews__anons ul li:before {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: 0;
-    border-radius: 50%;
-    background-color: #000;
-    width: 5px;
-    height: 5px;
-    margin-right: 10px;
-    vertical-align: middle;
-    overflow: hidden;
-  }
-
-  .reviews__anons p {
-    font-size: 12px;
-    line-height: 25px;
-  }
-
-  .reviews .btn {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 24px auto 0;
-    font-size: 12px;
-    line-height: 14px;
-    padding: 11px 13px;
-  }
-
-  .reviews .swiper-reviews-next {
-    background-size: 78px 26px;
+  .reviews__btn:after {
+    top: 1px;
+    right: 0;
+    width: 62px;
+    height: 22px;
   }
 
   .articles__title {

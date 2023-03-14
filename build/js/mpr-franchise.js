@@ -157,7 +157,6 @@ $(function () {
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         observer: true,
-        freeMode: true,
         navigation: {
             nextEl: '.swiper-reviews-next',
         },
