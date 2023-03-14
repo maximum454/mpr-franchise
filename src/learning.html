@@ -25,10 +25,10 @@
 <div class="wrp">
     @@include('./template/_header.html')
     <div id="learning-main" class="learning-main">
-            <div class="learning-main__img">
-                <img class="img-fluid" src="./img/learning-main2.png" width="1439" height="810" alt="">
-            </div>
             <div class="container">
+                <div class="learning-main__header">
+                    <div class="learning-main__title">Учебный центр</div>
+                </div>
                 <div class="learning-main__body">
                     <div class="learning-main__item">
                         <div class="learning-main__icon"></div>
@@ -61,12 +61,17 @@
                             МПР
                         </div>
                     </div>
-                    <div class="learning-main__item">
-                        <button class="btn btn-primary">Подробнее...</button>
+                    <div class="learning-main__item align-center">
+                        <img class="img-fluid" src="./img/learning-logo.png" width="440" height="46" alt="">
                     </div>
+                    <button class="btn btn-primary">записаться на курс</button>
                 </div>
             </div>
+            <div class="learning-main__img">
+                <img class="img-fluid" src="./img/learning-main2.png" width="1439" height="810" alt="">
+            </div>
     </div>
+
     <div class="learning-page">
         <div class="container">
             <div class="learning-page__body">
@@ -92,7 +97,7 @@
 
             <h2>Расписание ближайших групп:</h2>
             <div class="learning-page__body">
-                <ul class="learning-page__list">
+                <ul class="learning-page__list learning-page__list--margin">
                     <li><b>08-19 февраля 2021 года</b> - Курс для управляющих магазином (группа 18)</li>
 
                     <li><b>01-12 марта 2021 года </b>- Курс для управляющих магазином (группа 19)</li>
