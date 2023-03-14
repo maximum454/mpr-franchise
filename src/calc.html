@@ -26,46 +26,46 @@
     @@include('./template/_header.html')
 
     <div id="calculator" class="calculator">
-        <div class="calculator__header">
-            <div class="calculator__title">Калькулятор вашего будущего бизнеса</div>
+        <div class="container">
+            <div class="calculator__header">
+                <div class="calculator__title">Калькулятор вашего будущего бизнеса</div>
+            </div>
+            <div class="calculator__body">
+                <div class="form-group">
+                    <label class="form-label" for="KVM">Стоимость 1&nbsp;кв.м.</label>
+                    <input class="form-control" type="number" name="KVM" value="" id="KVM" placeholder="..." required>
+                    <span class="calculator__span">кв. метров</span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="TPM">Торговая площадь<br> магазина</label>
+                    <input class="form-control" type="number" name="TPM" value="" id="TPM" placeholder="..." required>
+                    <span class="calculator__span">метров</span>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="ZPR">Средняя зарплата продавца<br> в вашем регионе</label>
+                    <input class="form-control" type="number" name="ZPR" value="" id="ZPR" placeholder="..." required>
+                    <span class="calculator__span">рублей</span>
+                </div>
+                <div class="alert alert-danger">заполните все поля</div>
+                <button class="btn btn-primary calculator__btn js-calc">раcсчитать</button>
+            </div>
         </div>
-        <div class="calculator__body">
-            <div class="form-group">
-                <label class="form-label" for="KVM">Стоимость 1&nbsp;кв.м.</label>
-                <input class="form-control" type="number" name="KVM" value="" id="KVM" placeholder="..." required>
-                <span class="calculator__span">рублей</span>
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="TPM">Торговая площадь<br> магазина</label>
-                <input class="form-control" type="number" name="TPM" value="" id="TPM" placeholder="..." required>
-                <span class="calculator__span">метров</span>
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="ZPR">Средняя зарплата продавца<br> в вашем регионе</label>
-                <input class="form-control" type="number" name="ZPR" value="" id="ZPR" placeholder="..." required>
-                <span class="calculator__span">рублей</span>
-            </div>
-            <div class="alert alert-danger">заполните все поля</div>
-            <button class="btn btn-primary calculator__btn js-calc">расчитать</button>
-        </div>
-
-
     </div>
     <div class="investment">
         <div class="container">
             <div class="investment__header">
                 <div class="investment__title">Сумма инвестиций на один магазин</div>
             </div>
-            <p class="text-danger"><b>Основные расходы в руб. на магазин 170 м<sup>2</sup> торговой площади</b></p>
             <div class="investment__body">
                 <div class="investment__item">
                     <div class="investment__txt">
-                        <div class="investment__name">Ремонт/дополнительное освещение</div>
-                        <ul class="investment__list">
-                            <li>при необходимости</li>
-                        </ul>
+                        <div class="investment__name">Паушальный взнос</div>
+                        <p>Услуги сервисной компании:</p>
+                        <p>прорисовка периметра магазина, план расстановка ТО (торгового оборудования), 3D моделирование, зонирование магазина по товарным группам, разработка дизайна вывесок навигации и листовки открытия, аудио-видео ролики, формирование установочного заказа, сопровождение проекта, очное обучение управляющего (в теч. 6 мес с даты старта проекта)</p>
                     </div>
-                    <div class="investment__price">от 100 000</div>
+                    <div class="investment__price">185 000</div>
+                    <div class="investment__price">185 000</div>
+                    <div class="investment__price">185 000</div>
                 </div>
                 <div class="investment__item">
                     <div class="investment__txt">

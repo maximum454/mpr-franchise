@@ -2740,35 +2740,32 @@ img {
 }
 
 .investment__header {
-  margin-bottom: 100px;
+  margin-bottom: 79px;
 }
 
 .investment__title {
   display: inline-block;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.investment__title:after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #E30613;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: -0.3px;
+  color: #E30613;
 }
 
 .investment__txt {
   max-width: 710px;
   position: relative;
   margin-right: 40px;
+}
+
+.investment__txt P {
+  font-family: "AvantGardeCTT", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 0 0 19px;
 }
 
 .investment__list {
@@ -2834,10 +2831,12 @@ img {
 }
 
 .investment__name {
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.05em;
   color: #000000;
+  margin: 0 0 19px;
 }
 
 .investment__price {
@@ -2850,6 +2849,10 @@ img {
   position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.investment .container {
+  max-width: 1160px;
 }
 
 .learning-main {
@@ -3515,35 +3518,25 @@ img {
 }
 
 .calculator {
-  margin-bottom: 30px;
+  padding: 30px 0 89px;
+  margin-bottom: 81px;
+  background-color: #EFEFEF;
 }
 
 .calculator__header {
-  margin-bottom: 60px;
+  margin-bottom: 72px;
 }
 
 .calculator__title {
   display: inline-block;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  color: #000000;
-  position: relative;
-}
-
-.calculator__title:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  background-color: #E30613;
-  width: 100%;
-  height: 3px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: -0.3px;
+  color: #E30613;
 }
 
 .calculator__body {
-  max-width: 667px;
   margin: auto;
 }
 
@@ -3634,13 +3627,13 @@ img {
 }
 
 .calculator__btn {
-  width: 264px;
+  width: 329px;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 22px;
+  line-height: 26px;
   letter-spacing: 0.05em;
-  padding: 6px 25px;
-  margin: 0 auto;
+  padding: 17px 25px;
+  margin: 0 0 0 178px;
   display: block;
 }
 
@@ -3651,30 +3644,33 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-bottom: 46px;
 }
 
 .calculator .form-label {
+  font-family: "AvantGardeCTT", sans-serif;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 0.05em;
   color: #000000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 278px;
+          flex: 1 0 278px;
+  max-width: 278px;
 }
 
 .calculator .form-control {
   border: 1px solid #E30613;
   border-radius: 5px;
   max-width: 162px;
-  margin-right: 26px;
-  margin-left: auto;
-  padding: 3px 0.75rem;
+  padding: 14px 0.75rem;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   color: #8A8383;
+  background-color: rgba(217, 217, 217, 0.5);
+  margin-right: 135px;
 }
 
 .calculator .form-control::-webkit-outer-spin-button,
@@ -3706,6 +3702,10 @@ img {
 .calculator .alert {
   text-align: center;
   display: none;
+}
+
+.calculator .container {
+  max-width: 1160px;
 }
 
 .tabs-format {
@@ -5745,23 +5745,14 @@ img {
   }
 
   .calculator__header {
-    margin-bottom: 37px;
-    position: relative;
+    margin-bottom: 15px;
+    padding: 0;
+    text-align: center;
   }
 
   .calculator__title {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .calculator__title:after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    width: 142px;
-    height: 3px;
-    background-color: #fff;
+    font-size: 24px;
+    line-height: 50px;
   }
 
   .calculator__modal {
