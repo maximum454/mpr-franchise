@@ -4917,36 +4917,50 @@ img {
   }
 
   .percent {
-    padding: 24px 0;
+    padding: 0;
+  }
+
+  .percent__header {
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .percent__title {
+    font-size: 24px;
+    line-height: 50px;
   }
 
   .percent__body {
-    grid-gap: 27px;
+    grid-gap: 17px;
   }
 
   .percent__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: block;
     max-width: 100%;
     gap: 10px;
+    padding-left: 66px;
+    position: relative;
+  }
+
+  .percent__num {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
   }
 
   .percent__name {
-    margin-top: 0;
-    margin-left: 10px;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 23px;
   }
 
-  .percent__img {
-    width: 23px;
-    height: 21px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+  .percent__anons {
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .geografia__header {

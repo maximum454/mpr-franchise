@@ -82,25 +82,43 @@
 		}
 	}
 	@include r(767){
-		padding: 24px 0;
+		padding: 0;
+		&__header {
+			margin-bottom: 20px;
+			padding: 0;
+			text-align: center;
+		}
+		&__title{
+			font-size: 24px;
+			line-height: 50px;
+		}
 		&__body{
-			grid-gap: 27px;
+			grid-gap: 17px;
 		}
 		&__item{
-			display: flex;
-			align-items: center;
+			display: block;
 			max-width: 100%;
 			gap: 10px;
+			padding-left: 66px;
+			position: relative;
+		}
+		&__num{
+			position: absolute;
+			top: -8px;
+			left: 0;
+			width: 45px;
+			height: 45px;
+			margin-bottom: 0;
 		}
 		&__name{
-			margin-top: 0;
-			margin-left: 10px;
-			font-size: 13px;
-			line-height: 25px;
-		}&__img{
-			 width: 23px;
-			 height: 21px;
-			 flex-shrink: 0;
-		 }
+			font-size: 16px;
+			line-height: 24px;
+			margin: 0 0 23px;
+		}
+		&__anons{
+			font-size: 14px;
+			line-height: 24px;
+		}
+
 	}
 }
