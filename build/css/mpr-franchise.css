@@ -5904,6 +5904,8 @@ img {
   .video-shops__title {
     font-size: 24px;
     line-height: 25px;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .video-shops__name {
