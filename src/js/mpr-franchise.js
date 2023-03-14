@@ -170,10 +170,10 @@ const swiperOne = new Swiper( '.swiper.one', {
 } );
 
 const swiperTwo = new Swiper( '.swiper.two', {
-    loop: true,
     centeredSlides: true,
+    centeredSlidesBounds: true,
     slidesPerView: 'auto',
-    spaceBetween: 17,
+    spaceBetween: 20,
     effect: 'coverflow',
     coverflowEffect: {
         rotate: 0,
@@ -187,6 +187,31 @@ const swiperTwo = new Swiper( '.swiper.two', {
         prevEl: '.swiper-button-prev',
     },
 } );
+
+const swiperUniform = new Swiper('.swiper-container-uniform', {
+    slidesPerView: 4,
+    spaceBetween: 50,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    observer: true,
+    navigation: {
+        nextEl: '.swiper-reviews-next',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        767: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1023: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+        }
+    }
+})
 
 
 

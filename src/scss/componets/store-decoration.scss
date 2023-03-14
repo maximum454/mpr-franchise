@@ -1,16 +1,18 @@
 .store-decoration {
 	overflow: hidden;
-	&__header {
+	&__header{
+		margin-bottom: 81px;
 		position: relative;
-		margin-bottom: 100px;
+		padding-left: 118px;
 	}
-	&__title {
+	&__title{
 		display: inline-block;
+		font-family: $font1;
 		font-weight: bold;
-		font-size: 24px;
+		font-size: 32px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
-		position: relative;
+		color: #E30613;
 	}
 	&__slider{
 		margin-bottom: 77px;
@@ -100,14 +102,22 @@
 
 	@include r(767) {
 		&__header {
+			margin-bottom: 15px;
+			padding: 0;
+			text-align: center;
+		}
+		&__title{
+			font-size: 24px;
+			line-height: 50px;
+		}
+		&__slider{
 			margin-bottom: 20px;
 		}
-		&__title {
-			font-size: 20px;
-			line-height: 25px;
-		}
 		.one .swiper-slide {
-			width: 100%;
+			width: 60%;
+		}
+		.d-none-mobile{
+			display: none;
 		}
 	}
 }
