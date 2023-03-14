@@ -106,65 +106,50 @@
 		}
 	}
 	@include r(767){
-		padding: 20px 0;
-		&.stages{
-			background-color: #fff;
-			color: #000;
-			.advantage__arrow{
-				background-image: url("../img/icons-sprite.svg#icon-arrow-dropdown");
-			}
-			.advantage__title{
-				&:after{
-					background-color: #E30613;
-				}
-			}
-			.advantage__item{
-				padding-left: 60px;
-			}
-			.advantage__img{
-				width: auto;
-				height: auto;
-				border-bottom: 3px solid #E30613;
-				top: -8px;
-				font-size: 30px;
-			}
-			.advantage__list{
-				li{
-					&:before{
-						background-color: #000;
-					}
-				}
-			}
-		}
+		padding: 26px 0 30px;
+		margin-bottom: 30px;
 		&__header{
-			margin-bottom: 37px;
-			position: relative;
-
+			margin-bottom: 20px;
+			text-align: center;
+			padding: 0;
 		}
 		&__title{
-			font-size: 20px;
+			font-size: 24px;
 			line-height: 25px;
 			&:after{
-				content: '';
-				position: absolute;
-				bottom: -15px;
-				left: 0;
-				width: 142px;
-				height: 3px;
-				background-color: #fff;
+				display: none;
 			}
 		}
 		&__body{
-
+			display: block;
+		}
+		&__col{
+			flex: 1 0 100%;
 		}
 		&__item{
-			padding-left: 50px;
-			max-width: 100%;
-			margin-bottom: 40px;
+			padding-left: 20px;
+			margin-bottom: 23px;
+			min-height: auto;
+			&:last-of-type{
+				margin-bottom: 23px;
+				.advantage__name{
+					border-bottom:1px solid #000;
+				}
+			}
+		}
+		&__num{
+			width: 30px;
+			font-size: 24px;
+			line-height: 25px;
+			flex-shrink: 0;
+			margin-right: 10px;
+			text-align: center;
 		}
 		&__name{
-			font-size: 13px;
+			font-size: 16px;
 			line-height: 25px;
+			min-height: auto;
+			padding-bottom: 16px;
 		}
 	}
 }

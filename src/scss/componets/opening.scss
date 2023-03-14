@@ -72,12 +72,41 @@
     }
   }
   @include r(767){
+    margin-bottom: 20px;
+    &__header {
+      margin-bottom: 7px;
+      padding-left: 0;
+      text-align: center;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 14px;
+    }
+    &__subtitle{
+      font-size: 16px;
+      line-height: 19px;
+    }
     &__figure-big{
       display: none;
     }
     &__figure{
       margin: 0;
       display: block;
+    }
+    &__body{
+      gap: 6px;
+    }
+    &__item{
+      flex: 1 0 100%;
+      max-width: 100%;
+      &:nth-of-type(-4n + 4){
+        margin-left: auto;
+      }
+    }
+    &__name{
+      font-size: 16px;
+      line-height: 25px;
     }
   }
 }

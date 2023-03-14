@@ -31,6 +31,8 @@
     overflow: hidden;
     img{
       display: block;
+      width: 100%;
+      object-fit: cover;
     }
   }
   &__name{
@@ -90,6 +92,39 @@
         top: 3px;
         right: -100px;
         width: 72px;
+        height: 22px;
+      }
+    }
+  }
+  @include r(767){
+    &__header {
+      margin-bottom: 28px;
+      padding-left: 0;
+      text-align: center;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 25px;
+    }
+    &__name{
+      font-size: 16px;
+      margin-bottom: 19px;
+    }
+    &__anons{
+      font-size: 16px;
+    }
+    &__footer{
+      margin-top: 21px;
+    }
+    &__btn{
+      width: 100%;
+      margin: 0;
+      font-size: 16px;
+      line-height: 19px;
+      &:after{
+        top: 1px;
+        right: 0;
+        width: 62px;
         height: 22px;
       }
     }
