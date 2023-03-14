@@ -104,14 +104,17 @@
 		font-family: $font1;
 		background-color: #C2C2C2;
 		padding: 45px 15px 51px;
+		margin-top: 47px;
+	}
+	&__num-body{
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		margin-top: 47px;
 	}
 	&__num-item{
-		flex: 1 0 370px;
+		flex: 1 0 33.33%;
+		max-width: 370px;
 	}
 	&__num-top{
 		font-weight: 700;

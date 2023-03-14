@@ -2086,6 +2086,10 @@ img {
   font-family: "AvantGardeCTT", sans-serif;
   background-color: #C2C2C2;
   padding: 45px 15px 51px;
+  margin-top: 47px;
+}
+
+.hero__num-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2096,13 +2100,13 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin-top: 47px;
 }
 
 .hero__num-item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 370px;
-          flex: 1 0 370px;
+      -ms-flex: 1 0 33.33%;
+          flex: 1 0 33.33%;
+  max-width: 370px;
 }
 
 .hero__num-top {
