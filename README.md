@@ -16,3 +16,9 @@ https://maximum454.github.io/mpr-franchise/build/articles.html
 
 ##Статьи внутрении
 https://maximum454.github.io/mpr-franchise/build/articles-inner.html
+
+##Калькулятор
+https://maximum454.github.io/mpr-franchise/build/calc.html
+
+##Аренда
+https://maximum454.github.io/mpr-franchise/build/rent.html

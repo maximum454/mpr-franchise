@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    @@include('./template/_meta.html')
+    <title>Готовое решение для вашего бизнеса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.css"
+          integrity="sha512-UO+dUiFTr6cCaPZKCzXEGhYsuK8DkGAS5iThyMUrtHsg+INCFyRM3GiqJ4rjuvfEyn81XGjpfmjSwwR1dAjAsw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal-default-theme.min.css"
+          integrity="sha512-jRxwiuoe3nt8lMSnOzNEuQ7ckDrLl31dwVYFWS6jklXQ6Nzl7b05rrWF9gjSxgOow5nFerdoN6CBB4gY5m5nDw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/mpr-franchise.css">
+
+
+</head>
+
+<body>
+<div class="wrp">
+    @@include('./template/_header.html')
+
+    <div class="rent">
+        <div class="container">
+            <div class="rent__header">
+                <div class="rent__title">Арендуем коммерческую недвижимость<br> под розничный магазин</div>
+                <div class="rent__subtitle">Динамично развивающаяся сеть розничных Магазинов Постоянных<br> Распродаж арендует торговые площади</div>
+            </div>
+            <div class="rent__body">
+                <figure class="rent__figure">
+                    <img class="img-fluid" src="./img/rent-img.png" width="1246" height="262" alt="">
+                </figure>
+                <div class="rent__row">
+                    <div class="rent__row-item">
+                        <div class="rent__row-title">МАГАЗИН ПОСТОЯННЫХ РАСПРОДАЖ ЭТО:</div>
+                        <ul class="rent__list">
+                            <li>428 розничных магазинов (данные Декабрь 2022)</li>
+                            <li>278 город присутствия (данные Декабрь 2022)</li>
+                            <li>Магазин - генерирующий трафик</li>
+                            <li>Ассортимент для всей семьи</li>
+                            <li>Доступные цены</li>
+                            <li>Федеральная реклама</li>
+                            <li>Регулярные акции</li>
+                            <li>Более 500 посетителей ежедневно</li>
+                        </ul>
+
+                    </div>
+                    <div class="rent__row-item">
+                        <div class="rent__row-title">ПРЕИМУЩЕСТВА:</div>
+                        <ul class="rent__list">
+                            <li>Надежность и стабильность бизнеса</li>
+                            <li>Собственные логистические хабы в РФ и Китае</li>
+                            <li>Настроенная система закупок</li>
+                            <li>Обеспечиваем рекламную поддержку открытия магазинов</li>
+                            <li>Привлекаем новых покупателей в ваш Торговый Центр</li>
+                            <li>Участвуем во всех рекламных кампаниях ТЦ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rent__gallery">
+                    <img class="img-fluid" src="./img/rent-img2.png" width="555" height="414" alt="">
+                    <img class="img-fluid" src="./img/rent-img3.png" width="555" height="414" alt="">
+                </div>
+                <div class="rent__row">
+                    <div class="rent__row-item">
+                        <div class="rent__row-title">ТРЕБОВАНИЯ К ПОМЕЩЕНИЯМ:</div>
+                        <ul class="rent__list">
+                            <li>Городской или районный Торговый Центр</li>
+                            <li>Супермаркет на территории ТЦ</li>
+                            <li>Транспортная доступность</li>
+                            <li>Жилой район</li>
+                            <li>Площадь от 100 до 350 кв.м</li>
+                            <li>Первый, второй или цокольные этажи. Стрит-формат или секция внутри работающего магазина</li>
+                            <li>Высота потолков от 3 метров</li>
+                            <li>Вентиляция от 2 крат или возможность ее установки</li>
+                            <li>Электропитание 100 Вт на кв.м</li>
+                            <li>Системы кондиционирования 100 Вт на кв.м или возможность их установки</li>
+                            <li>Второй эвакуационный выход или возможность его открытия</li>
+                            <li>Разделение входа для загрузки товаров с входом для покупателей</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <p>Если Ваша коммерческая недвижимость соответствует нашим требованиям, заполните форму с контактными данными, и мы свяжемся с Вами в кратчайшие сроки. Предоставляя в аренду Ваши торговые площади под Магазин Постоянных Распродаж Вы получаете добросовестного арендатора и увеличиваете поток покупателей Вашего Торгового Центра!</p>
+            </div>
+        </div>
+    </div>
+
+    @@include('./template/_footer.html')
+</div>
+@@include('./template/_modal.html')
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"
+        integrity="sha512-a/KwXZUMuN0N2aqT/nuvYp6mg1zKg8OfvovbIlh4ByLw+BJ4sDrJwQM/iSOd567gx+yS0pQixA4EnxBlHgrL6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/mpr-franchise.js"></script>
+
+</body>
+
+</html>
