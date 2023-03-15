@@ -1849,8 +1849,8 @@ img {
   z-index: 15;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 29px;
-  height: 29px;
+  width: 34px;
+  height: 34px;
   padding: 5px;
   cursor: pointer;
   display: none;
@@ -1909,7 +1909,8 @@ img {
 }
 
 .header__phone {
-  font-weight: bold;
+  font-family: "AvantGardeCTT", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 50px;
   text-decoration: none;
@@ -2076,6 +2077,10 @@ img {
   text-align: center;
 }
 
+.hero__img.mobile {
+  display: none;
+}
+
 .hero__video {
   width: 100%;
 }
@@ -2089,6 +2094,10 @@ img {
   background-color: #C2C2C2;
   padding: 45px 15px 51px;
   margin-top: 47px;
+}
+
+.hero__num.mobile {
+  display: none;
 }
 
 .hero__num-body {
@@ -3154,7 +3163,7 @@ img {
 }
 
 .reviews__title {
-  display: inline-block;
+  font-family: "AvantGardeCTT", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 50px;
@@ -4858,6 +4867,15 @@ img {
     line-height: 14px;
   }
 
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .header {
+    padding-bottom: 12px;
+  }
+
   .header__body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4872,7 +4890,8 @@ img {
   }
 
   .header__button {
-    margin-right: 0;
+    top: -12px;
+    margin-right: 8px;
     margin-left: auto;
   }
 
@@ -4890,6 +4909,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 30px;
+    padding-top: 0;
   }
 
   .hero__txt {
@@ -4902,6 +4922,13 @@ img {
 
   .hero__img {
     display: none;
+  }
+
+  .hero__img.mobile {
+    display: block;
+    width: 284px;
+    height: 269px;
+    margin-top: -39px;
   }
 
   .hero__title {
@@ -4919,6 +4946,7 @@ img {
     width: fit-content;
     font-size: 36px;
     line-height: 40px;
+    margin-bottom: 17px;
   }
 
   .hero__list {
@@ -4929,7 +4957,7 @@ img {
 
   .hero__list li {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 30px;
     text-align: left;
     padding-left: 15px;
   }
@@ -4982,6 +5010,41 @@ img {
 
   .hero__num {
     display: none;
+    margin: 0 -15px 30px;
+  }
+
+  .hero__num.mobile {
+    display: block;
+    padding: 21px 0;
+  }
+
+  .hero__num-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .hero__num-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .hero__num-item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .hero__num-top {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .hero__num-middle {
+    font-size: 36px;
+    line-height: 39px;
   }
 
   .hero__video {

@@ -175,6 +175,13 @@ img{
 	margin: 2px 0 0 1px;
 }
 
+@include r(767){
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+
 
 
 @import "componets/header";

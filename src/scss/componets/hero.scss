@@ -94,6 +94,9 @@
 	&__img{
 		flex: 1;
 		text-align: center;
+		&.mobile{
+			display: none;
+		}
 	}
 	&__video{
 		width: 100%;
@@ -106,6 +109,9 @@
 		background-color: #C2C2C2;
 		padding: 45px 15px 51px;
 		margin-top: 47px;
+		&.mobile{
+			display: none;
+		}
 	}
 	&__num-body{
 		display: flex;
@@ -196,6 +202,7 @@
 			display: flex;
 			flex-direction: column;
 			margin-bottom: 30px;
+			padding-top: 0;
 		}
 		&__txt{
 			max-width: 582px;
@@ -204,6 +211,12 @@
 		}
 		&__img{
 			display: none;
+			&.mobile{
+				display: block;
+				width: 284px;
+				height: 269px;
+				margin-top: -39px;
+			}
 		}
 		&__title{
 			font-size: 24px;
@@ -216,6 +229,7 @@
 				width: fit-content;
 				font-size: 36px;
 				line-height: 40px;
+				margin-bottom: 17px;
 			}
 		}
 		&__list{
@@ -224,7 +238,7 @@
 			list-style: none;
 			li{
 				font-size: 16px;
-				line-height: 25px;
+				line-height: 30px;
 				text-align: left;
 				padding-left: 15px;
 				&:before{
@@ -268,6 +282,30 @@
 		}
 		&__num{
 			display: none;
+			margin: 0 -15px 30px;
+			&.mobile{
+				display: block;
+				padding: 21px 0;
+			}
+		}
+		&__num-body{
+			flex-direction: column;
+		}
+		&__num-item{
+			flex: 1 0 100%;
+			max-width: 100%;
+			margin-bottom: 40px;
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+		&__num-top{
+			font-size: 14px;
+			line-height: 30px;
+		}
+		&__num-middle{
+			font-size: 36px;
+			line-height: 39px;
 		}
 		&__video{
 
