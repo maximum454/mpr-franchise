@@ -3745,6 +3745,7 @@ img {
 
 .tabs-format {
   margin-bottom: 85px;
+  overflow: hidden;
 }
 
 .tabs-format__header {
