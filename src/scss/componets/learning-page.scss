@@ -124,6 +124,7 @@
     }
 
     @include r(767) {
+        margin-bottom: 0;
         &__body {
             margin-bottom: 30px;
         }

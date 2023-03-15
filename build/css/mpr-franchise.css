@@ -5650,6 +5650,10 @@ img {
     line-height: 26px;
   }
 
+  .learning-page {
+    margin-bottom: 0;
+  }
+
   .learning-page__body {
     margin-bottom: 30px;
   }
