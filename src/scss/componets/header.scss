@@ -1,6 +1,9 @@
 .header {
 	padding: 23px 0 26px;
 	background-color: #EFEFEF;
+	&__back{
+		display: none;
+	}
 	&__button {
 		background-color: #EFEFEF;
 		border: 1px solid #E30613;
@@ -123,6 +126,25 @@
 	}
 	@include r(767){
 		padding-bottom: 12px;
+		&.page{
+			background-color: #ffffff;
+			justify-content: space-between;
+			&.gray{
+				background-color: #EFEFEF!important;
+				.header__button {
+					background-color: #EFEFEF;
+				}
+			}
+			.header__back{
+				display: block;
+			}
+			.header__phone {
+				text-align: center;
+			}
+			.header__button {
+				background-color: #ffffff;
+			}
+		}
 		&__body{
 			justify-content: space-between;
 		}

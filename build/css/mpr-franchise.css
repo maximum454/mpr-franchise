@@ -1832,6 +1832,10 @@ img {
   background-color: #EFEFEF;
 }
 
+.header__back {
+  display: none;
+}
+
 .header__button {
   background-color: #EFEFEF;
   border: 1px solid #E30613;
@@ -4982,6 +4986,33 @@ img {
 
   .header {
     padding-bottom: 12px;
+  }
+
+  .header.page {
+    background-color: #ffffff;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .header.page.gray {
+    background-color: #EFEFEF !important;
+  }
+
+  .header.page.gray .header__button {
+    background-color: #EFEFEF;
+  }
+
+  .header.page .header__back {
+    display: block;
+  }
+
+  .header.page .header__phone {
+    text-align: center;
+  }
+
+  .header.page .header__button {
+    background-color: #ffffff;
   }
 
   .header__body {
