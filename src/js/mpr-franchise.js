@@ -198,6 +198,15 @@ const swiperTwo = new Swiper( '.swiper.two', {
     },
 } );
 
+const swiperUniformThumb = new Swiper('.swiper-container-uniform-thumb', {
+    slidesPerView: 4,
+    spaceBetween: 17,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    observer: true,
+})
+
 const swiperUniform = new Swiper('.swiper-container-uniform', {
     slidesPerView: 4,
     spaceBetween: 50,
@@ -206,7 +215,10 @@ const swiperUniform = new Swiper('.swiper-container-uniform', {
     watchSlidesProgress: true,
     observer: true,
     navigation: {
-        nextEl: '.swiper-reviews-next',
+        nextEl: '.swiper-uniform-next',
+    },
+    thumbs: {
+        swiper: swiperUniformThumb,
     },
     breakpoints: {
         320: {
