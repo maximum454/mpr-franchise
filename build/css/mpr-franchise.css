@@ -3221,17 +3221,7 @@ img {
 }
 
 .shedule__list li:before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 0;
-  border-radius: 50%;
-  background-color: #000;
-  width: 5px;
-  height: 5px;
-  margin-right: 10px;
-  vertical-align: middle;
-  overflow: hidden;
+  display: none;
 }
 
 .reviews {
