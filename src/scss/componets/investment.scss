@@ -15,7 +15,7 @@
 	}
 
 	&__txt {
-		max-width: 710px;
+		width: 680px;
 		position: relative;
 		margin-right: 40px;
 		P{
@@ -25,7 +25,7 @@
 			line-height: 25px;
 			letter-spacing: 0.05em;
 			color: #000000;
-			margin: 0 0 19px;
+			margin: 19px 0 0;
 		}
 	}
 
@@ -64,9 +64,9 @@
 		padding: 33px 20px 40px;
 		margin: 0 -20px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		position: relative;
-
 		&:nth-child(even) {
 			background-color: #EFEDED;
 
@@ -83,6 +83,21 @@
 				z-index: 0;
 			}
 		}
+		hr{
+			flex: 1 0 100%;
+			border: 0;
+			border-bottom: 3px solid #E30613;
+
+			margin-top: 0;
+			margin-bottom: 28px;
+		}
+	}
+
+	&__item-inner {
+		flex: 1 0 100%;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
 	}
 
 	&__name {
@@ -91,7 +106,6 @@
 		line-height: 25px;
 		letter-spacing: 0.05em;
 		color: #000000;
-		margin: 0 0 19px;
 	}
 
 	&__price {
@@ -103,6 +117,8 @@
 		color: #000000;
 		position: relative;
 		flex-shrink: 0;
+		width: 115px;
+		align-self: flex-end;
 	}
 	.container{
 		max-width: 1160px;
