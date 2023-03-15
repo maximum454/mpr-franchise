@@ -2958,6 +2958,7 @@ img {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  display: none;
 }
 
 .learning-main__header {
@@ -3032,6 +3033,10 @@ img {
   margin: 80px auto 20px;
   width: 100%;
   max-width: 329px;
+}
+
+.learning-main .container {
+  max-width: 1160px;
 }
 
 .learning-page {
@@ -5535,6 +5540,10 @@ img {
 
   .learning-main__img img {
     width: 100%;
+  }
+
+  .learning-main__img-logo {
+    display: block;
   }
 
   .learning-main__item {

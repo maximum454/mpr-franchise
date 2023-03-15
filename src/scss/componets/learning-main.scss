@@ -34,6 +34,7 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+		display: none;
 	}
 	&__header{
 		margin-bottom: 86px;
@@ -86,6 +87,9 @@
 		width: 100%;
 		max-width: 329px;
 	}
+	.container{
+		max-width: 1160px;
+	}
 
 	@include r(767) {
 		padding: 0;
@@ -121,6 +125,9 @@
 			img{
 				width: 100%;
 			}
+		}
+		&__img-logo{
+			display: block;
 		}
 		&__item{
 			max-width: 100%;
