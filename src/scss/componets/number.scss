@@ -25,6 +25,7 @@
         font-size: 18px;
         line-height: 25px;
         font-weight: 700;
+        max-width: 144px;
         span{
             display: block;
             color: #E30613;
@@ -57,11 +58,12 @@
         &__item{
             text-align: center;
             margin-bottom: 18px;
+
         }
         &__text {
             font-size: 16px;
             line-height: 25px;
-            margin-bottom: 12px;
+            margin: 0 auto 12px;
             span{
                 display: inline;
             }
