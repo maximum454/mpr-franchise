@@ -39,6 +39,9 @@
 		padding: 0 4px;
 		height: 197px;
 		overflow: hidden;
+		&.show{
+			height: auto;
+		}
 		ul{
 			margin: 15px 0;
 			padding: 0;

@@ -77,11 +77,18 @@ $(function () {
         document.querySelector('body').classList.toggle('lock');
     }
 
+    $('.js-reviews-open').on('click', function (){
+        let target = $(this);
+        target.remove()
+        target.parent('.swiper-slide').find('.reviews__anons').addClass('show');
+        return false
+    })
+
 
     const swiperReviews = new Swiper('.swiper-container-reviews', {
         slidesPerView: 3,
         loop: true,
-        autoHeight: true,
+        autoHeight: false,
         spaceBetween: 136,
         watchOverflow: true,
         watchSlidesVisibility: true,

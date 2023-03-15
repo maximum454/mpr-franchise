@@ -3201,6 +3201,10 @@ img {
   overflow: hidden;
 }
 
+.reviews__anons.show {
+  height: auto;
+}
+
 .reviews__anons ul {
   margin: 15px 0;
   padding: 0;
