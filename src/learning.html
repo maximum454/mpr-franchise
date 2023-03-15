@@ -25,6 +25,9 @@
 <div class="wrp">
     @@include('./template/_header.html')
     <div id="learning-main" class="learning-main">
+        <div class="learning-main__header mobile">
+            <div class="learning-main__title">Учебный центр</div>
+        </div>
         <div class="learning-main__img">
             <img class="img-fluid" src="./img/learning-main2.png" width="1439" height="810" alt="">
             <div class="learning-main__img-logo"><img class="img-fluid" src="./img/learning-logo.png" width="440"
@@ -98,16 +101,19 @@
                 </div>
             </div>
 
-            <h2>Расписание ближайших групп:</h2>
-            <div class="learning-page__body">
-                <ul class="learning-page__list learning-page__list--margin">
-                    <li><b>08-19 февраля 2021 года</b> - Курс для управляющих магазином (группа 18)</li>
+            <div class="shedule">
+                <div class="shedule__title">Расписание ближайших групп:</div>
+                <div class="shedule__body">
+                    <ul class="shedule__list">
+                        <li><b>08-19 февраля 2021 года</b> <span>- Курс для управляющих магазином <span>(группа 18)</span></span></li>
 
-                    <li><b>01-12 марта 2021 года </b>- Курс для управляющих магазином (группа 19)</li>
+                        <li><b>01-12 марта 2021 года </b> <span>- Курс для управляющих магазином <span>(группа 19)</span></span></li>
 
-                    <li><b>15-26 марта 2021 года </b>- Курс для управляющих магазином (группа 20)</li>
-                </ul>
-                <button type="button" class="btn btn-primary" data-remodal-target="course">Записаться на курс</button>
+                        <li><b>15-26 марта 2021 года </b> <span>- Курс для управляющих магазином <span>(группа 20)</span></span></li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" data-remodal-target="course">Записаться на курс
+                    </button>
+                </div>
             </div>
 
             <div class="learning-page__body">
@@ -130,15 +136,15 @@
             </div>
             <div class="learning-page__row">
                 <div>
-                    <p><b>Остались вопросы?</b><br>
-                        Заполните форму и мы свяжемся с вами в ближайшее время</p>
+                    <div class="learning-page__row-name">Остались вопросы?</div>
+                    <p>Заполните форму и мы свяжемся с вами в ближайшее время</p>
                     <button type="button" class="btn btn-primary d-mobile-none" data-remodal-target="question">Задать
                         вопрос
                     </button>
                 </div>
                 <div>
-                    <p><b>Нужен региональный менеджер?</b><br>
-                        В случае возникновения вопросов, требующих обсуждения</p>
+                    <div class="learning-page__row-name">Нужен региональный менеджер?</div>
+                    <p>В случае возникновения вопросов, требующих обсуждения</p>
                     <button type="button" class="btn btn-primary" data-remodal-target="trener">Связаться с
                         менеджером
                     </button>

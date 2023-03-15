@@ -2965,6 +2965,10 @@ img {
   margin-bottom: 86px;
 }
 
+.learning-main__header.mobile {
+  display: none;
+}
+
 .learning-main__title {
   font-family: "AvantGardeCTT", sans-serif;
   font-weight: 700;
@@ -3044,29 +3048,6 @@ img {
   margin-bottom: 110px;
 }
 
-.learning-page__title {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 25px;
-  letter-spacing: 0.05em;
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-bottom: 30px;
-}
-
-.learning-page__title:after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #E30613;
-}
-
 .learning-page h2 {
   font-weight: bold;
   font-size: 18px;
@@ -3086,7 +3067,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  text-align: justify;
   letter-spacing: 0.05em;
   color: #333333;
 }
@@ -3165,9 +3145,24 @@ img {
   gap: 20px 86px;
 }
 
+.learning-page__row-name {
+  font-family: "AvantGardeCTT", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.learning-page__row p {
+  font-family: "AvantGardeCTT", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  color: #333333;
+  margin: 0;
+}
+
 .learning-page__row .btn {
-  margin-top: 63px;
   width: 329px;
+  margin-top: 63px;
 }
 
 .learning-page__row P {
@@ -3179,6 +3174,56 @@ img {
 
 .learning-page .container {
   max-width: 1160px;
+}
+
+.shedule {
+  margin-bottom: 61px;
+}
+
+.shedule__title {
+  font-family: "AvantGardeCTT", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 0 0 21px;
+}
+
+.shedule__body {
+  padding-left: 115px;
+}
+
+.shedule__list {
+  margin: 0 0 42px;
+  padding: 0;
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.shedule__list li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.shedule__list li:before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  border-radius: 50%;
+  background-color: #000;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 .reviews {
@@ -5505,13 +5550,20 @@ img {
     display: none;
   }
 
-  .learning-main__title {
-    font-size: 20px;
-    line-height: 25px;
+  .learning-main__header.mobile {
+    display: block;
+    margin-bottom: 27px;
+    margin-top: 26px;
   }
 
-  .learning-main__title:after {
-    width: 142px;
+  .learning-main__title {
+    font-family: "AvantGardeCTT", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #E30613;
   }
 
   .learning-main__body {
@@ -5544,6 +5596,7 @@ img {
 
   .learning-main__img-logo {
     display: block;
+    width: 90%;
   }
 
   .learning-main__item {
@@ -5575,25 +5628,9 @@ img {
   .learning-main .btn {
     width: 100%;
     margin: 0 auto;
-    padding: 11px 20px;
+    padding: 18px 20px;
     font-size: 22px;
     line-height: 26px;
-  }
-
-  .learning-page__title {
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 30px;
-  }
-
-  .learning-page__title:after {
-    content: "";
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    width: 142px;
-    height: 3px;
-    background-color: #E30613;
   }
 
   .learning-page__body {
@@ -5620,7 +5657,9 @@ img {
   }
 
   .learning-page p {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
   }
 
   .learning-page__dark {
@@ -5648,7 +5687,7 @@ img {
   .learning-page__list li:before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 16px;
     left: 0;
     border-radius: 50%;
     background-color: #000;
@@ -5667,12 +5706,52 @@ img {
 
   .learning-page__row > div {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .learning-page__row .btn {
     width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 30px auto 0;
+  }
+
+  .shedule {
+    margin-bottom: 23px;
+  }
+
+  .shedule__body {
+    padding-left: 0;
+  }
+
+  .shedule__list {
+    margin: 0 0 23px;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    color: #000000;
+  }
+
+  .shedule__list li {
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  .shedule__list li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .shedule__list li:before {
+    display: none;
+  }
+
+  .shedule__list li span {
+    display: block;
   }
 
   .reviews {

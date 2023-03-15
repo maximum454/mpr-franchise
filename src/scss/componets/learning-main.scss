@@ -38,6 +38,9 @@
 	}
 	&__header{
 		margin-bottom: 86px;
+		&.mobile{
+			display: none;
+		}
 	}
 	&__title{
 		font-family: $font1;
@@ -96,13 +99,20 @@
 		margin-bottom: 41px;
 		&__header{
 			display: none;
+			&.mobile{
+				display: block;
+				margin-bottom: 27px;
+				margin-top: 26px;
+			}
 		}
 		&__title{
-			font-size: 20px;
+			font-family: $font1;
+			font-weight: 700;
+			font-size: 24px;
 			line-height: 25px;
-			&:after {
-				width: 142px;
-			}
+			text-align: center;
+			letter-spacing: 0.05em;
+			color: #E30613;
 		}
 		&__body {
 			display: grid;
@@ -128,6 +138,7 @@
 		}
 		&__img-logo{
 			display: block;
+			width: 90%;
 		}
 		&__item{
 			max-width: 100%;
@@ -148,7 +159,7 @@
 		.btn{
 			width: 100%;
 			margin: 0 auto;
-			padding: 11px 20px;
+			padding: 18px 20px;
 			font-size: 22px;
 			line-height: 26px;
 		}
