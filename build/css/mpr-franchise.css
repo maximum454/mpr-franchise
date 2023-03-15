@@ -3362,30 +3362,18 @@ img {
 }
 
 .articles {
-  margin: 15px 0;
+  margin: 86px 0 34px;
 }
 
 .articles__title {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 24px;
+  font-family: "AvantGardeCTT", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-bottom: 40px;
-}
-
-.articles__title:after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #E30613;
+  color: #E30613;
+  margin-bottom: 79px;
 }
 
 .articles__body {
@@ -3394,14 +3382,14 @@ img {
 }
 
 .articles__item {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .articles__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3459,22 +3447,28 @@ img {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 16px;
+  margin-top: 32px;
   margin-right: 0;
   margin-left: auto;
-  font-weight: bold;
+  border: none;
+  padding: 0;
+  font-family: "AvantGardeCTT", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  padding: 8.5px 30px;
+  color: #E30613;
 }
 
 .pagination {
   text-align: center;
+  margin-bottom: 79px;
 }
 
 .pagination a,
 .pagination span {
+  font-family: "AvantGardeCTT", sans-serif;
   font-weight: normal;
   color: #000;
   font-size: 14px;
@@ -5829,9 +5823,19 @@ img {
     height: 22px;
   }
 
+  .articles {
+    margin: 0 0 29px;
+  }
+
   .articles__title {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 25px;
+    text-align: center;
+    margin-bottom: 19px;
+  }
+
+  .articles__item {
+    margin-bottom: 12px;
   }
 
   .articles__item.active .articles__data {
@@ -5845,6 +5849,7 @@ img {
   .articles__header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 14px;
   }
 
   .articles__name {
@@ -5853,6 +5858,8 @@ img {
             flex: 0 0 100%;
     position: relative;
     padding-right: 25px;
+    font-size: 12px;
+    line-height: 25px;
   }
 
   .articles__name:after {
@@ -5871,11 +5878,11 @@ img {
 
   .articles__data {
     font-size: 12px;
-    text-align: right;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     display: none;
+    margin-top: 16px;
   }
 
   .articles__row {
@@ -5917,6 +5924,10 @@ img {
 
   .articles .btn {
     display: none;
+  }
+
+  .pagination {
+    margin-bottom: 22px;
   }
 
   .pagination a,
