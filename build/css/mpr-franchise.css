@@ -2785,7 +2785,10 @@ img {
 }
 
 .investment__txt {
-  width: 680px;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  max-width: 680px;
   position: relative;
   margin-right: 40px;
 }
@@ -2832,6 +2835,7 @@ img {
 }
 
 .investment__item {
+  min-width: 1120px;
   padding: 33px 20px 40px;
   margin: 0 -20px;
   display: -webkit-box;
@@ -2843,6 +2847,12 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  color: #000000;
+}
+
+.investment__item:first-of-type {
+  color: #E30613;
+  padding: 14px 20px;
 }
 
 .investment__item:nth-child(even) {
@@ -2892,7 +2902,6 @@ img {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.05em;
-  color: #000000;
 }
 
 .investment__price {
@@ -2901,7 +2910,6 @@ img {
   line-height: 25px;
   letter-spacing: 0.05em;
   text-transform: lowercase;
-  color: #000000;
   position: relative;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -4487,6 +4495,22 @@ img {
   }
 }
 
+@media only screen and (max-width: 1120px) {
+  .investment__body {
+    overflow: auto;
+    margin: 0 -15px;
+  }
+
+  .investment__item {
+    padding-left: 50px;
+  }
+
+  .investment__item:first-of-type {
+    color: #E30613;
+    padding: 14px 50px;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .header {
     padding: 24px 0;
@@ -5490,20 +5514,18 @@ img {
   }
 
   .investment__header {
-    margin-bottom: 30px;
+    margin-bottom: 8px;
+    text-align: center;
+    padding: 0;
   }
 
   .investment__title {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 25px;
   }
 
-  .investment__title:after {
-    width: 142px;
-  }
-
   .investment__item {
-    padding: 15px 20px;
+    padding: 15px 50px;
     margin: 0 -20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5512,6 +5534,11 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
+  }
+
+  .investment__item:first-of-type {
+    color: #E30613;
+    padding: 14px 50px;
   }
 
   .investment__item:nth-child(even) {
@@ -5995,15 +6022,28 @@ img {
             transform: rotate(-90deg);
   }
 
+  .calculator {
+    padding: 30px 0;
+    margin-bottom: 27px;
+  }
+
   .calculator__header {
-    margin-bottom: 15px;
+    margin-bottom: 27px;
     padding: 0;
     text-align: center;
   }
 
   .calculator__title {
     font-size: 24px;
-    line-height: 50px;
+    line-height: 25px;
+  }
+
+  .calculator__btn {
+    width: 100%;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 17px 25px;
+    margin: 0;
   }
 
   .calculator__modal {
@@ -6028,18 +6068,27 @@ img {
   }
 
   .calculator__span {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 12px;
+  }
+
+  .calculator .form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
   }
 
   .calculator .form-label {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 30px;
   }
 
   .calculator .form-control {
-    max-width: 116px;
+    max-width: 142px;
     margin-right: 20px;
+    margin-left: 71px;
+    padding: 3px 0.75rem;
   }
 
   .tabs-format {

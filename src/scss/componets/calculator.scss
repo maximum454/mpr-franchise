@@ -142,14 +142,23 @@
 		max-width: 1160px;
 	}
 	@include r(767){
+		padding: 30px 0;
+		margin-bottom: 27px;
 		&__header {
-			margin-bottom: 15px;
+			margin-bottom: 27px;
 			padding: 0;
 			text-align: center;
 		}
 		&__title{
 			font-size: 24px;
-			line-height: 50px;
+			line-height: 25px;
+		}
+		&__btn{
+			width: 100%;
+			font-size: 22px;
+			line-height: 26px;
+			padding: 17px 25px;
+			margin: 0;
 		}
 		&__modal{
 			display: block;
@@ -170,16 +179,23 @@
 
 		}
 		&__span{
-			font-size: 13px;
-			line-height: 16px;
+			font-size: 16px;
+			line-height: 12px;
+		}
+		.form-group{
+			flex-wrap: wrap;
+			margin-bottom: 30px;
 		}
 		.form-label{
-			font-size: 13px;
-			line-height: 16px;
+			font-size: 16px;
+			line-height: 20px;
+			margin-bottom: 30px;
 		}
 		.form-control{
-			max-width: 116px;
+			max-width: 142px;
 			margin-right: 20px;
+			margin-left: 71px;
+			padding: 3px 0.75rem;
 		}
 	}
 }

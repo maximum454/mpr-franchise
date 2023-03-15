@@ -1,7 +1,6 @@
 .investment {
 	margin: 30px 0 80px;
 	overflow: hidden;
-
 	&__header {
 		margin-bottom: 79px;
 	}
@@ -14,8 +13,11 @@
 		color: #E30613;
 	}
 
+	&__body{
+	}
 	&__txt {
-		width: 680px;
+		flex: auto;
+		max-width: 680px;
 		position: relative;
 		margin-right: 40px;
 		P{
@@ -61,12 +63,18 @@
 	}
 
 	&__item {
+		min-width: 1120px;
 		padding: 33px 20px 40px;
 		margin: 0 -20px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		position: relative;
+		color: #000000;
+		&:first-of-type{
+			color: #E30613;
+			padding: 14px 20px;
+		}
 		&:nth-child(even) {
 			background-color: #EFEDED;
 
@@ -105,7 +113,6 @@
 		font-size: 18px;
 		line-height: 25px;
 		letter-spacing: 0.05em;
-		color: #000000;
 	}
 
 	&__price {
@@ -114,7 +121,6 @@
 		line-height: 25px;
 		letter-spacing: 0.05em;
 		text-transform: lowercase;
-		color: #000000;
 		position: relative;
 		flex-shrink: 0;
 		width: 115px;
@@ -123,6 +129,19 @@
 	.container{
 		max-width: 1160px;
 	}
+	@include r(1120){
+		&__body{
+			overflow: auto;
+			margin: 0 -15px;
+		}
+		&__item {
+			padding-left: 50px;
+			&:first-of-type{
+				color: #E30613;
+				padding: 14px 50px;
+			}
+		}
+	}
 	@include r(767) {
 		margin: 20px 0;
 		.text-danger{
@@ -130,23 +149,24 @@
 			margin: 0;
 		}
 		&__header {
-			margin-bottom: 30px;
+			margin-bottom: 8px;
+			text-align: center;
+			padding: 0;
 		}
 		&__title {
-			font-size: 20px;
+			font-size: 24px;
 			line-height: 25px;
-
-			&:after {
-				width: 142px;
-			}
 		}
 		&__item {
-			padding: 15px 20px;
+			padding: 15px 50px;
 			margin: 0 -20px;
 			display: flex;
 			justify-content: space-between;
 			position: relative;
-
+			&:first-of-type{
+				color: #E30613;
+				padding: 14px 50px;
+			}
 			&:nth-child(even) {
 				background-color: #EFEDED;
 
