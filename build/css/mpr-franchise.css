@@ -3820,7 +3820,6 @@ img {
   margin: 0;
   cursor: pointer;
   background: #fff;
-  font-weight: bold;
   -webkit-transition: background ease 0.2s;
   -o-transition: background ease 0.2s;
   transition: background ease 0.2s;
@@ -3830,8 +3829,9 @@ img {
           box-sizing: border-box;
   border-radius: 4px;
   text-align: center;
-  font-size: 18px;
-  line-height: 22px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
   letter-spacing: 0.05em;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
