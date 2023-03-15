@@ -1,6 +1,9 @@
 .footer{
 	background-color: #4E5A65;
 	padding: 88px 0 36px;
+	.container{
+		max-width: 1160px;
+	}
 	&__body{
 		display: flex;
 		flex-wrap: wrap;

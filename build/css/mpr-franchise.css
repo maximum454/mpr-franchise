@@ -2148,6 +2148,10 @@ img {
   padding: 88px 0 36px;
 }
 
+.footer .container {
+  max-width: 1160px;
+}
+
 .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
