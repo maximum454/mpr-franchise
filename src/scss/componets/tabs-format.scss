@@ -67,17 +67,32 @@
 			flex-grow: 1;
 		}
 		.tab {
-
 			margin-top: -5px;
 			order: 99;
 			flex-grow: 1;
 			width: 100%;
 			display: none;
-			border-radius: 0 0 5px 5px;
 			background: #9F9FA0;
 			position: relative;
-			overflow: hidden;
 			align-items: center;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				background-color: #9F9FA0;
+				width: 100%;
+				height: 100%;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0;
+				right: -100%;
+				background-color: #9F9FA0;
+				width: 100%;
+				height: 100%;
+			}
 		}
 		input[type="radio"] {
 			position: absolute;

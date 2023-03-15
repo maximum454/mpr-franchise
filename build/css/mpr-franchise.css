@@ -744,9 +744,8 @@ input[type=submit].styler[disabled] {
 @font-face {
   font-family: "AvantGardeCTT";
   src: url("../fonts/AvantGardeCTT/AvantGardeCTT-bold.ttf") format("truetype");
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -3848,13 +3847,31 @@ img {
           flex-grow: 1;
   width: 100%;
   display: none;
-  border-radius: 0 0 5px 5px;
   background: #9F9FA0;
   position: relative;
-  overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.tabs-format .tabs .tab:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #9F9FA0;
+  width: 100%;
+  height: 100%;
+}
+
+.tabs-format .tabs .tab:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: #9F9FA0;
+  width: 100%;
+  height: 100%;
 }
 
 .tabs-format .tabs input[type=radio] {
