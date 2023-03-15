@@ -6,6 +6,9 @@
 		flex-wrap: wrap;
 		gap: 20px 112px;
 		align-items: center;
+		&.mobile{
+			display: none;
+		}
 		img{
 			max-width: 100%;
 			height: auto;
@@ -30,6 +33,14 @@
 		}
 	}
 	@include r(767){
+		&__body{
+			display: none;
+			&.mobile{
+				display: flex;
+				flex-wrap: nowrap;
+				gap: 24px;
+			}
+		}
 		&__item{
 		}
 		&__policy{

@@ -2160,6 +2160,10 @@ img {
           align-items: center;
 }
 
+.footer__body.mobile {
+  display: none;
+}
+
 .footer__body img {
   max-width: 100%;
   height: auto;
@@ -5079,6 +5083,19 @@ img {
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+
+  .footer__body {
+    display: none;
+  }
+
+  .footer__body.mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 24px;
   }
 
   .footer__policy {
